@@ -6,5 +6,5 @@
 
 ### V2:
 
-- Template:https://www.templateclue.com/ideal-blogger-template/
+- Template: https://www.templateclue.com/ideal-blogger-template/
 
