@@ -2,7 +2,7 @@
 
 ### V1:
 
-- Template: 
+- Template: https://btemplates.com/2013/blogger-template-metrominimalist/
 
 ### V2:
 
