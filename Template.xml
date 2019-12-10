@@ -245,7 +245,7 @@ li, ul {
   z-index: 2;
 }
 .section-title h2:before {
-    background: #2196f3;
+    background: #2B5797;
 }
 .site-btn {
   position: relative;
@@ -270,11 +270,11 @@ li, ul {
   padding: 12px 40px;
 }
 .site-btn.btn-outline {
-    color: #2196f3!important;
-    border: 2px solid #2196f3;
+    color: #2B5797!important;
+    border: 2px solid #2B5797;
 }
 .bg-color, .site-btn, .bar-inner, .resume-item .resume-right:after, .owl-nav div:hover, .blog-item:after {
-    background: #2196f3;
+    background: #2B5797;
 }
 .mah_buttons {
     float: right;
@@ -597,6 +597,7 @@ width:33%;
     color: #fff;
     line-height: 57px;
     font-size: 60px;
+    display:none;
 }
 .header-section .logo {
   display: inline-block;
@@ -658,7 +659,7 @@ width:33%;
 
 .header-section.sticky {
   position: fixed;
-  background: #000;
+  background: #2B5797;
   padding: 10px 50px;
 }
 
@@ -667,7 +668,7 @@ width:33%;
 }
 
 .header-section.sticky .menu-list li a {
-  color: #a0a0a0;
+  color: #fff;
 }
 
 .intro-section {
@@ -866,8 +867,8 @@ width:33%;
 .me-image{box-shadow:0 0 20px rgba(34,34,34,0.61);position:relative;overflow:hidden}
 .profile-items{margin-bottom:0}
 .profile-preword{float:left;margin-bottom:10px}
-.profile-preword span{color:#fff;font-size:14px;font-weight:700;line-height:1.1;display:inline-block;padding:7px 12px;text-transform:uppercase;background:#2196f3;position:relative}
-.profile-preword span:before{content:'';width:0;height:0;top:100%;left:5px;display:block;position:absolute;border-style:solid;border-width:0 0 8px 8px;border-color:transparent;border-left-color:#2196f3}
+.profile-preword span{color:#fff;font-size:14px;font-weight:700;line-height:1.1;display:inline-block;padding:7px 12px;text-transform:uppercase;background:#2B5797;position:relative}
+.profile-preword span:before{content:'';width:0;height:0;top:100%;left:5px;display:block;position:absolute;border-style:solid;border-width:0 0 8px 8px;border-color:transparent;border-left-color:#2B5797}
 .profile-share{float:right;line-height:1;margin-bottom:10px}
 figure.effect-zoe figcaption{top:auto;bottom:-20px;height:3.75em;position:absolute;background:#fff;color:#3c4a50;-webkit-transition:-webkit-transform .35s;transition:transform .35s;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);overflow:hidden;width:100%}
 figure.effect-zoe h2{float:left}
@@ -918,7 +919,7 @@ figure.effect-zoe{margin:0}
   line-height: 22px;
 }
 .main-color, .service-item i, .resume-item .resume-right h2:after, .owl-nav div, .contact-info i {
-    color: #2196f3;
+    color: #2B5797;
 }
 
 
@@ -1013,7 +1014,7 @@ font-family:Verdana,Arial,Tahoma,sans-serif;
 font-size:12px;
 }
 .category-title{margin-bottom:10px!important;text-align:center;padding-top:30px}
-.aisa-btn{font-size:14px;color:#2196f3}
+.aisa-btn{font-size:14px;color:#2B5797}
 .aisa-btn a:nth-child(n+2){display:none!important}
 .aisa-publish{padding-bottom:20px;padding-top:5px;text-transform:uppercase;text-align:center}
 .aisa-publish ul{margin:0!important}
@@ -1049,7 +1050,7 @@ span#post-tags a:nth-child(n+4){display:none}
 .work .item{margin-top:5px;position:relative;height:280px;overflow:hidden;background:#000;cursor:pointer}
 .work .item img{width:100%;height:275px;-webkit-transition:all .25s ease-out;transition:all .25s ease-out;object-fit:cover;position:relative;opacity:.8}
 .item a.readmore{position:absolute;left:0;right:0;text-align:center;bottom:-30px;font-size:12px;color:#fff;font-family:Open Sans;font-weight:bold;transform:scale(0);transition:.2s;z-index:999;display:inline-block}
-.item a.readmore:before{content:"";background:#2196f3;width:200px;height:30px;display:block;text-align:center;margin:0 auto;bottom:-28px;position:relative;z-index:-1}
+.item a.readmore:before{content:"";background:#2B5797;width:200px;height:30px;display:block;text-align:center;margin:0 auto;bottom:-28px;position:relative;z-index:-1}
 .item:hover a.readmore{bottom:15px;transform:scale(1)}
 .item:hover .viframe{opacity:.3!important}
 iframe.viframe{opacity:.7;transition:.2s;height:275px;width:100%}
@@ -1057,7 +1058,7 @@ iframe.viframe{opacity:.7;transition:.2s;height:275px;width:100%}
 .date-outer .item img{-webkit-transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,transform .35s;-webkit-transform:scale(1.12);transform:scale(1.12)}
 .date-outer .item:hover img{opacity:.4;-webkit-transform:scale(1);transform:scale(1.1)}
 .date-outer.col-md-4.col-sm-4{padding:1px 3px}
-.date-outer .item a.electo::before{position:absolute;top:13px;right:17px;bottom:13px;left:17px;border:1px solid #2196f3;content:''}
+.date-outer .item a.electo::before{position:absolute;top:13px;right:17px;bottom:13px;left:17px;border:1px solid #2B5797;content:''}
 .date-outer .item a.electo::before,.date-outer .item h2{opacity:0;-webkit-transition:opacity .35s,-webkit-transform .35s;transition:opacity .35s,transform .35s}
 .date-outer .item a.electo h2{padding:18% 0 20px;text-align:center;font-size:12px;margin:0 auto;max-width:205px;-webkit-transform:scale(1.5);transform:scale(1.5);font-family:"Raleway", sans-serif}
 .date-outer .item:hover a.electo::before,.date-outer .item:hover h2{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
@@ -1151,14 +1152,14 @@ div#work {
 
 .hire{background-color:rgba(0,0,0,.8);background-blend-mode:overlay;background-image:url(https://2.bp.blogspot.com/-EnLQd3ryqzs/WVt7IoRgkfI/AAAAAAAABDY/F8gptHG0KzA2BpF8O8gRj_hUZf-JNkMbwCLcBGAs/s1600/numbers.jpg);background-size:cover;background-attachment:fixed;background-position:center}
 .hire h3{color:#fff;letter-spacing:2px;font-weight:100;margin-bottom:30px}
-.hire button{padding:7px 25px;color:#fff;font-size:18px;letter-spacing:1px;background:#2196f3;border:1px solid #2196f3;transition:all .5s}
+.hire button{padding:7px 25px;color:#fff;font-size:18px;letter-spacing:1px;background:#2B5797;border:1px solid #2B5797;transition:all .5s}
 .hire button:hover{background:0}
 
 .contact_image{display:inline-block}
 .contact-con{padding:40px 0;text-align: center;}
 .contact_image .toverlay .contact_info .item{padding:0;text-align:center}
 .contact_image .toverlay .contact_info .item:nth-of-type(1),.contact_image .toverlay .contact_info .item:nth-of-type(2),.contact_image .toverlay .contact_info .item:nth-of-type(3),.contact_image .toverlay .contact_info .item:nth-of-type(4){margin-bottom:0;padding-bottom:65px}
-.contact_image .toverlay .contact_info .item i{font-size:28px;margin-bottom:15px;width:80px;height:80px;line-height:80px;border-radius:100%;border:1px solid #2196f3;color:#fff;display:inline-block;background:#2196f3}
+.contact_image .toverlay .contact_info .item i{font-size:28px;margin-bottom:15px;width:80px;height:80px;line-height:80px;border-radius:100%;border:1px solid #2B5797;color:#fff;display:inline-block;background:#2B5797}
 .contact_image .toverlay .contact_info .item div a{color:#000}
 .contact_image .toverlay .contact_info .item div{font-size:15px;text-transform:uppercase;letter-spacing:2px}
 section#contact{padding-top:50px}
@@ -1169,13 +1170,13 @@ section#contact{padding-top:50px}
 .contact_body .messages{border-top:1px solid #ef3f3d;border-bottom:1px solid #ef3f3d;background:#f9f9f9;padding:10px;opacity:0;visibility:hidden;z-index:-1;-webkit-transition:all 300ms linear;-moz-transition:all 300ms linear;-o-transition:all 300ms linear;transition:all 300ms linear}
 textarea#ContactForm1_contact-form-email-message{margin-bottom:10px}
 .contact_body .messages.visible{opacity:1;visibility:visible;z-index:5}
-input#ContactForm1_contact-form-submit{background:#2196f3;padding:15px 40px;color:#fff;outline:0;border:0;border-radius:50px;font-family:Open Sans;font-weight:900;text-transform:uppercase;box-shadow:0;transition:.2s ease-in}
+input#ContactForm1_contact-form-submit{background:#2B5797;padding:15px 40px;color:#fff;outline:0;border:0;border-radius:50px;font-family:Open Sans;font-weight:900;text-transform:uppercase;box-shadow:0;transition:.2s ease-in}
 input#ContactForm1_contact-form-submit:hover{background:#222;box-shadow:0 0 25px 2px rgba(0,0,0,0.37)}
 textarea#ContactForm1_contact-form-email-message{margin-bottom:10px}
 p#ContactForm1_contact-form-error-message{position:absolute;padding:1px 20px;border-radius:4px;left:0;color:#e74c3c;text-transform:uppercase;width:100%}
 p#ContactForm1_contact-form-error-message img,p#ContactForm1_contact-form-success-message img{width:12px;margin-top:-3px}
 form#contactForm{position:relative}
-p#ContactForm1_contact-form-success-message{position:absolute;padding:1px 20px;border-radius:4px;left:0;color:#2196f3;text-transform:uppercase;width:100%}
+p#ContactForm1_contact-form-success-message{position:absolute;padding:1px 20px;border-radius:4px;left:0;color:#2B5797;text-transform:uppercase;width:100%}
 .contactFooter{background-color:#222;padding:35px 0 30px;color:#fdfdfd}
 .footerLeft{font-size:14px;color:#777;font-family:Open Sans;text-transform:capitalize;font-weight:100;text-align:center}
 .footerLeft a{color:#fff;font-weight:500;font-family:Open Sans}
@@ -1238,7 +1239,7 @@ a.profile-link{clear:both;display:block;font:80% monospace;padding:10px 0;text-a
     text-transform: capitalize;
     margin-bottom: 12px;
 }
-.sidebar h2:after{content:'';width:70px;height:1px;background:#2196f3;position:absolute;bottom:-1px;left:0}
+.sidebar h2:after{content:'';width:70px;height:1px;background:#2B5797;position:absolute;bottom:-1px;left:0}
 .sidebar .widget{
     clear: both;
     width: 100%;
@@ -1349,8 +1350,8 @@ h2.date-header{display:none}
 .big_post_image{margin:0 -15px}
 
 .tc-title{position:relative;font-weight:400;margin-bottom:30px;padding-bottom:20px;letter-spacing:2px;display:inline-block;border-bottom:1px solid #ccc;text-transform:uppercase;font-size: 25px;}
-.tc-title:after{content:'';width:70px;height:1px;background:#2196f3;position:absolute;bottom:-1px;left:0}
-.tc-title-center:after{content:'';width:70px;height:1px;background:#2196f3;position:absolute;bottom:-1px;left:calc(50% - 35px)}
+.tc-title:after{content:'';width:70px;height:1px;background:#2B5797;position:absolute;bottom:-1px;left:0}
+.tc-title-center:after{content:'';width:70px;height:1px;background:;position:absolute;bottom:-1px;left:calc(50% - 35px)}
 .hero .tc-title{width:100%}
 .tc_name_title h4{text-transform:uppercase}
 .tc_name_title{padding:0;margin-bottom:15px}
@@ -1602,7 +1603,7 @@ body#layout{background-color:#F7F7F7} body#layout ul,body#layout li{list-style:n
     <div class='logo'>
       <!-- Logo -->
       <b:section class='header' id='header' maxwidgets='1' showaddelement='yes'>
-        <b:widget id='Header1' locked='true' title='LUC (cabecera)' type='Header' version='1'>
+        <b:widget id='Header1' locked='true' title='Luciano Cismondi (cabecera)' type='Header' version='1'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1686,8 +1687,8 @@ user is not using shrink to fit then we expand the header.
     <ul class='menu-list'>
       <li><a href='/#home'>HOME</a></li>
       <li><a href='/#about'>Estudio</a></li>
-      <li><a href='/#work'>Trabajo</a></li>
-      <li><a href='/#resume'>y Me divierto</a></li>
+      <li><a href='/#resume'>Trabajo</a></li>
+      <li><a href='/#work'>y Me divierto</a></li>
       <li><a href='/#testimonial'>CV</a></li>
       <li><a href='/#contact'>Contacto</a></li>
     </ul> 
@@ -1741,11 +1742,14 @@ user is not using shrink to fit then we expand the header.
 <!-- About Links -->
 <figcaption>
 <p class='icon-links'>
-<a href='#'><span aria-hidden='false' class='fa fa-facebook'/></a>
-<a href='#'><span aria-hidden='false' class='fa fa-twitter'/></a>
-<a href='#'><span aria-hidden='false' class='fa fa-google-plus'/></a>
-<a href='#'><span aria-hidden='true' class='fa fa-instagram'/></a>
 <a href='#'><span aria-hidden='true' class='fa fa-linkedin'/></a>
+<a href='#'><span aria-hidden='true' class='fa fa-google'/></a>
+<!--<a href='#'><span aria-hidden='true' class='fa fa-facebook'/></a>-->
+<!--<a href='#'><span aria-hidden='true' class='fa fa-twitter'/></a>-->
+<!--<a href='#'><span aria-hidden='true' class='fa fa-google-plus'/></a>-->
+<a href='#'><span aria-hidden='true' class='fa fa-instagram'/></a>
+<a href='#'><span aria-hidden='true' class='fa fa-skype'/></a>
+
 </p>
 </figcaption>
 </figure>
@@ -1756,15 +1760,15 @@ user is not using shrink to fit then we expand the header.
 <div class='profile-items clearfix'>
 <!-- About Preword --><div class='profile-preword'><span>Hola!</span></div>
 </div>
-<!-- About Details --><h1 class='profile-title'><span>Soy</span>Luciano Cismondi</h1>
+<!-- About Details --><h1 class='profile-title'>Luciano Cismondi</h1>
 <div class='profile-position'>Ingeniero eletrónico y Escalador</div></div>
 <!-- About Bio -->
 					<p>Soy <b>Luciano Cismondi.</b> Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo.</p>
 					<p>Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
 
 					<div class='mah_buttons'>
-					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='#contact'>Download CV</a>
-					<a class='btn site-btn transition-ease smooth-scroll mt10' data-wow-delay='0.1s' href='#contact'>Contact Me</a>
+					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='#contact'>Descargar CV</a>
+					<a class='btn site-btn transition-ease smooth-scroll mt10' data-wow-delay='0.1s' href='#contact'>Contactame</a>
                   </div>
 				</div>
 			</div>
@@ -1779,7 +1783,7 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-6'>
 					<!-- Skills -->
 					<div class='single-progress-item'>
-						<p>Ingeniero elecónico</p>
+						<p>Ingeniero electrónico</p>
             <!-- Skills Progress -->
 						<div class='progress-bar-style' data-progress='100'/>
 					</div>
@@ -1820,12 +1824,12 @@ user is not using shrink to fit then we expand the header.
 					<div class='resume-item row'>
 						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
 							<div>
-								<h2>Apple Inc.</h2>
-								<p>2015-Today</p>
+								<h2>Tecnología</h2>
+								<p>2018-Actualidad</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
-							<h2>Art &amp; Creative director</h2>
+							<h2>Estandarización y Calidad de los Sistemas y Procesos</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
@@ -1833,12 +1837,12 @@ user is not using shrink to fit then we expand the header.
 					<div class='resume-item row'>
 						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
 							<div>
-								<h2>Facebook Inc.</h2>
-								<p>2012-2015</p>
+								<h2>Fibra óptica</h2>
+								<p>2010-2018</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
-							<h2>Web designer &amp; developer</h2>
+							<h2>Ingeniería de procesos</h2>
 							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
 						</div>
 					</div>
@@ -1846,12 +1850,38 @@ user is not using shrink to fit then we expand the header.
 					<div class='resume-item row'>
 						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
 							<div>
-								<h2>IBM Inc.</h2>
-								<p>2011-2012</p>
+								<h2>HLT</h2>
+								<p>2007-2015</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
-							<h2>Mid-level designer</h2>
+							<h2>Grupo de alto rendimiento</h2>
+							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+						</div>
+					</div>  
+					<!-- Resume Item -->
+					<div class='resume-item row'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+							<div>
+								<h2>GIAR</h2>
+								<p>2012-2014</p>
+							</div>
+						</div>
+						<div class='col-md-6 col-sm-6 resume-right'>
+							<h2>Grupo de Ingeligencia Artificial y Robótica</h2>
+							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+						</div>
+                  </div>
+					<!-- Resume Item -->
+					<div class='resume-item row'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+							<div>
+								<h2>Comunicaciones</h2>
+								<p>2007-2008</p>
+							</div>
+						</div>
+						<div class='col-md-6 col-sm-6 resume-right'>
+							<h2>Laboratorio de radios</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
@@ -1860,6 +1890,7 @@ user is not using shrink to fit then we expand the header.
 		</div>
 	</section>
 	<!-- ==== Resume Section End ==== -->
+                 
       
     <!-- ====== What I Do ====== -->
 	<section class='service-section fix'>
@@ -1870,21 +1901,21 @@ user is not using shrink to fit then we expand the header.
 			<div class='row'>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-						<i class='fa fa-desktop'/>
-						<h4>Electronica</h4>
+						<i class='fa fa-usb'/>
+						<h4>Electrónica</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
 					<div class='service-item'>
-						<i class='fa fa-camera'/>
+						<i class='fa fa-database'/>
 						<h4>Escalada</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
 					<div class='service-item'>
-						<i class='fa fa-database'/>
+						<i class='fa fa-bicycle'/>
 						<h4>Bicicleta</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
@@ -1917,6 +1948,16 @@ user is not using shrink to fit then we expand the header.
 	</section>
 	<!-- ==== Service Section End ==== -->
 
+   <!-- ====== Hire ====== -->
+  <section class='hire section-padding text-center'>
+    <div class='container'>
+      <h3>Hagamos algo juntos!</h3>
+      <a href='#contact'><button>Proyectos y Publicaciones</button></a>
+    </div>
+  </section>
+  <!--====== End Hire ======-->  
+      
+      
       
     </b:if></b:if>
          <!-- ====== Work ====== -->
@@ -3192,7 +3233,7 @@ user is not using shrink to fit then we expand the header.
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLUC\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttps://blogcartwhite.blogspot.com/\x26vt\x3d8532484611203565897&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttps://blogcartwhite.blogspot.com/\x26vt\x3d8532484611203565897&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -3388,15 +3429,6 @@ head.appendChild(script);
 	</section>
 	<!-- ==== Testimonial Section End ==== -->
 
-    
-  <!-- ====== Hire ====== -->
-  <section class='hire section-padding text-center'>
-    <div class='container'>
-      <h3>Trabajemos juntos!</h3>
-      <a href='#contact'><button>Contactame</button></a>
-    </div>
-  </section>
-  <!--====== End Hire ======-->
 
   <section class='section nopaddingbottom' id='contact'>
     <div class='container-fluid'>
@@ -3441,13 +3473,13 @@ head.appendChild(script);
                     <form id='contactForm' name='contact-form'>
 
 
-                      <input class='contact_name inputfield' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' placeholder='Name* :' required='' type='text'/>
+                      <input class='contact_name inputfield' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' placeholder='Nombre* :' required='' type='text'/>
 
 
                       <input class='contact_email inputfield' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' placeholder='E-mail* :' required='' type='email'/>
 
 
-                      <textarea class='contact_message inputfield' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' placeholder='Message* :' required='' type='tel'/>
+                      <textarea class='contact_message inputfield' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' placeholder='Mensaje* :' required='' type='tel'/>
 
 
                       <input class='submit contact_button button' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' style='visibility: visible;' type='submit'/>
