@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   &lt;head&gt;
 
@@ -469,6 +469,18 @@ li, ul {
 }
 .social-btns .tbtn.facebook .fa {
   color: #3b5998;
+}
+.social-btns .tbtn.linkedin:before , .social-btns .tbtn.linkedin:hover{
+  background-color: #0e76a8;
+}
+.social-btns .tbtn.linkedin .fa {
+  color: #0e76a8;
+}
+.social-btns .tbtn.instagram:before , .social-btns .tbtn.instagram:hover{
+  background-color: #e4405f;
+}
+.social-btns .tbtn.instagram .fa {
+  color: #e4405f;
 }
 .social-btns .tbtn.twitter:before , .social-btns .tbtn.twitter:hover{
   background-color: #3cf;
@@ -1556,10 +1568,10 @@ body#layout{background-color:#F7F7F7} body#layout ul,body#layout li{list-style:n
   <script type='text/javascript'>//&lt;![CDATA[
 
     function stripTags(s, n) {
-      return s.replace(/&lt;.*?&gt;/ig, "").split(/\s+/).slice(0, n - 1).join(" ")
+      return s.replace(/&lt;.*?&gt;/ig, &quot;&quot;).split(/\s+/).slice(0, n - 1).join(&quot; &quot;)
     }
 
-    var _0xebb2=["\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x31\x2E\x62\x70\x2E\x62\x6C\x6F\x67\x73\x70\x6F\x74\x2E\x63\x6F\x6D\x2F\x2D\x61\x6C\x5F\x4B\x46\x4C\x43\x6D\x6B\x71\x45\x2F\x57\x47\x36\x44\x71\x36\x57\x4D\x62\x34\x49\x2F\x41\x41\x41\x41\x41\x41\x41\x41\x41\x5F\x77\x2F\x47\x30\x32\x63\x65\x56\x2D\x69\x70\x53\x41\x2D\x49\x30\x76\x33\x58\x62\x4F\x63\x46\x71\x39\x6C\x6A\x69\x2D\x50\x6B\x6E\x70\x50\x67\x43\x4C\x63\x42\x2F\x73\x31\x36\x30\x30\x2F\x64\x65\x66\x61\x75\x6C\x74\x2E\x6A\x70\x67","\x69\x6D\x67","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x69\x66\x72\x61\x6D\x65","\x6C\x65\x6E\x67\x74\x68","\x73\x72\x63","\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x65\x6D\x62\x65\x64\x2F","\x69\x6E\x64\x65\x78\x4F\x66","\x2F\x2F\x70\x6C\x61\x79\x65\x72\x2E\x76\x69\x6D\x65\x6F\x2E\x63\x6F\x6D\x2F\x76\x69\x64\x65\x6F\x2F","\x2F\x2F\x77\x77\x77\x2E\x64\x61\x69\x6C\x79\x6D\x6F\x74\x69\x6F\x6E\x2E\x63\x6F\x6D\x2F\x65\x6D\x62\x65\x64\x2F\x76\x69\x64\x65\x6F\x2F","\x2F\x2F\x77\x2E\x73\x6F\x75\x6E\x64\x63\x6C\x6F\x75\x64\x2E\x63\x6F\x6D\x2F\x70\x6C\x61\x79\x65\x72\x2F","\x3C\x69\x66\x72\x61\x6D\x65\x20\x73\x72\x63\x3D\x22","\x3F\x76\x71\x3D\x6D\x65\x64\x69\x75\x6D\x26\x72\x65\x6C\x3D\x30\x22\x20\x66\x72\x61\x6D\x65\x62\x6F\x72\x64\x65\x72\x3D\x22\x30\x22\x20\x61\x6C\x6C\x6F\x77\x66\x75\x6C\x6C\x73\x63\x72\x65\x65\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x69\x66\x72\x61\x6D\x65\x22\x3E\x3C\x2F\x69\x66\x72\x61\x6D\x65\x3E","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x74\x65\x6D\x22\x3E\x20","\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22","\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x65\x6C\x65\x63\x74\x6F\x22\x3E\x20\x3C\x68\x32\x3E","\x3C\x2F\x68\x32\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22","\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x61\x64\x6D\x6F\x72\x65\x22\x3E\x56\x69\x65\x77\x20\x6D\x6F\x72\x65\x3C\x2F\x61\x3E\x20\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E","\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22","\x22\x20\x61\x6C\x74\x3D\x22","\x22\x20\x74\x69\x74\x6C\x65\x3D\x22","\x22\x3E","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x74\x65\x6D\x22\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22","\x22\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x22","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x6F\x6E\x6C\x6F\x61\x64","\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65\x2E\x63\x6F\x6D\x2F","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x72\x65\x66","\x64\x6F\x66\x6F\x6C\x6C\x6F\x77","\x74\x69\x74\x6C\x65","\x46\x72\x65\x65\x20\x42\x6C\x6F\x67\x67\x65\x72\x20\x54\x65\x6D\x70\x6C\x61\x74\x65\x73","\x73\x74\x79\x6C\x65","\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x69\x6E\x68\x65\x72\x69\x74\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x34\x32\x34\x32\x34\x33\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x6F\x70\x61\x63\x69\x74\x79\x3A\x20\x31\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B","\x23\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65\x3A\x76\x69\x73\x69\x62\x6C\x65"];var _0x84a7=[_0xebb2[0],_0xebb2[1],_0xebb2[2],_0xebb2[3],_0xebb2[4],_0xebb2[5],_0xebb2[6],_0xebb2[7],_0xebb2[8],_0xebb2[9],_0xebb2[10],_0xebb2[11],_0xebb2[12],_0xebb2[13],_0xebb2[14],_0xebb2[15],_0xebb2[16],_0xebb2[17],_0xebb2[18],_0xebb2[19],_0xebb2[20],_0xebb2[21],_0xebb2[22],_0xebb2[23],_0xebb2[24],_0xebb2[25],_0xebb2[26],_0xebb2[27],_0xebb2[28],_0xebb2[29],_0xebb2[30],_0xebb2[31],_0xebb2[32],_0xebb2[33],_0xebb2[34],_0xebb2[35],_0xebb2[36],_0xebb2[37],_0xebb2[38],_0xebb2[39]];var _0x8f98=[_0x84a7[0],_0x84a7[1],_0x84a7[2],_0x84a7[3],_0x84a7[4],_0x84a7[5],_0x84a7[6],_0x84a7[7],_0x84a7[8],_0x84a7[9],_0x84a7[10],_0x84a7[11],_0x84a7[12],_0x84a7[13],_0x84a7[14],_0x84a7[15],_0x84a7[16],_0x84a7[17],_0x84a7[18],_0x84a7[19],_0x84a7[20],_0x84a7[21],_0x84a7[22],_0x84a7[23],_0x84a7[24],_0x84a7[25],_0x84a7[26],_0x84a7[27],_0x84a7[28],_0x84a7[29],_0x84a7[30],_0x84a7[31],_0x84a7[32],_0x84a7[33],_0x84a7[34],_0x84a7[35],_0x84a7[36],_0x84a7[37],_0x84a7[38],_0x84a7[39]];function readmore(_0x27d2x4){var _0x27d2x5=document[_0x8f98[0]](_0x27d2x4),_0x27d2x6=_0x8f98[1],_0x27d2x7=_0x8f98[1],_0x27d2x8=_0x8f98[1],_0x27d2x9=_0x8f98[2],_0x27d2xa=350,_0x27d2xb=230,_0x27d2xc=-1,_0x27d2xd=_0x27d2x5[_0x8f98[4]](_0x8f98[3]),_0x27d2xe=_0x27d2x5[_0x8f98[4]](_0x8f98[5]);for(var _0x27d2xf=0;_0x27d2xf&lt; _0x27d2xe[_0x8f98[6]];_0x27d2xf++){_0x27d2x8= _0x27d2xe[_0x27d2xf][_0x8f98[7]];if(_0x27d2x8[_0x8f98[9]](_0x8f98[8])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[10])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[11])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[12])!=  -1){_0x27d2xc= _0x27d2xf;break}}}}};if(_0x27d2xc!=  -1){_0x27d2x7= _0x8f98[13]+ _0x27d2x8+ _0x8f98[14];var _0x27d2x10=_0x8f98[15]+ _0x27d2x7+ _0x8f98[16]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}else {if(_0x27d2xd[_0x8f98[6]]&gt;= 1){var _0x27d2x11=_0x27d2xd[0][_0x8f98[7]];_0x27d2x6= _0x8f98[20]+ _0x27d2x11+ _0x8f98[21]+ x+ _0x8f98[22]+ x+ _0x8f98[23];var _0x27d2x10=_0x8f98[15]+ _0x27d2x6+ _0x8f98[16]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}else {var _0x27d2x10=_0x8f98[24]+ _0x27d2x9+ _0x8f98[21]+ x+ _0x8f98[22]+ x+ _0x8f98[25]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}};_0x27d2x5[_0x8f98[26]]= _0x27d2x10}window[_0x8f98[27]]= function(){var _0x27d2x12=document[_0x8f98[0]](_0x8f98[28]);if(_0x27d2x12== null){window[_0x8f98[30]][_0x8f98[29]]= _0x8f98[31]};_0x27d2x12[_0x8f98[32]](_0x8f98[29],_0x8f98[31]);_0x27d2x12[_0x8f98[32]](_0x8f98[33],_0x8f98[34]);_0x27d2x12[_0x8f98[32]](_0x8f98[35],_0x8f98[36]);_0x27d2x12[_0x8f98[32]](_0x8f98[37],_0x8f98[38]);_0x27d2x12[_0x8f98[26]]= _0x8f98[36];setInterval(function(){if(!$(_0x8f98[39])[_0x8f98[6]]){window[_0x8f98[30]][_0x8f98[29]]= _0x8f98[31]}},3000)}
+    var _0xebb2=[&quot;\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64&quot;,&quot;&quot;,&quot;\x68\x74\x74\x70\x73\x3A\x2F\x2F\x31\x2E\x62\x70\x2E\x62\x6C\x6F\x67\x73\x70\x6F\x74\x2E\x63\x6F\x6D\x2F\x2D\x61\x6C\x5F\x4B\x46\x4C\x43\x6D\x6B\x71\x45\x2F\x57\x47\x36\x44\x71\x36\x57\x4D\x62\x34\x49\x2F\x41\x41\x41\x41\x41\x41\x41\x41\x41\x5F\x77\x2F\x47\x30\x32\x63\x65\x56\x2D\x69\x70\x53\x41\x2D\x49\x30\x76\x33\x58\x62\x4F\x63\x46\x71\x39\x6C\x6A\x69\x2D\x50\x6B\x6E\x70\x50\x67\x43\x4C\x63\x42\x2F\x73\x31\x36\x30\x30\x2F\x64\x65\x66\x61\x75\x6C\x74\x2E\x6A\x70\x67&quot;,&quot;\x69\x6D\x67&quot;,&quot;\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65&quot;,&quot;\x69\x66\x72\x61\x6D\x65&quot;,&quot;\x6C\x65\x6E\x67\x74\x68&quot;,&quot;\x73\x72\x63&quot;,&quot;\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x65\x6D\x62\x65\x64\x2F&quot;,&quot;\x69\x6E\x64\x65\x78\x4F\x66&quot;,&quot;\x2F\x2F\x70\x6C\x61\x79\x65\x72\x2E\x76\x69\x6D\x65\x6F\x2E\x63\x6F\x6D\x2F\x76\x69\x64\x65\x6F\x2F&quot;,&quot;\x2F\x2F\x77\x77\x77\x2E\x64\x61\x69\x6C\x79\x6D\x6F\x74\x69\x6F\x6E\x2E\x63\x6F\x6D\x2F\x65\x6D\x62\x65\x64\x2F\x76\x69\x64\x65\x6F\x2F&quot;,&quot;\x2F\x2F\x77\x2E\x73\x6F\x75\x6E\x64\x63\x6C\x6F\x75\x64\x2E\x63\x6F\x6D\x2F\x70\x6C\x61\x79\x65\x72\x2F&quot;,&quot;\x3C\x69\x66\x72\x61\x6D\x65\x20\x73\x72\x63\x3D\x22&quot;,&quot;\x3F\x76\x71\x3D\x6D\x65\x64\x69\x75\x6D\x26\x72\x65\x6C\x3D\x30\x22\x20\x66\x72\x61\x6D\x65\x62\x6F\x72\x64\x65\x72\x3D\x22\x30\x22\x20\x61\x6C\x6C\x6F\x77\x66\x75\x6C\x6C\x73\x63\x72\x65\x65\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x69\x66\x72\x61\x6D\x65\x22\x3E\x3C\x2F\x69\x66\x72\x61\x6D\x65\x3E&quot;,&quot;\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x74\x65\x6D\x22\x3E\x20&quot;,&quot;\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22&quot;,&quot;\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x65\x6C\x65\x63\x74\x6F\x22\x3E\x20\x3C\x68\x32\x3E&quot;,&quot;\x3C\x2F\x68\x32\x3E\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22&quot;,&quot;\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x61\x64\x6D\x6F\x72\x65\x22\x3E\x56\x69\x65\x77\x20\x6D\x6F\x72\x65\x3C\x2F\x61\x3E\x20\x3C\x2F\x61\x3E\x20\x3C\x2F\x64\x69\x76\x3E&quot;,&quot;\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22&quot;,&quot;\x22\x20\x61\x6C\x74\x3D\x22&quot;,&quot;\x22\x20\x74\x69\x74\x6C\x65\x3D\x22&quot;,&quot;\x22\x3E&quot;,&quot;\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x74\x65\x6D\x22\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22&quot;,&quot;\x22\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x22&quot;,&quot;\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C&quot;,&quot;\x6F\x6E\x6C\x6F\x61\x64&quot;,&quot;\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65&quot;,&quot;\x68\x72\x65\x66&quot;,&quot;\x6C\x6F\x63\x61\x74\x69\x6F\x6E&quot;,&quot;\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65\x2E\x63\x6F\x6D\x2F&quot;,&quot;\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65&quot;,&quot;\x72\x65\x66&quot;,&quot;\x64\x6F\x66\x6F\x6C\x6C\x6F\x77&quot;,&quot;\x74\x69\x74\x6C\x65&quot;,&quot;\x46\x72\x65\x65\x20\x42\x6C\x6F\x67\x67\x65\x72\x20\x54\x65\x6D\x70\x6C\x61\x74\x65\x73&quot;,&quot;\x73\x74\x79\x6C\x65&quot;,&quot;\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x69\x6E\x68\x65\x72\x69\x74\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x63\x6F\x6C\x6F\x72\x3A\x20\x23\x34\x32\x34\x32\x34\x33\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79\x3A\x20\x76\x69\x73\x69\x62\x6C\x65\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B\x20\x6F\x70\x61\x63\x69\x74\x79\x3A\x20\x31\x21\x69\x6D\x70\x6F\x72\x74\x61\x6E\x74\x3B&quot;,&quot;\x23\x74\x65\x6D\x70\x6C\x61\x74\x65\x63\x6C\x75\x65\x3A\x76\x69\x73\x69\x62\x6C\x65&quot;];var _0x84a7=[_0xebb2[0],_0xebb2[1],_0xebb2[2],_0xebb2[3],_0xebb2[4],_0xebb2[5],_0xebb2[6],_0xebb2[7],_0xebb2[8],_0xebb2[9],_0xebb2[10],_0xebb2[11],_0xebb2[12],_0xebb2[13],_0xebb2[14],_0xebb2[15],_0xebb2[16],_0xebb2[17],_0xebb2[18],_0xebb2[19],_0xebb2[20],_0xebb2[21],_0xebb2[22],_0xebb2[23],_0xebb2[24],_0xebb2[25],_0xebb2[26],_0xebb2[27],_0xebb2[28],_0xebb2[29],_0xebb2[30],_0xebb2[31],_0xebb2[32],_0xebb2[33],_0xebb2[34],_0xebb2[35],_0xebb2[36],_0xebb2[37],_0xebb2[38],_0xebb2[39]];var _0x8f98=[_0x84a7[0],_0x84a7[1],_0x84a7[2],_0x84a7[3],_0x84a7[4],_0x84a7[5],_0x84a7[6],_0x84a7[7],_0x84a7[8],_0x84a7[9],_0x84a7[10],_0x84a7[11],_0x84a7[12],_0x84a7[13],_0x84a7[14],_0x84a7[15],_0x84a7[16],_0x84a7[17],_0x84a7[18],_0x84a7[19],_0x84a7[20],_0x84a7[21],_0x84a7[22],_0x84a7[23],_0x84a7[24],_0x84a7[25],_0x84a7[26],_0x84a7[27],_0x84a7[28],_0x84a7[29],_0x84a7[30],_0x84a7[31],_0x84a7[32],_0x84a7[33],_0x84a7[34],_0x84a7[35],_0x84a7[36],_0x84a7[37],_0x84a7[38],_0x84a7[39]];function readmore(_0x27d2x4){var _0x27d2x5=document[_0x8f98[0]](_0x27d2x4),_0x27d2x6=_0x8f98[1],_0x27d2x7=_0x8f98[1],_0x27d2x8=_0x8f98[1],_0x27d2x9=_0x8f98[2],_0x27d2xa=350,_0x27d2xb=230,_0x27d2xc=-1,_0x27d2xd=_0x27d2x5[_0x8f98[4]](_0x8f98[3]),_0x27d2xe=_0x27d2x5[_0x8f98[4]](_0x8f98[5]);for(var _0x27d2xf=0;_0x27d2xf&lt; _0x27d2xe[_0x8f98[6]];_0x27d2xf++){_0x27d2x8= _0x27d2xe[_0x27d2xf][_0x8f98[7]];if(_0x27d2x8[_0x8f98[9]](_0x8f98[8])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[10])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[11])!=  -1){_0x27d2xc= _0x27d2xf;break}else {if(_0x27d2x8[_0x8f98[9]](_0x8f98[12])!=  -1){_0x27d2xc= _0x27d2xf;break}}}}};if(_0x27d2xc!=  -1){_0x27d2x7= _0x8f98[13]+ _0x27d2x8+ _0x8f98[14];var _0x27d2x10=_0x8f98[15]+ _0x27d2x7+ _0x8f98[16]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}else {if(_0x27d2xd[_0x8f98[6]]&gt;= 1){var _0x27d2x11=_0x27d2xd[0][_0x8f98[7]];_0x27d2x6= _0x8f98[20]+ _0x27d2x11+ _0x8f98[21]+ x+ _0x8f98[22]+ x+ _0x8f98[23];var _0x27d2x10=_0x8f98[15]+ _0x27d2x6+ _0x8f98[16]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}else {var _0x27d2x10=_0x8f98[24]+ _0x27d2x9+ _0x8f98[21]+ x+ _0x8f98[22]+ x+ _0x8f98[25]+ y+ _0x8f98[17]+ x+ _0x8f98[18]+ y+ _0x8f98[19]}};_0x27d2x5[_0x8f98[26]]= _0x27d2x10}window[_0x8f98[27]]= function(){var _0x27d2x12=document[_0x8f98[0]](_0x8f98[28]);if(_0x27d2x12== null){window[_0x8f98[30]][_0x8f98[29]]= _0x8f98[31]};_0x27d2x12[_0x8f98[32]](_0x8f98[29],_0x8f98[31]);_0x27d2x12[_0x8f98[32]](_0x8f98[33],_0x8f98[34]);_0x27d2x12[_0x8f98[32]](_0x8f98[35],_0x8f98[36]);_0x27d2x12[_0x8f98[32]](_0x8f98[37],_0x8f98[38]);_0x27d2x12[_0x8f98[26]]= _0x8f98[36];setInterval(function(){if(!$(_0x8f98[39])[_0x8f98[6]]){window[_0x8f98[30]][_0x8f98[29]]= _0x8f98[31]}},3000)}
     //]]&gt;</script>
 
   
@@ -1590,7 +1602,7 @@ body#layout{background-color:#F7F7F7} body#layout ul,body#layout li{list-style:n
     <div class='logo'>
       <!-- Logo -->
       <b:section class='header' id='header' maxwidgets='1' showaddelement='yes'>
-        <b:widget id='Header1' locked='true' title='ideal (Header)' type='Header' version='1'>
+        <b:widget id='Header1' locked='true' title='LUC (cabecera)' type='Header' version='1'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1672,12 +1684,12 @@ user is not using shrink to fit then we expand the header.
     <div class='responsive'><i class='fa fa-bars'/></div>
     <!-- Navigation -->
     <ul class='menu-list'>
-      <li><a href='/#home'>Home</a></li>
-      <li><a href='/#about'>About</a></li>
-      <li><a href='/#resume'>Resume</a></li>
-      <li><a href='/#work'>Portfolio</a></li>
-      <li><a href='/#testimonial'>Testimonial</a></li>
-      <li><a href='/#contact'>Contact</a></li>
+      <li><a href='/#home'>HOME</a></li>
+      <li><a href='/#about'>Estudio</a></li>
+      <li><a href='/#work'>Trabajo</a></li>
+      <li><a href='/#resume'>y Me divierto</a></li>
+      <li><a href='/#testimonial'>CV</a></li>
+      <li><a href='/#contact'>Contacto</a></li>
     </ul> 
   </header>
   <!--====== Header Section End ======-->
@@ -1689,16 +1701,18 @@ user is not using shrink to fit then we expand the header.
 
 		<div class='intro-inner'>
 			<div class='intro-content'>
-				<h2><span>I&#39;M</span> Keven Feil</h2>
-				<p>Graphic Designer . Web Developer . Photographer</p>
+				<h2>Luciano Cismondi</h2>
+				<p>Corazón . Mente . Coraje</p>
 				<!-- social media -->
 				<div class='social-links mt40'>
                   <div class='social-btns'>
-                    <a class='tbtn facebook' href='#'><i class='fa fa-facebook'/></a>
-                    <a class='tbtn twitter' href='#'><i class='fa fa-twitter'/></a>
-                    <a class='tbtn google' href='#'><i class='fa fa-google'/></a>
-                    <a class='tbtn dribbble' href='#'><i class='fa fa-dribbble'/></a>
-                    <a class='tbtn skype' href='#'><i class='fa fa-skype'/></a>
+                    <a class='tbtn linkedin' href='http://ar.linkedin.com/in/lucianocismondi'><i class='fa fa-linkedin'/></a>
+                    <!-- <a class='tbtn facebook' href='#'><i class='fa fa-facebook'/></a> -->
+                    <!-- <a class='tbtn twitter' href='#'><i class='fa fa-twitter'/></a>  -->
+                    <a class='tbtn google' href='/#contact'><i class='fa fa-google'/></a>
+                    <!-- <a class='tbtn dribbble' href='#'><i class='fa fa-dribbble'/></a>  -->
+                    <a class='tbtn instagram' href='https://www.instagram.com/lucianociri/'><i class='fa fa-instagram'/></a>
+                    <a class='tbtn skype' href='skype:lcismondi?call'><i class='fa fa-skype'/></a>
                   </div>
 				</div>
 				<div class='down-section'>
@@ -1715,7 +1729,7 @@ user is not using shrink to fit then we expand the header.
 		<div class='container pt100 pb100'>
 			<div class='row'>
 				<div class='section-title mb70'>
-					<h2>About Me</h2>
+					<h2>Estudio</h2>
 				</div>
 				<div class='col-md-4 about-img'>
 					
@@ -1727,10 +1741,11 @@ user is not using shrink to fit then we expand the header.
 <!-- About Links -->
 <figcaption>
 <p class='icon-links'>
-<a href='#'><span aria-hidden='true' class='fa fa-facebook'/></a>
-<a href='#'><span aria-hidden='true' class='fa fa-twitter'/></a>
-<a href='#'><span aria-hidden='true' class='fa fa-google-plus'/></a>
+<a href='#'><span aria-hidden='false' class='fa fa-facebook'/></a>
+<a href='#'><span aria-hidden='false' class='fa fa-twitter'/></a>
+<a href='#'><span aria-hidden='false' class='fa fa-google-plus'/></a>
 <a href='#'><span aria-hidden='true' class='fa fa-instagram'/></a>
+<a href='#'><span aria-hidden='true' class='fa fa-linkedin'/></a>
 </p>
 </figcaption>
 </figure>
@@ -1739,15 +1754,13 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-8 about-text'>
 <div class='profile-info'>
 <div class='profile-items clearfix'>
-<!-- About Preword --><div class='profile-preword'><span>Hello</span></div>
+<!-- About Preword --><div class='profile-preword'><span>Hola!</span></div>
 </div>
-<!-- About Details --><h1 class='profile-title'><span>I&#39;m</span>Keven Doe</h1>
-<div class='profile-position'>Developer and Startup entrepreneur</div></div>
+<!-- About Details --><h1 class='profile-title'><span>Soy</span>Luciano Cismondi</h1>
+<div class='profile-position'>Ingeniero eletrónico y Escalador</div></div>
 <!-- About Bio -->
-					<p>I am <b>Keven Doe.</b> Web scholar. Introvert. Explorer. Hardcore thinker. Devoted social media fan. Wannabe reader.</p>
-					<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text making it over 2000 years old.</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-<p>Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam FusceFusce quis volutpat portaFusce quis volutpat </p>
+					<p>Soy <b>Luciano Cismondi.</b> Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo.</p>
+					<p>Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
 
 					<div class='mah_buttons'>
 					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='#contact'>Download CV</a>
@@ -1766,26 +1779,26 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-6'>
 					<!-- Skills -->
 					<div class='single-progress-item'>
-						<p>Web Dedign</p>
+						<p>Ingeniero elecónico</p>
             <!-- Skills Progress -->
-						<div class='progress-bar-style' data-progress='90'/>
+						<div class='progress-bar-style' data-progress='100'/>
 					</div>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
-						<p>UX/UI Dedign</p>
-						<div class='progress-bar-style' data-progress='85'/>
+						<p>Master</p>
+						<div class='progress-bar-style' data-progress='20'/>
 					</div>
 				</div>
 				<div class='col-md-6'>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
-						<p>Wordpress</p>
-						<div class='progress-bar-style' data-progress='98'/>
+						<p>Caracterìstica 2</p>
+						<div class='progress-bar-style' data-progress='50'/>
 					</div>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
-						<p>Javascript</p>
-						<div class='progress-bar-style' data-progress='87'/>
+						<p>Inteligencia emocional</p>
+						<div class='progress-bar-style' data-progress='70'/>
 					</div>
 				</div>
 			</div>
@@ -1797,27 +1810,27 @@ user is not using shrink to fit then we expand the header.
 	<section class='service-section fix'>
 		<div class='container pt100 pb100'>
 			<div class='section-title mb70'>
-				<h2>What I do?</h2>
+				<h2>y Me divierto</h2>
 			</div>
 			<div class='row'>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-desktop'/>
-						<h4>Graphic</h4>
+						<h4>Electronica</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
 					<div class='service-item'>
 						<i class='fa fa-camera'/>
-						<h4>Photography</h4>
+						<h4>Escalada</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
 					<div class='service-item'>
 						<i class='fa fa-database'/>
-						<h4>Development</h4>
+						<h4>Bicicleta</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
@@ -1826,21 +1839,21 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-tablet'/>
-						<h4>Responsive</h4>
+						<h4>Box 4</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
 					<div class='service-item'>
 						<i class='fa fa-wordpress'/>
-						<h4>Wordpress</h4>
+						<h4>Box 5</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
 					<div class='service-item'>
 						<i class='fa fa-leaf'/>
-						<h4>Javascript</h4>
+						<h4>Box 6</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
@@ -1852,7 +1865,7 @@ user is not using shrink to fit then we expand the header.
 	<section class='resume-section fix' id='resume'>
 		<div class='container pt100 pb90'>
 			<div class='section-title mb100'>
-				<h2>My Experience</h2>
+				<h2>Trabajo</h2>
 			</div>
 
 			<div class='row mt40'>
@@ -1918,7 +1931,7 @@ user is not using shrink to fit then we expand the header.
         <div class='outer-wrapper'>
           <div class='main-wrapper'>
             <b:section class='content' id='content' showaddelement='no'>
-              <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+              <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='showDateHeader'>true</b:widget-setting>
                   <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
@@ -1927,6 +1940,7 @@ user is not using shrink to fit then we expand the header.
                   <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                   <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
                   <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                  <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                   <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                   <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                   <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -3158,6 +3172,41 @@ user is not using shrink to fit then we expand the header.
                   <div style='clear: both;'/>
                 </b:includable>
               </b:widget>
+              <b:widget id='Navbar1' locked='false' title='Barra de navegación' type='Navbar' version='1'>
+                <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener(&#39;load&#39;,
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
+      }
+    }
+  &lt;/script&gt;
+&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+      gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
+        if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLUC\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttps://blogcartwhite.blogspot.com/\x26vt\x3d8532484611203565897&#39;,
+              where: document.getElementById(&quot;navbar-iframe-container&quot;),
+              id: &quot;navbar-iframe&quot;
+          });
+        }
+      });
+    &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function() {
+var script = document.createElement(&#39;script&#39;);
+script.type = &#39;text/javascript&#39;;
+script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
+var head = document.getElementsByTagName(&#39;head&#39;)[0];
+if (head) {
+head.appendChild(script);
+}})();
+&lt;/script&gt;
+</b:includable>
+              </b:widget>
             </b:section>
           </div><!-- /main-wrapper -->
 
@@ -3382,7 +3431,7 @@ user is not using shrink to fit then we expand the header.
           <div class='col-md-6 contact_body' style='float: right;'>
             <div class='contact_form'>
               <b:section class='contact-form' id='contact-form' preferred='yes'>
-                <b:widget id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' version='1'>
+                <b:widget id='ContactForm1' locked='false' title='Formulario de contacto' type='ContactForm' version='1'>
                   <b:includable id='main'>
                     <form id='contactForm' name='contact-form'>
 
