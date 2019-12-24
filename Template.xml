@@ -55,7 +55,10 @@
   </b:if>
 
   <!-- Links -->
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css' rel='stylesheet'/>
+  <!-- <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet'/> -->
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+  <!-- <script crossorigin='anonymous' src='https://kit.fontawesome.com/50ec47d905.js'/> -->
   <link href='https://cdn.linearicons.com/free/1.0.0/icon-font.min.css' rel='stylesheet'/>
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' type='text/javascript'/>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,800' rel='stylesheet'/>
@@ -1796,8 +1799,8 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-6'>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
-						<p>Caracterìstica 2</p>
-						<div class='progress-bar-style' data-progress='50'/>
+						<p>Innovación</p>
+						<div class='progress-bar-style' data-progress='80'/>
 					</div>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
@@ -1830,7 +1833,7 @@ user is not using shrink to fit then we expand the header.
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Estandarización y Calidad de los Sistemas y Procesos</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>La estandarización debe observarse desde diferentes niveles, el objetivo es mejorar la productividad, lo que se refleja en menores costos a la vez que mejora la experiencia con el cliente y asegura un servicio consistente.</p>
 						</div>
 					</div>
 					<!-- Resume Item -->
@@ -1843,7 +1846,7 @@ user is not using shrink to fit then we expand the header.
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Ingeniería de procesos</h2>
-							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+							<p>Las redes de fibra óptica se aplican tanto para consumo masivo (GPON), como en vinculación de antenas celulares y sitios importantes los cuales requieran comunicación con alta transferencia de información.</p>
 						</div>
 					</div>
 					<!-- Resume Item -->
@@ -1856,7 +1859,7 @@ user is not using shrink to fit then we expand the header.
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Grupo de alto rendimiento</h2>
-							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+							<p>El intercambio de ideas en diferentes ramas socio-culturales favorece el pensamiento lateral y como grupo creemos que las grandes soluciones se encuentran en pensar diferente frente a una misma situación.</p>
 						</div>
 					</div>  
 					<!-- Resume Item -->
@@ -1869,7 +1872,7 @@ user is not using shrink to fit then we expand the header.
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Grupo de Ingeligencia Artificial y Robótica</h2>
-							<p>Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+							<p>La orientación específica para la carrera de Ing. Electrónica permite incluir el uso de técnicas de IA en los lugares de trabajo, mejorando resultados o resolviendo problemas que son abordados con éxito con herramientas propias de IA.</p>
 						</div>
                   </div>
 					<!-- Resume Item -->
@@ -1882,7 +1885,7 @@ user is not using shrink to fit then we expand the header.
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Laboratorio de radios</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>La radiocomunicación es la tecnología que posibilita la transmisión de señales mediante la modulación (de su frecuencia o amplitud) de ondas electromagnéticas.</p>
 						</div>
 					</div>
 				</div>
@@ -1893,7 +1896,7 @@ user is not using shrink to fit then we expand the header.
                  
       
     <!-- ====== What I Do ====== -->
-	<section class='service-section fix'>
+	<section class='service-section fix' id='work'>
 		<div class='container pt100 pb100'>
 			<div class='section-title mb70'>
 				<h2>y Me divierto</h2>
@@ -1908,15 +1911,15 @@ user is not using shrink to fit then we expand the header.
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
 					<div class='service-item'>
-						<i class='fa fa-database'/>
-						<h4>Escalada</h4>
+						<i class='fa fa-code-branch'/>
+						<h4>Investigación</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
 					<div class='service-item'>
-						<i class='fa fa-bicycle'/>
-						<h4>Bicicleta</h4>
+						<i class='fa fa-cogs'/>
+						<h4>Desarrollos</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
@@ -1925,21 +1928,21 @@ user is not using shrink to fit then we expand the header.
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-tablet'/>
-						<h4>Box 4</h4>
+						<h4>Escalada</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
 					<div class='service-item'>
-						<i class='fa fa-wordpress'/>
-						<h4>Box 5</h4>
+						<i class='fa fa-bicycle'/>
+						<h4>Biciclet</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
 					<div class='service-item'>
 						<i class='fa fa-leaf'/>
-						<h4>Box 6</h4>
+						<h4>Naturaleza</h4>
 						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
 					</div>
 				</div>
@@ -3233,7 +3236,7 @@ user is not using shrink to fit then we expand the header.
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttps://blogcartwhite.blogspot.com/\x26vt\x3d8532484611203565897&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://blogcartwhite.blogspot.com/\x26vt\x3d3702852257673737557&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
