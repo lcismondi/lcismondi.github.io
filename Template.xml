@@ -1906,44 +1906,44 @@ user is not using shrink to fit then we expand the header.
 					<div class='service-item'>
 						<i class='fa fa-usb'/>
 						<h4>Electrónica</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<p>Entender como funciona la tecnología actual</p>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-code-branch'/>
 						<h4>Investigación</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<p>Encontrar nuevas tecnologías</p>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-cogs'/>
 						<h4>Desarrollos</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<p>Aplicar nuevas tecnologías</p>
 					</div>
 				</div>
 			</div>
 			<div class='row mt30'>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-						<i class='fa fa-tablet'/>
+						<i class='fa fa-hand-rock'/>
 						<h4>Escalada</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<p>Vivir al límite</p>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.4s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-bicycle'/>
-						<h4>Biciclet</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<h4>Bicicleta</h4>
+						<p>Moverse eficientemente</p>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.6s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
 						<i class='fa fa-leaf'/>
 						<h4>Naturaleza</h4>
-						<p>Lorem ipsum dolor sit amet, augue theophrastus ex.</p>
+						<p>Disfrutar lo que nos rodea</p>
 					</div>
 				</div>
 			</div>
