@@ -2831,7 +2831,7 @@ user is not using shrink to fit then we expand the header.
 
                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
                       <div class='post-footer'>
-                        <span class='group' id='post-tags'><span id='tags-name'>Tags: </span><b:if cond='data:post.labels'>
+                        <span class='group' id='post-tags'><span id='tags-name'>#: </span><b:if cond='data:post.labels'>
                           <b:loop values='data:post.labels' var='label'>
                             <a expr:href='data:label.url' rel='tag'>
                               <data:label.name/>
@@ -2870,22 +2870,24 @@ user is not using shrink to fit then we expand the header.
                           <data:post.author/>
                           </a>
                           <!-- A_Bio -->
-                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                          <p>Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
                         </div>
                       </div>
                       <ul class='social'>
-                        <li><a href='http://twitter.com' target='_blank'><i aria-hidden='true' class='fa fa-twitter'/></a>
+                        <li><a href='http://ar.linkedin.com/in/lucianocismondi' target='_blank'><i aria-hidden='true' class='fa fa-linkedin'/></a>
                         </li>
-                        <li><a href='http://facebook.com' target='_blank'><i aria-hidden='true' class='fa fa-facebook'/></a>
+                        <li><a href='/#contact' target='_blank'><i aria-hidden='true' class='fa fa-google'/></a>
                         </li>
-                        <li><a href='http://instagram.com' target='_blank'><i aria-hidden='true' class='fa fa-instagram'/></a>
+                        <li><a href='https://www.instagram.com/lucianociri/' target='_blank'><i aria-hidden='true' class='fa fa-instagram'/></a>
                         </li>
-                        <li><a href='http://pinterest.com' target='_blank'><i aria-hidden='true' class='fa fa-pinterest'/></a>
+                        <li><a href='skype:lcismondi?call' target='_blank'><i aria-hidden='true' class='fa fa-skype'/></a>
                         </li>
+                        <!--
                         <li><a href='http://g-plus.com' target='_blank'><i aria-hidden='true' class='fa fa-google-plus'/></a>
                         </li>
                         <li><a href='http://youtube.com' target='_blank'><i aria-hidden='true' class='fa fa-youtube'/></a>
                         </li>
+						-->
                       </ul>
                     </div>
 
