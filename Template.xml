@@ -20,9 +20,9 @@
 
   <!-- Description and Keywords -->
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <meta content='YOUR DESCRIPTION HERE' name='description'/>
+    <meta content='Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.' name='description'/>
   </b:if>
-  <meta content='YOUR KEYWORDS HERE' name='keywords'/>
+  <meta content='Ingeniería, UTN, FRBA, Universidad, Paper, Publicación, Montañismo, Escalada, Andinismo, Boulder, Ciclismo, MTB, Mountainbike, Inglés, Alemán, Técnico, Estudio, Trabajo, Diversión, Argentina, Alemania, Cuadricoptero, Drones, Aeroespacio, Aerodinámico, Osciloscopio, Sensor, Cuadcopter, Electrónica, UTNBA, acelerómetro, giróscopo, brazo robótico, GIAR, Inteligencia Artificial, Robótica, Móvil, Investigación, Desarrollo, Aprendizaje por refuerzo, [I+D+I] StartUper' name='keywords'/>
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
     <meta expr:content='data:blog.pageName' property='og:title'/>
     <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
