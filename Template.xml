@@ -1616,7 +1616,7 @@ body#layout{background-color:#F7F7F7} body#layout ul,body#layout li{list-style:n
     <div class='logo'>
       <!-- Logo -->
       <b:section class='header' id='header' maxwidgets='1' showaddelement='yes'>
-        <b:widget id='Header1' locked='true' title='Luciano Cismondi (cabecera)' type='Header' version='1'>
+        <b:widget id='Header1' locked='true' title='Luciano Cismondi 2 (cabecera)' type='Header' version='1'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1710,7 +1710,7 @@ user is not using shrink to fit then we expand the header.
 
   <!-- ==== Intro Section Start ==== -->
 	<section class='intro-section fix' id='home'>
-		<div class='bg-cms' data-bg='https://3.bp.blogspot.com/-zKd_lqsliho/WgGu8L98PkI/AAAAAAAABEs/yH67wCSPSKwfdChnDvdFEj_hKVVsXyM3wCLcBGAs/s1600/freestocks-org-62602.jpg'/>
+		<div class='bg-cms' data-bg='https://1.bp.blogspot.com/-uyzl0rqG8hk/Xhtr8pKh8nI/AAAAAAAAB7o/Vq29NMni0VMwFfOpQenyJxCk_AdCWslUwCLcBGAsYHQ/s1600/LCismondi%2BVertical.png'/>
 
 
 		<div class='intro-inner'>
@@ -1751,7 +1751,7 @@ user is not using shrink to fit then we expand the header.
 <div class='me-image'>
 <figure class='effect-zoe'>
 <!-- Avatar -->
-<img alt='' src='https://3.bp.blogspot.com/-OsvXwZPwOuw/WgHEDYgiW4I/AAAAAAAABE8/TuBN7FWoC0gDJnMyB5sq-L3NffzrQVjYQCLcBGAs/s1600/profile.png'/>
+<img alt='' src='https://1.bp.blogspot.com/-8z5wG5_O-c8/Xhtr704k1mI/AAAAAAAAB7k/CvWSVFXNoMUOqgAtG_4TevMqp0wW1CG2wCLcBGAsYHQ/s1600/LCismondi%2BHorizontal.png'/>
 <!-- About Links -->
 <figcaption>
 <p class='icon-links'>
@@ -3260,7 +3260,7 @@ user is not using shrink to fit then we expand the header.
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://blogcartwhite.blogspot.com/\x26vt\x3d3702852257673737557&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi+2\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://blogcartwhite.blogspot.com/\x26vt\x3d3702852257673737557&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -3477,7 +3477,7 @@ head.appendChild(script);
                   <div>Ingeniero Electrónico</div>
                 </div>
                 <div class='item col-md-6 col-sm-6'>
-                  <a href='https://api.whatsapp.com/send?phone=5491121830418&amp;text=web: '><i class='fa fa-whatsapp'/>
+                  <a href='https://api.whatsapp.com/send?phone=5491121830418&amp;text=Hola Luciano!%20 '><i class='fa fa-whatsapp'/>
                   <div>Teléfono</div></a>
                 </div>
                 <div class='item col-md-6 col-sm-6'>
