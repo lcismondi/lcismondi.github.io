@@ -1716,7 +1716,7 @@ user is not using shrink to fit then we expand the header.
 		<div class='intro-inner'>
 			<div class='intro-content'>
 				<h2>Luciano Cismondi</h2>
-				<p>Corazón . Mente . Coraje</p>
+				<p> ... </p>
 				<!-- social media -->
 				<div class='social-links mt40'>
                   <div class='social-btns'>
@@ -2854,7 +2854,7 @@ user is not using shrink to fit then we expand the header.
                     <div class='aisa-author'>
                       <div class='aisa-author-info'>
                         <div class='author-avatar'>
-                          <script type='text/javascript'>
+                          <!--<script type='text/javascript'>
                             //<![CDATA[
                             function av(a) {
                               var b = a.entry.author[0];
@@ -2862,8 +2862,8 @@ user is not using shrink to fit then we expand the header.
                               d = b.gd$image.src.replace(/\/s[0-9]+(-*c*)\//, "/s107$1/");
                               document.write('<img alt="' + c + '" src="' + d + '" title="' + c + '" avatar avatar-91 photo" height="91" width="91"/>')
                             };
-                            //]]>
-                          </script>
+                          </script>//]]>-->
+                          <img alt='Luciano Cismondi' height='91' src='https://1.bp.blogspot.com/-8z5wG5_O-c8/Xhtr704k1mI/AAAAAAAAB7k/CvWSVFXNoMUOqgAtG_4TevMqp0wW1CG2wCLcBGAsYHQ/s1600/LCismondi%2BHorizontal.png' title='Luciano Cismondi' width='91'/>  
                           <a href='#'> <script expr:src='&quot;/feeds/posts/default/&quot; + data:post.id + &quot;?alt=json-in-script&amp;amp;callback=av&quot;'/> </a>
                         </div>
                         <!-- <div class='author-content'> <a class='author-name' expr:href='data:post.authorProfileUrl' expr:title='data:post.author' rel='author'> -->
@@ -2872,7 +2872,7 @@ user is not using shrink to fit then we expand the header.
                           Luciano Cismondi
                           </a>
                           <!-- A_Bio -->
-                          <p>Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
+                          <p>Me preparé para desarrollar sistemas de ingeniería comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
                         </div>
                       </div>
                       <ul class='social'>
