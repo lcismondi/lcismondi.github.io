@@ -1616,7 +1616,7 @@ body#layout{background-color:#F7F7F7} body#layout ul,body#layout li{list-style:n
     <div class='logo'>
       <!-- Logo -->
       <b:section class='header' id='header' maxwidgets='1' showaddelement='yes'>
-        <b:widget id='Header1' locked='true' title='Luciano Cismondi 2 (cabecera)' type='Header' version='1'>
+        <b:widget id='Header1' locked='true' title='Luciano Cismondi (cabecera)' type='Header' version='1'>
           <b:widget-settings>
             <b:widget-setting name='displayUrl'/>
             <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -3260,7 +3260,7 @@ user is not using shrink to fit then we expand the header.
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4000713417216869788\x26blogName\x3dLuciano+Cismondi+2\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://blogcartwhite.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://blogcartwhite.blogspot.com/\x26vt\x3d3702852257673737557&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5113196813311393723\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://www.lucianocismondi.com.ar/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://www.lucianocismondi.com.ar/\x26vt\x3d-5283235438823619644&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -3282,138 +3282,7 @@ head.appendChild(script);
           </div><!-- /main-wrapper -->
 
           <div class='sidebar-wrapper'>
-            <b:section class='sidebar' id='sidebar' showaddelement='yes'>
-              <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
-                <b:widget-settings>
-                  <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-                  <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-                  <b:widget-setting name='showSnippets'>false</b:widget-setting>
-                  <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-                  <b:if cond='data:title'><h2><data:title/></h2></b:if>
-                  <div class='widget-content popular-posts'>
-                    <ul>
-                      <b:loop values='data:posts' var='post'>
-                        <li>
-                          <b:if cond='data:showThumbnails == &quot;false&quot;'>
-                            <b:if cond='data:showSnippets == &quot;false&quot;'>
-                              <!-- (1) No snippet/thumbnail -->
-                              <a expr:href='data:post.href'><data:post.title/></a>
-                              <b:else/>
-                              <!-- (2) Show only snippets -->
-                              <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-                              <div class='item-snippet'><data:post.snippet/></div>
-                            </b:if>
-                            <b:else/>
-                            <b:if cond='data:showSnippets == &quot;false&quot;'>
-                              <!-- (3) Show only thumbnails -->
-                              <div class='item-thumbnail-only'>
-                                <b:if cond='data:post.thumbnail'>
-                                  <div class='item-thumbnail'>
-                                    <a expr:href='data:post.href' target='_blank'>
-                                      <img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                                    </a>
-                                  </div>
-                                </b:if>
-                                <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-                              </div>
-                              <div style='clear: both;'/>
-                              <b:else/>
-                              <!-- (4) Show snippets and thumbnails -->
-                              <div class='item-content'>
-                                <b:if cond='data:post.thumbnail'>
-                                  <div class='item-thumbnail'>
-                                    <a expr:href='data:post.href' target='_blank'>
-                                      <img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                                    </a>
-                                  </div>
-                                </b:if>
-                                <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
-                                <div class='item-snippet'><data:post.snippet/></div>
-                              </div>
-                              <div style='clear: both;'/>
-                            </b:if>
-                          </b:if>
-                        </li>
-                      </b:loop>
-                    </ul>
-                    <b:include name='quickedit'/>
-                  </div>
-                </b:includable>
-              </b:widget>
-              <b:widget id='Label1' locked='false' title='Labels' type='Label' version='1'>
-                <b:widget-settings>
-                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-                  <b:widget-setting name='display'>CLOUD</b:widget-setting>
-                  <b:widget-setting name='selectedLabelsList'/>
-                  <b:widget-setting name='showType'>ALL</b:widget-setting>
-                  <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-                  <b:if cond='data:title'>
-                    <h2><data:title/></h2>
-                  </b:if>
-                  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-                    <b:if cond='data:display == &quot;list&quot;'>
-                      <ul>
-                        <b:loop values='data:labels' var='label'>
-                          <li>
-                            <b:if cond='data:blog.url == data:label.url'>
-                              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-                              <b:else/>
-                              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-                            </b:if>
-                            <b:if cond='data:showFreqNumbers'>
-                              <span dir='ltr'>(<data:label.count/>)</span>
-                            </b:if>
-                          </li>
-                        </b:loop>
-                      </ul>
-                      <b:else/>
-                      <b:loop values='data:labels' var='label'>
-                        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-                          <b:if cond='data:blog.url == data:label.url'>
-                            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-                            <b:else/>
-                            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-                          </b:if>
-                          <b:if cond='data:showFreqNumbers'>
-                            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-                          </b:if>
-                        </span>
-                      </b:loop>
-                    </b:if>
-                    <b:include name='quickedit'/>
-                  </div>
-                </b:includable>
-              </b:widget>
-              <b:widget id='HTML1' locked='false' title='Facebook' type='HTML' version='1'>
-                <b:widget-settings>
-                  <b:widget-setting name='content'>&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
-                    &lt;script&gt;(function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = &quot;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.9&amp;appId=384288681912501&quot;;
-                    fjs.parentNode.insertBefore(js, fjs);
-                    }(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
-
-                    &lt;div class=&quot;fb-page&quot; data-href=&quot;https://www.facebook.com/templateclue/&quot; data-small-header=&quot;false&quot; data-adapt-container-width=&quot;true&quot; data-hide-cover=&quot;false&quot; data-show-facepile=&quot;true&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/templateclue/&quot; class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;a href=&quot;https://www.facebook.com/templateclue/&quot;&gt;Templateclue&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-                  <!-- only display title if it's non-empty -->
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <data:content/>
-                  </div>
-
-                  <b:include name='quickedit'/>
-                </b:includable>
-              </b:widget>
-            </b:section>
+            <b:section class='sidebar' id='sidebar' showaddelement='yes'/>
 
           </div><!-- /sidebar-wrapper -->
           <div class='clr'/>
@@ -3516,6 +3385,116 @@ head.appendChild(script);
                     </form>
                     <b:include name='quickedit'/>
                   </b:includable>
+                </b:widget>
+                <b:widget id='BlogArchive1' locked='false' title='Biografía' type='BlogArchive'>
+                  <b:widget-settings>
+                    <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+                    <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+                    <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+                    <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+                    <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+                    <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+                    <b:widget-setting name='chronological'>false</b:widget-setting>
+                    <b:widget-setting name='showPosts'>true</b:widget-setting>
+                    <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+                  <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+                  <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+                  <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+                  <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+                  <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
+</b:includable>
+                </b:widget>
+                <b:widget id='Image1' locked='false' title='' type='Image' version='1'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-8akycwxd2QI/UqCskc9KqiI/AAAAAAAAALE/wv8YizUFrFk/s1600/SF%2BBlanco%2B3.png</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>135</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>305</b:widget-setting>
+                    <b:widget-setting name='link'>http://www.lucianocismondi.com.ar/search/label/Sparkfun</b:widget-setting>
+                    <b:widget-setting name='caption'/>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+    <b:if cond='data:blog.url == &quot;http://www.lucianocismondi.com.ar/search/label/Sparkfun&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:if cond='data:link'>
+        <a expr:href='data:link'>
+          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+        </a>
+      <b:else/>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:if>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
                 </b:widget>
               </b:section>
               <div class='messages'/>
