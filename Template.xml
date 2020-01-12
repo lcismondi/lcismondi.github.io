@@ -1698,7 +1698,7 @@ user is not using shrink to fit then we expand the header.
     <div class='responsive'><i class='fa fa-bars'/></div>
     <!-- Navigation -->
     <ul class='menu-list'>
-      <li><a href='/#home'>HOME</a></li>
+      <li><a href='https://www.lucianocismondi.com.ar/'>HOME</a></li>
       <li><a href='/#about'>Estudio</a></li>
       <li><a href='/#resume'>Trabajo</a></li>
       <li><a href='/#work'>y Me divierto</a></li>
@@ -2013,11 +2013,11 @@ user is not using shrink to fit then we expand the header.
                   <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                   <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                   <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                  <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                  <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
                   <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                   <b:widget-setting name='showLabels'>true</b:widget-setting>
-                  <b:widget-setting name='showLocation'>true</b:widget-setting>
-                  <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                  <b:widget-setting name='showLocation'>false</b:widget-setting>
+                  <b:widget-setting name='showTimestamp'>false</b:widget-setting>
                   <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                   <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                   <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
@@ -2866,8 +2866,10 @@ user is not using shrink to fit then we expand the header.
                           </script>
                           <a href='#'> <script expr:src='&quot;/feeds/posts/default/&quot; + data:post.id + &quot;?alt=json-in-script&amp;amp;callback=av&quot;'/> </a>
                         </div>
-                        <div class='author-content'> <a class='author-name' expr:href='data:post.authorProfileUrl' expr:title='data:post.author' rel='author'>
-                          <data:post.author/>
+                        <!-- <div class='author-content'> <a class='author-name' expr:href='data:post.authorProfileUrl' expr:title='data:post.author' rel='author'> -->
+                        <div class='author-content'> <a class='author-name' href='https://www.LucianoCismondi.com.ar' rel='author'>
+                          <!-- <data:post.author/> --> 
+                          Luciano Cismondi
                           </a>
                           <!-- A_Bio -->
                           <p>Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
@@ -3282,7 +3284,54 @@ head.appendChild(script);
           </div><!-- /main-wrapper -->
 
           <div class='sidebar-wrapper'>
-            <b:section class='sidebar' id='sidebar' showaddelement='yes'/>
+            <b:section class='sidebar' id='sidebar' showaddelement='yes'>
+              <b:widget id='Label1' locked='false' title='Hashtag' type='Label'>
+                <b:widget-settings>
+                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                  <b:widget-setting name='display'>CLOUD</b:widget-setting>
+                  <b:widget-setting name='selectedLabelsList'>Accelerometers,Aerospace simulation,Artificial intelligence,Attitude control,Audio-visual systems,Automata,Automatic control,Brushless motors,Capacitive sensors,Collaborative robots,Complex permittivity,Computer simulation,Data acquisition,Data integration,Data storage systems,Database machines,Dielectric constant,Dielectric liquids,Digital filter,Educational robots,Fuzzy control,Gyroscopes,IIR filter,Industry applications,Intelligent robot,Kalman filter,Level control,Load management,Microphones,Microsensors,Mobile robots,Motion detection,Motor drivers,Multivalued logic,Permittivity,Pulse width modulation,Robot control,Robot motion,Robotic assembly,Robots,Scattering parameters,Sensor systems and applications,Tactile sensors,VNA,Variable speed drivers,Voltage fluctuations,electric current control,electronic circuits,electronic equipment manufacture,open-ended coaxial probe</b:widget-setting>
+                  <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+                  <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+              </b:widget>
+            </b:section>
 
           </div><!-- /sidebar-wrapper -->
           <div class='clr'/>
