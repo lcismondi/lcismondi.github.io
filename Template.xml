@@ -443,8 +443,8 @@ li, ul {
   left: -10px;
   width: 15px;
   height: 15px;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
   border-color: #fff transparent #fff transparent;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
@@ -1986,7 +1986,7 @@ user is not using shrink to fit then we expand the header.
       
     </b:if></b:if>
          <!-- ====== Work ====== -->
-  <div class='work section-padding' id='work'>
+  <div class='work section-padding' id='proyectos'>
     <div class='container'>
       <b:if cond='data:blog.pageType != &quot;item&quot;'>
         <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
