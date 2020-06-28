@@ -443,8 +443,8 @@ li, ul {
   left: -10px;
   width: 15px;
   height: 15px;
-  -webkit-animation-duration: 0.1s;
-  animation-duration: 0.1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   border-color: #fff transparent #fff transparent;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
@@ -1914,7 +1914,7 @@ user is not using shrink to fit then we expand the header.
 			<div class='row'>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/search/label/Asalariado' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/search/label/Asalariado/#proyectos' style='color:#333333;'>
 						<i class='fa fa-usb'/>
 						<h4>Electrónica</h4>
 						<p>Entender como funciona la tecnología actual</p>
@@ -1923,7 +1923,7 @@ user is not using shrink to fit then we expand the header.
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/search/label/Investigación' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/search/label/Investigación/#proyectos' style='color:#333333;'>
 						<i class='fa fa-code-branch'/>
 						<h4>Investigación</h4>
 						<p>Encontrar nuevas tecnologías</p>
@@ -1943,7 +1943,7 @@ user is not using shrink to fit then we expand the header.
 			<div class='row mt30'>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/search/label/Escalada' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/search/label/Escalada/#proyectos' style='color:#333333;'>
 						<i class='fa fa-hand-rock'/>
 						<h4>Escalada</h4>
 						<p>Vivir al límite</p>
@@ -1952,7 +1952,7 @@ user is not using shrink to fit then we expand the header.
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/search/label/Ciclismo' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/search/label/Ciclismo/#proyectos' style='color:#333333;'>
 						<i class='fa fa-bicycle'/>
 						<h4>Bicicleta</h4>
 						<p>Moverse eficientemente</p>
@@ -1961,7 +1961,7 @@ user is not using shrink to fit then we expand the header.
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/search/label/Trekking' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/search/label/Trekking/#proyectos' style='color:#333333;'>
 						<i class='fa fa-leaf'/>
 						<h4>Naturaleza</h4>
 						<p>Disfrutar lo que nos rodea</p>
