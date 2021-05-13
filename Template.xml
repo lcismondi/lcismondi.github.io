@@ -20,7 +20,7 @@
 
   <!-- Description and Keywords -->
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <meta content='Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.' name='description'/>
+    <meta content='Me preparé para desarrollar sistemas de ingeniería aplicando tecnologías actuales, comprometiéndome con el medio, permitiéndome ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.' name='description'/>
   </b:if>
   <meta content='Ingeniería, UTN, FRBA, Universidad, Paper, Publicación, Montañismo, Escalada, Andinismo, Boulder, Ciclismo, MTB, Mountainbike, Inglés, Alemán, Técnico, Estudio, Trabajo, Diversión, Argentina, Alemania, Cuadricoptero, Drones, Aeroespacio, Aerodinámico, Osciloscopio, Sensor, Cuadcopter, Electrónica, UTNBA, acelerómetro, giróscopo, brazo robótico, GIAR, Inteligencia Artificial, Robótica, Móvil, Investigación, Desarrollo, Aprendizaje por refuerzo, [I+D+I] StartUper' name='keywords'/>
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1703,7 +1703,7 @@ user is not using shrink to fit then we expand the header.
       <li><a href='/#about'>Estudio</a></li>
       <li><a href='/#resume'>Trabajo</a></li>
       <li><a href='/#work'>y Me divierto</a></li>
-      <li><a href='https://www.lucianocismondi.com.ar/p/curriculum-vitae.html'>CV</a></li>
+      <li><a href='/#about'>CV</a></li>
       <li><a href='/#contact'>Contacto</a></li>
     </ul> 
   </header>
@@ -1775,13 +1775,13 @@ user is not using shrink to fit then we expand the header.
 <!-- About Preword --><div class='profile-preword'><span>Hola!</span></div>
 </div>
 <!-- About Details --><h1 class='profile-title'>Luciano Cismondi</h1>
-<div class='profile-position'>Ingeniero eletrónico y Escalador</div></div>
+<div class='profile-position'>Ingeniero electrónico y Escalador</div></div>
 <!-- About Bio -->
 					<p>Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo.</p>
 					<p>Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
 
 					<div class='mah_buttons'>
-					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='https://www.lucianocismondi.com.ar/p/curriculum-vitae.html'>CV</a>
+					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='https://www.lucianocismondi.com.ar/p/curriculum-vitae.html#proyectos'>CV</a>
 					<a class='btn site-btn transition-ease smooth-scroll mt10' data-wow-delay='0.1s' href='#contact'>Contactame</a>
                   </div>
 				</div>
@@ -1804,7 +1804,7 @@ user is not using shrink to fit then we expand the header.
 					<!-- Skill item -->
 					<div class='single-progress-item'>
 						<p>Master</p>
-						<div class='progress-bar-style' data-progress='20'/>
+						<div class='progress-bar-style' data-progress='40'/>
 					</div>
 				</div>
 				<div class='col-md-6'>
@@ -1933,7 +1933,7 @@ user is not using shrink to fit then we expand the header.
 				</div>
 				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
 					<div class='service-item'>
-                      <a href='http://www.lucianocismondi.com.ar/p/proyectos.html' style='color:#333333;'>
+                      <a href='http://www.lucianocismondi.com.ar/p/proyectos.html#proyectos' style='color:#333333;'>
 						<i class='fa fa-cogs'/>
 						<h4>Desarrollos</h4>
 						<p>Aplicar nuevas tecnologías</p>
@@ -1978,7 +1978,7 @@ user is not using shrink to fit then we expand the header.
   <section class='hire section-padding text-center'>
     <div class='container'>
       <h3>Hagamos algo juntos!</h3>
-      <a href='http://www.lucianocismondi.com.ar/p/proyectos.html'><button>Proyectos y Publicaciones</button></a>
+      <a href='http://www.lucianocismondi.com.ar/p/proyectos.html#proyectos'><button>Proyectos y Publicaciones</button></a>
     </div>
   </section>
   <!--====== End Hire ======-->  
@@ -2014,6 +2014,7 @@ user is not using shrink to fit then we expand the header.
                   <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                   <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                   <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                  <b:widget-setting name='reactionsLabel'/>
                   <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
                   <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                   <b:widget-setting name='showLabels'>true</b:widget-setting>
