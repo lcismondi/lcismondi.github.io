@@ -20,7 +20,7 @@
 
   <!-- Description and Keywords -->
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <meta content='Me preparé para desarrollar sistemas de ingeniería aplicando tecnologías actuales, comprometiéndome con el medio, permitiéndome ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo. Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.' name='description'/>
+    <meta content='Me especializo en hacer que las cosas sucedan. Me motiva el reconocimiento de mis pares, el conocimiento personal y el beneficio económico que producen. Probablemente en ese orden.' name='description'/>
   </b:if>
   <meta content='Ingeniería, UTN, FRBA, Universidad, Paper, Publicación, Montañismo, Escalada, Andinismo, Boulder, Ciclismo, MTB, Mountainbike, Inglés, Alemán, Técnico, Estudio, Trabajo, Diversión, Argentina, Alemania, Cuadricoptero, Drones, Aeroespacio, Aerodinámico, Osciloscopio, Sensor, Cuadcopter, Electrónica, UTNBA, acelerómetro, giróscopo, brazo robótico, GIAR, Inteligencia Artificial, Robótica, Móvil, Investigación, Desarrollo, Aprendizaje por refuerzo, [I+D+I] StartUper' name='keywords'/>
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1777,8 +1777,8 @@ user is not using shrink to fit then we expand the header.
 <!-- About Details --><h1 class='profile-title'>Luciano Cismondi</h1>
 <div class='profile-position'>Ingeniero electrónico y Escalador</div></div>
 <!-- About Bio -->
-					<p>Me preparé para desarrollar sistemas de ingeniería aplicando la tecnología existente, comprometiéndome con el medio, lo que me permite ser promotor de cambio, con capacidad de innovación, al servicio de un conocimiento productivo.</p>
-					<p>Cooperando o asumiendo el liderazgo efectivo en la coordinación técnica y metodológica de los procesos.</p>
+					<p>Me especializo en hacer que las cosas sucedan. Me motiva el reconocimiento de mis pares, el conocimiento personal y el beneficio económico que producen.</p>
+					<p>Probablemente en ese orden.</p>
 
 					<div class='mah_buttons'>
 					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='https://www.lucianocismondi.com.ar/p/curriculum-vitae.html#proyectos'>CV</a>
