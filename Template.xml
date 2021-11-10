@@ -1716,8 +1716,8 @@ user is not using shrink to fit then we expand the header.
 
 		<div class='intro-inner'>
 			<div class='intro-content'>
-				<h2>Luciano Cismondi</h2>
-				<p> ... </p>
+				<h2>Acá estamos...</h2>
+				<p> haciendo que las cosas sucedan </p>
 				<!-- social media -->
 				<div class='social-links mt40'>
                   <div class='social-btns'>
@@ -1752,7 +1752,7 @@ user is not using shrink to fit then we expand the header.
 <div class='me-image'>
 <figure class='effect-zoe'>
 <!-- Avatar -->
-<img alt='' src='https://1.bp.blogspot.com/-8z5wG5_O-c8/Xhtr704k1mI/AAAAAAAAB7k/CvWSVFXNoMUOqgAtG_4TevMqp0wW1CG2wCLcBGAsYHQ/s1600/LCismondi%2BHorizontal.png'/>
+<img alt='' src='https://1.bp.blogspot.com/-nzQUJBHMR_w/YYwynUpJj4I/AAAAAAAAC0E/iMXKBBciTcA1Lv7qOBaz8C6dNBvOLQqogCLcBGAsYHQ/s16000/LCismondi%2Bvertical.jpg'/>
 <!-- About Links -->
 <figcaption>
 <p class='icon-links'>
@@ -1803,8 +1803,8 @@ user is not using shrink to fit then we expand the header.
 					</div>
 					<!-- Skill item -->
 					<div class='single-progress-item'>
-						<p>Master</p>
-						<div class='progress-bar-style' data-progress='40'/>
+						<p>Master Evaluación de Proyectos</p>
+						<div class='progress-bar-style' data-progress='90'/>
 					</div>
 				</div>
 				<div class='col-md-6'>
@@ -2865,7 +2865,7 @@ user is not using shrink to fit then we expand the header.
                               document.write('<img alt="' + c + '" src="' + d + '" title="' + c + '" avatar avatar-91 photo" height="91" width="91"/>')
                             };
                           </script>//]]>-->
-                          <img alt='Luciano Cismondi' height='91' src='https://1.bp.blogspot.com/-8z5wG5_O-c8/Xhtr704k1mI/AAAAAAAAB7k/CvWSVFXNoMUOqgAtG_4TevMqp0wW1CG2wCLcBGAsYHQ/s1600/LCismondi%2BHorizontal.png' title='Luciano Cismondi' width='91'/>  
+                          <img alt='Luciano Cismondi' height='91' src='https://1.bp.blogspot.com/-XbCFEBVPMS8/YYw0pxp8UuI/AAAAAAAAC0M/OWG-zuv2EZc7W85aA7qLoPmAtyo7GQjQwCLcBGAsYHQ/s16000/Comentario.jpg' title='Luciano Cismondi' width='91'/>  
                           <a href='#'> <script expr:src='&quot;/feeds/posts/default/&quot; + data:post.id + &quot;?alt=json-in-script&amp;amp;callback=av&quot;'/> </a>
                         </div>
                         <!-- <div class='author-content'> <a class='author-name' expr:href='data:post.authorProfileUrl' expr:title='data:post.author' rel='author'> -->
@@ -3349,9 +3349,15 @@ head.appendChild(script);
 		<div class='container pt100 pb90'>
 			<div class='col-md-offset-2 col-md-8'>
 				<div class='section-title mb70'>
-					<h2>Las frases que me dicen</h2>
+					<h2>Las frases que me motivan</h2>
 				</div>
 				<div id='testimonial-carousel'>
+                 	<!-- testimonial item -->
+					<div class='testimonial-item'>
+						<p>In theory there is no difference between theory and practice, but in practice there is.</p>
+						<h2>JB</h2>
+						<div class='company-name'/>
+					</div>
 					<!-- testimonial item -->
 					<div class='testimonial-item'>
 						<p>El correcto equilibrio entre el corazón, la mente y el coraje es lo que cuenta.</p>
