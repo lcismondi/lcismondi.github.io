@@ -20,7 +20,7 @@
 
   <!-- Description and Keywords -->
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <meta content='Me especializo en hacer que las cosas sucedan. Me motiva el reconocimiento de mis pares, el conocimiento personal y el beneficio económico que producen. Probablemente en ese orden.' name='description'/>
+    <meta content='Soy un emprendedor tecnológico perpicaz e innovador, orientado a la solución. Me encanta trabajar en la creación de productos geniales. Mi visión es combinar las capacidades de la tecnología con la complejidad de las personas.' name='description'/>
   </b:if>
   <meta content='Ingeniería, UTN, FRBA, Universidad, Paper, Publicación, Montañismo, Escalada, Andinismo, Boulder, Ciclismo, MTB, Mountainbike, Inglés, Alemán, Técnico, Estudio, Trabajo, Diversión, Argentina, Alemania, Cuadricoptero, Drones, Aeroespacio, Aerodinámico, Osciloscopio, Sensor, Cuadcopter, Electrónica, UTNBA, acelerómetro, giróscopo, brazo robótico, GIAR, Inteligencia Artificial, Robótica, Móvil, Investigación, Desarrollo, Aprendizaje por refuerzo, [I+D+I] StartUper' name='keywords'/>
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -1775,10 +1775,12 @@ user is not using shrink to fit then we expand the header.
 <!-- About Preword --><div class='profile-preword'><span>Hola!</span></div>
 </div>
 <!-- About Details --><h1 class='profile-title'>Luciano Cismondi</h1>
-<div class='profile-position'>Ingeniero electrónico y Escalador</div></div>
+<div class='profile-position'>Ingeniero electrónico y Master en Evaluación de Proyectos</div></div>
 <!-- About Bio -->
-					<p>Me especializo en hacer que las cosas sucedan. Me motiva el reconocimiento de mis pares, el conocimiento personal y el beneficio económico que producen.</p>
-					<p>Probablemente en ese orden.</p>
+					<p>Soy un emprendedor tecnológico perspicaz e innovador, orientado a la solución. Me encanta trabajar en la creación de productos geniales. Mi visión es combinar las capacidades de la tecnología con la complejidad de las personas.</p>
+<p>Aporto desde la combinación de la experiencia técnica, comercial y de gestión de los equipos, para liderar el cambio con un estilo fluído y así lograr que las cosas sucedan.
+Una persona que muestra predisposición al hacer, me resulta cómodo reconceptualizar los problemas para descubrir soluciones prácticas a problemas difíciles para brindar servicios de alta calidad orientados a la satisfacción del cliente en entornos de grandes cambios.</p>
+<p>Líder eficaz y miembro fuerte del equipo, proactivo, organizado y responsable de las tareas con una visión sistémica, actuando siempre como una referencia para el grupo, no espero a que me digan qué hacers y brindando soluciones alcanzables para los problemas relevantes.</p>
 
 					<div class='mah_buttons'>
 					<a class='btn site-btn btn-outline transition-ease mt10' data-wow-delay='0.1s' href='https://www.lucianocismondi.com.ar/p/curriculum-vitae.html#proyectos'>CV</a>
@@ -1836,20 +1838,33 @@ user is not using shrink to fit then we expand the header.
 				<!-- Resume Item -->
 				<div class='col-md-offset-2 col-md-9'>
 					<div class='resume-item row'>
-						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
 							<div>
 								<h2>Tecnología</h2>
-								<p>2018-Actualidad</p>
+								<p>2020-Actualidad</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
 							<h2>Estandarización y Calidad de los Sistemas y Procesos</h2>
 							<p>La estandarización debe observarse desde diferentes niveles, el objetivo es mejorar la productividad, lo que se refleja en menores costos a la vez que mejora la experiencia con el cliente y asegura un servicio consistente.</p>
 						</div>
-					</div>
+					</div>                  
+ 					<!-- Resume Item -->
+					<div class='resume-item row'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
+							<div>
+								<h2>Consumo masivo</h2>
+								<p>2018-2020</p>
+							</div>
+						</div>
+						<div class='col-md-6 col-sm-6 resume-right'>
+							<h2>Frío a demanda</h2>
+							<p>Investigación y desarrollo de un equipo capaz de enfriar bebidas envasadas en forma rápida y eficiente. Un &#8220;microondas&#8221; que enfría cerveza en 30 segundos.</p>
+						</div>
+					</div>                 
 					<!-- Resume Item -->
 					<div class='resume-item row'>
-						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
 							<div>
 								<h2>Fibra óptica</h2>
 								<p>2010-2018</p>
@@ -1862,10 +1877,10 @@ user is not using shrink to fit then we expand the header.
 					</div>
 					<!-- Resume Item -->
 					<div class='resume-item row'>
-						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
 							<div>
 								<h2>HLT</h2>
-								<p>2007-2015</p>
+								<p>2007-2010</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
@@ -1875,10 +1890,10 @@ user is not using shrink to fit then we expand the header.
 					</div>  
 					<!-- Resume Item -->
 					<div class='resume-item row'>
-						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
 							<div>
 								<h2>GIAR</h2>
-								<p>2012-2014</p>
+								<p>2008-2010</p>
 							</div>
 						</div>
 						<div class='col-md-6 col-sm-6 resume-right'>
@@ -1888,7 +1903,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
 					<!-- Resume Item -->
 					<div class='resume-item row'>
-						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.15s'>
+						<div class='col-md-6 col-sm-6 resume-left wow fadeInUp' data-wow-delay='0.05s'>
 							<div>
 								<h2>Comunicaciones</h2>
 								<p>2007-2008</p>
@@ -2010,7 +2025,6 @@ user is not using shrink to fit then we expand the header.
                   <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                   <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
                   <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                  <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                   <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                   <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                   <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -3259,7 +3273,7 @@ user is not using shrink to fit then we expand the header.
     }
   &lt;/script&gt;
 &lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
@@ -3370,6 +3384,12 @@ head.appendChild(script);
 						<h2>SGB</h2>
 						<div class='company-name'/>
 					</div>
+                  	<!-- testimonial item -->
+					<div class='testimonial-item'>
+						<p>Cuando ya no somos capaces de cambiar una situación, nos encontramos ante el desafío de cambiarnos a nosotros mismos.</p>
+						<h2>VF</h2>
+						<div class='company-name'/>
+					</div>
 					<!-- testimonial item -->
 					<div class='testimonial-item'>
 						<p>El que aprende y aprende y no practica lo que sabe, es como el que ara y ara y no siembra.</p>
@@ -3460,7 +3480,7 @@ head.appendChild(script);
       <!-- COPYRIGHT -->
       <div class='col-md-12 col-sm-12 col-xs-12 footerLeft'>
   <!--         Copyright &#169; 2018 <data:blog.title/>. Design By <a href='https://www.templateclue.com/' id='templateclue' ref='dofollow' title='Premium Blogger Templates'>Premium Blogger Templates</a> -->
-			   &#169; 2020 | <a href='https://www.LucianoCismondi.com.ar/'><data:blog.title/></a>.
+			   &#169; 2023 | <a href='https://www.LucianoCismondi.com.ar/'><data:blog.title/></a>.
       </div>
       <!-- SOCIAL ICONS -->
 
