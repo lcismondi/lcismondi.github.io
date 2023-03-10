@@ -1792,39 +1792,41 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
 	</section>
 	<!-- ==== About Section End ==== -->
 
+
 <!-- ==== Skill Section Start ==== -->
+<!--      
 	<div class='skill-section fix'>
 		<div class='container pb65'>
 			<div class='row'>
 				<div class='col-md-6'>
-					<!-- Skills -->
-					<div class='single-progress-item'>
+					 Skills -->
+<!--					<div class='single-progress-item'>
 						<p>Ingeniero electrónico</p>
-            <!-- Skills Progress -->
-						<div class='progress-bar-style' data-progress='100'/>
+             Skills Progress -->
+<!--						<div class='progress-bar-style' data-progress='100'/>
 					</div>
-					<!-- Skill item -->
-					<div class='single-progress-item'>
+					Skill item -->
+<!--					<div class='single-progress-item'>
 						<p>Master Evaluación de Proyectos</p>
 						<div class='progress-bar-style' data-progress='90'/>
 					</div>
 				</div>
 				<div class='col-md-6'>
-					<!-- Skill item -->
-					<div class='single-progress-item'>
+					Skill item -->
+<!--					<div class='single-progress-item'>
 						<p>Innovación</p>
-						<div class='progress-bar-style' data-progress='80'/>
+						<div class='progress-bar-style' data-progress='100'/>
 					</div>
-					<!-- Skill item -->
-					<div class='single-progress-item'>
-						<p>Inteligencia emocional</p>
-						<div class='progress-bar-style' data-progress='70'/>
+					Skill item -->
+<!--					<div class='single-progress-item'>
+						<p>Getión de equipos</p>
+						<div class='progress-bar-style' data-progress='100'/>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- ==== Skill Section End ==== -->
+	==== Skill Section End ==== -->
 
 	<!-- ==== Resume Section ==== -->
 	<section class='resume-section fix' id='resume'>
@@ -1928,7 +1930,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
 				<h2>y Me divierto</h2>
 			</div>
 			<div class='row'>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/search/label/Asalariado/#proyectos' style='color:#333333;'>
 						<i class='fa fa-usb'/>
@@ -1937,7 +1939,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
                       </a>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/search/label/Investigación/#proyectos' style='color:#333333;'>
 						<i class='fa fa-code-branch'/>
@@ -1946,7 +1948,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
                       </a>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/p/proyectos.html#proyectos' style='color:#333333;'>
 						<i class='fa fa-cogs'/>
@@ -1957,7 +1959,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
 				</div>
 			</div>
 			<div class='row mt30'>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/search/label/Escalada/#proyectos' style='color:#333333;'>
 						<i class='fa fa-hand-rock'/>
@@ -1966,7 +1968,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
                       </a>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/search/label/Ciclismo/#proyectos' style='color:#333333;'>
 						<i class='fa fa-bicycle'/>
@@ -1975,7 +1977,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
                       </a>
 					</div>
 				</div>
-				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.2s'>
+				<div class='col-md-4 col-sm-4 wow fadeInUp' data-wow-delay='0.1s'>
 					<div class='service-item'>
                       <a href='http://www.lucianocismondi.com.ar/search/label/Trekking/#proyectos' style='color:#333333;'>
 						<i class='fa fa-leaf'/>
@@ -3278,7 +3280,7 @@ Una persona que muestra predisposición al hacer, me resulta cómodo reconceptua
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5113196813311393723\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://www.lucianocismondi.com.ar/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://www.lucianocismondi.com.ar/\x26vt\x3d-5283235438823619644&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d5113196813311393723\x26blogName\x3dLuciano+Cismondi\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://lucianocismondi.blogspot.com/search\x26blogLocale\x3des\x26v\x3d2\x26homepageUrl\x3dhttp://lucianocismondi.blogspot.com/\x26vt\x3d7973423113402985831&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
