@@ -23,6 +23,3 @@ http://localhost:8000      //Abrir desde el navegador
 Ctrl + Shift + R           //Actualizar cache
 Ctrl + C                   //Cerrar servidor
 ```
-
-# Imágnes
-Para las imágenes webp utilizo [squoosh](https://squoosh.app/editor)
