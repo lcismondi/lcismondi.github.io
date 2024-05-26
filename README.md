@@ -30,13 +30,14 @@ Para sincronizar el repositorio remoto:
 git init
 git status
 git add .      //Agrega los archivos nuevos y modificados al área de "preparación" (staged)
-git commit -m "Comentario"      //Crea una nueva versión en el ambiente local
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-git commit -m "Comentario"
-git branch -M main //Renombra la rama (forzado)
+git commit -m "Comentario"      //Crea una nueva versión en el ambiente local
+git branch -M main              //Renombra la rama (forzado)
 //Agrega la URL remota con el nombre "origin" al repositorio local
 git remote add origin https://github.com/lcismondi/lcismondi.github.io
-//Envía los commits de la rama "main" al repositorio remoto "origin". La opción -u establece "origin"" como la referencia predeterminada para futuros push y pull de la rama "main".
+git remote -v                   //Verifica configuración del remoto
+//Envía los commits de la rama "main" al repositorio remoto "origin".
+//La opción -u establece "origin"" como la referencia predeterminada para futuros push y pull de la rama "main".
 git push -u origin main
 ```
