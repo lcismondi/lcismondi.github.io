@@ -23,3 +23,18 @@ http://localhost:8000      //Abrir desde el navegador
 Ctrl + Shift + R           //Actualizar cache
 Ctrl + C                   //Cerrar servidor
 ```
+
+# GIT
+Para sincronizar el repositorio remoto:
+```
+git init
+git status
+git add .
+git commit -m "Comentario"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git commit -m "Comentariot"
+git branch -M main
+git remote add origin https://github.com/lcismondi/lcismondi.github.io
+git push -u origin main
+
