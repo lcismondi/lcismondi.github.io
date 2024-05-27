@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" hreflang="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Vubo | Luciano Cismondi</title>
+
+    <meta name="description"
+        content="Vubo es un VUmetro sobre un cuBO de led. Detecta el sonido ambiente y lo muestra en 5 niveles con forma de un cubo." />
+    <meta name="author" content="Luciano Cismondi" />
+    <meta name="copyright" content="Copyright owner" />
+    <meta name="keywords"
+        content="Vumetro, cubo led, comparador, logaritmico, micrófono, detector de pico, luciano cismondi" />
+    <meta name="robots" content="follow" />
+    <link rel="canonical" href="https://lucianocismondi.com.ar" />
+
+    <!--
+        * Main HTML
+        * By lucianocismondi.com.ar. Powered by Boostrap 5.0
+        * Cismondi Holdings -->
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lucianocismondi.com.ar/proyectos/vubo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vubo | Vúmetro 3D">
+    <meta property="og:description"
+        content="Vubo es un VUmetro sobre un cuBO de led. Detecta el sonido ambiente y lo muestra en 5 niveles con forma de un cubo.">
+    <meta property="og:image" content="https://lcismondi.github.io/proyectos/img/vubo_vumetro.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://lucianocismondi.com.ar">
+    <meta property="twitter:url" content="https://lucianocismondi.com.ar/proyectos/vubo.html">
+    <meta name="twitter:title" content="Vubo | Vúmetro 3D">
+    <meta name="twitter:description"
+        content="Vubo es un VUmetro sobre un cuBO de led. Detecta el sonido ambiente y lo muestra en 5 niveles con forma de un cubo.">
+    <meta name="twitter:image" content="https://lcismondi.github.io/proyectos/img/vubo_vumetro.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS-->
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS-->
+    <link href="../css/boostrap-styles.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body id="home">
+    <!-- Responsive navbar-->
+    <nav></nav>
+
+    <header>
+
+        <div class="container mt-5">
+
+            <div class="row justify-content-center pt-5">
+                <div class="col-10 col-md-8 mb-2">
+                    <h1 class="fs-1 fw-bolder text-dark">Vubo | vumetro 3D</h1>
+                    <p class="fs-5 text-dark">&nbsp; &nbsp;Vubo es un VUmetro sobre un cuBO de led. Detecta el sonido
+                        ambiente y lo muestra en 5 niveles con forma de un cubo.</p>
+                    <p class="text-dark opacity-50">6 de agosto de 2016 · <i>4 minuto de lectura</i></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container mb-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img/vubo_vumetro.webp" alt="Vúmetro 3D" class="img-fluid rounded-3">
+                <figcaption class="text-dark opacity-50">Un cubo iluminado.
+                </figcaption>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <p>&nbsp; &nbsp;El núcleo del proyecto se encuentra en el <a
+                        href="http://www.ti.com/lit/ds/symlink/lm3916.pdf" target="_blank">LM3916</a>, en esencia se
+                    trata de un comparador de 10 niveles con una salida
+                    adaptada para manejar leds, displays o cualquier cosa del estilo (1 - 30mA).
+                </p>
+                <p>&nbsp; &nbsp;Este modelo en particular presenta un salto logarítmico (vumetro) entre niveles, similar
+                    a la respuesta que tiene el oído humano, por lo que la variación "se verá igual" a como se escucha
+                    (LM3914 es lineal y el LM3915 cada 3dB).
+                </p>
+                <p>&nbsp; &nbsp;Al circuito típico que ofrece la hoja de datos vamos a hacerle algunos agregados para ir
+                    adaptándolo a lo que buscamos.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_comparador.webp" class="img-fluid rounded" alt="Circuito de aplicación">
+                <figcaption class="text-dark opacity-50">Circuito de aplicación LM3916</figcaption>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <p>&nbsp; &nbsp;El cubo será de 5x5x5, por lo que la salida de 10 niveles excede la representación y
+                    además, en cada nivel habrá 25 leds conectados a la salida, por lo que tendremos que ver como
+                    conectarlos.</p>
+                <h3>Pre-amplificador micrófono electret</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_preamplificador.webp" class="img-fluid rounded" alt="Pre amplificador del micrófono">
+                <figcaption class="text-dark opacity-50">Circuito pre amplificador</figcaption>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <h3>Etapa de entrada del vumetro</h3>
+                <p>&nbsp; &nbsp;Si la señal de audio ingresa directo al puerto 5 del LM3916, lo que mostrará será el
+                    valor instantáneo de la señal, cosa que si se analiza en detalle, la representación en leds se verá
+                    con una "sombra" sobre todo si se utiliza el modo punto. Ya que el integrado solo responde al
+                    semiciclo positivo de la señal es conveniente colocar a la entrada un detector de pico.</p>
+                <p>&nbsp; &nbsp;No es ni más ni menos que el mismo que se encuentra en la hoja de datos del integrado.
+                    Vale resaltar unos detalles.</p>
+                <p>&nbsp; &nbsp;Esta topología tiene un juego de valores que es necesario respetar. El capacitor C2 se
+                    carga por medio de R5, pero se descarga mediante R4 y R5, de modo que la selección apropiada de
+                    estos valores, puede ofrecer un detector de pico o también valor medio. Típicamente se recomienda
+                    para detector de pico R4 = 100Kohm y R5 = 1Kohm.</p>
+                <p>&nbsp; &nbsp;Ya que a la entrada del detector de pico va a estar diréctamente el micrófono, es
+                    conveniente ajustar la ganancia del operacional para llevarla a valores aceptables para el
+                    integrado. La ganancia de la topología queda definida por R4/R3 y ahí es donde entra la relación de
+                    compromiso.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_amplificador.webp" class="img-fluid rounded" alt="Smplificador del micrófono">
+                <figcaption class="text-dark opacity-50">Circuito amplificador</figcaption>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <h3>Ajustes del vumetro</h3>
+                <p>&nbsp; &nbsp;El circuito tiene la posibilidad de agregar algunos controles externos para ajustar la
+                    intensidad de los leds, como así también el umbral de detección.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_ajustes.webp" class="img-fluid rounded" alt="Ajustes externos">
+                <figcaption class="text-dark opacity-50">Configuración externa</figcaption>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <h3>Estructura del cubo</h3>
+                <p>&nbsp; &nbsp;La estructura es un cubo de leds de 5x5x5 (125 leds). En principio no sería necesario
+                    manejar los leds individuales por lo que se podría armar una estructura por fila de maneja de
+                    reducir el consumo de corriente y aumentar la tensión de alimentación, hasta encontrar el
+                    equilibrio. Por sencillez <a href="https://www.youtube.com/watch?v=vf_IpviMiFU" target="_blank">se
+                        decide armar una estructura</a> por nivel como la de la imagen, lo que mejora la rigidez
+                    mecánica y la presentación del cubo, pero aumenta significativamente la corriente de alimentación.
+                </p>
+                <h3>Etapa de salida</h3>
+                <p>&nbsp; &nbsp;La etapa de "potencia" consiste simplemente en aumentar la corriente de salida del
+                    comparador. Utilizando un transistor conectado a cada pin con la capacidad de controlar un nivel del
+                    cubo (25 leds). El esquema se basa en el <a href="https://www.youtube.com/watch?v=CtJqhg5Y6DA"
+                        target="_blank">explicado en este video</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_salida.webp" class="img-fluid rounded" alt="Etapa de potencia">
+                <figcaption class="text-dark opacity-50">Configuración externa</figcaption>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <h3>Diagrama completo</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img\vubo_diagrama.webp" class="img-fluid rounded" alt="Esquemático vubo">
+                <figcaption class="text-dark opacity-50">Esquemático del circuito completo</figcaption>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- Proyectos relacionados -->
+    <section class="bg-black py-5" id="blog">
+        <div class="container col-lg-7 p-4 gap-5 pt-md-4 align-items-center">
+
+            <h2 class="display-8 text-white mb-3 text-center">Proyectos relacionados</h2>
+            <div class="first-post list-group justify-content-center">
+                <a href="/estudios/datalogger.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="/estudios/img/datalogger.webp" width="64px" class="rounded mb-3 mb-md-0"
+                        alt="Datalogger dron">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Datalogger | Dron</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Sistema de registro de información de todas las
+                                variables manejadas por el dron. Para obtener una perspectiva del comportamiento de la
+                                aeronave.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Enero 2016</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="/estudios/tecladocapacitivo.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="/estudios/img/tecladocapacitivo.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Pelicula gruesa">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Teclado capacitivo | Película gruesa</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Hoy en día ya no se piensa en botones mecánicos, ya sea porque son ruidosos, se desgastan o porque no, poco estéticos.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Marzo 2015</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="/estudios/estabilizadordevuelo.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="/estudios/img/estabilizadorvuelo.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Vuelo por PID">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Estabilizador de vuelo por filtro PID | Dron</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Estudio del comportamiento que una aeronave al desplazarse por el aire y su control asociado.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Abril 2014</small>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col text-center">
+            <a id="contact" class="link-secondary text-secondary" href="proyectos.html">Ver todos<i
+                    class="bi bi-plus-circle ms-2"></i></a>
+        </div>
+
+    </section>
+
+
+    <div class="container footer">
+        <!-- Footer descripto en script.js -->
+        <footer></footer>
+    </div>
+
+    <!-- Core JS (with Popper)-->
+    <script src="../js/scripts.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
