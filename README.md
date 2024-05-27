@@ -37,6 +37,8 @@ git branch -M main              //Renombra la rama (forzado)
 //Agrega la URL remota con el nombre "origin" al repositorio local
 git remote add origin https://github.com/lcismondi/lcismondi.github.io
 git remote -v                   //Verifica configuración del remoto
+//Cambia la URL del remoto
+git remote set-url origin https://github.com/tu-usuario/nueva-url-repositorio.git
 //Envía los commits de la rama "main" al repositorio remoto "origin".
 //La opción -u establece "origin"" como la referencia predeterminada para futuros push y pull de la rama "main".
 git push -u origin main
