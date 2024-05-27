@@ -13,6 +13,11 @@
 ### V1:
 - Template: https://btemplates.com/2013/blogger-template-metrominimalist/
 
+
+# Performance
+El control de renderizado lo hago con: [Page Speed](https://pagespeed.web.dev/)
+
+
 # Desarrollo local
 La web la pruebo en un servidor local:
 
