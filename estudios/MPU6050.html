@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" hreflang="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>MPU 6050 | Luciano Cismondi</title>
+
+    <meta name="description"
+        content="Combina un giroscopio MEMS de 3 ejes y un acelerómetro de 3 ejes en la misma pastilla de silicio junto con un procesador digital de movimiento." />
+    <meta name="author" content="Luciano Cismondi" />
+    <meta name="copyright" content="Copyright owner" />
+    <meta name="keywords"
+        content="acelerometro, giroscopo, Digital Motion Processor, sparkfun, LPC1769, CMSIS, luciano cismondi" />
+    <meta name="robots" content="follow" />
+    <link rel="canonical" href="https://lucianocismondi.com.ar" />
+
+    <!--
+        * Main HTML
+        * By lucianocismondi.com.ar. Powered by Boostrap 5.0
+        * Cismondi Holdings -->
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lucianocismondi.com.ar/estudios/MPU6050.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MPU 6050 | Sparkfun Breakout">
+    <meta property="og:description"
+        content="Combina un giroscopio MEMS de 3 ejes y un acelerómetro de 3 ejes en la misma pastilla de silicio junto con un procesador digital de movimiento.">
+    <meta property="og:image" content="https://lcismondi.github.io/estudios/img/MPU6050.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://lucianocismondi.com.ar">
+    <meta property="twitter:url" content="https://lucianocismondi.com.ar/estudios/MPU6050.html">
+    <meta name="twitter:title" content="MPU 6050 | Sparkfun Breakout">
+    <meta name="twitter:description"
+        content="Combina un giroscopio MEMS de 3 ejes y un acelerómetro de 3 ejes en la misma pastilla de silicio junto con un procesador digital de movimiento.">
+    <meta name="twitter:image" content="https://lcismondi.github.io/estudios/img/MPU6050.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS-->
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS-->
+    <link href="../css/boostrap-styles.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body id="home">
+    <!-- Responsive navbar-->
+    <nav></nav>
+
+    <header>
+
+        <div class="container mt-5">
+
+            <div class="row justify-content-center pt-5">
+                <div class="col-10 col-md-8 mb-2">
+                    <h1 class="fs-1 fw-bolder text-dark">MPU 6050 Sparkfun Breakout</h1>
+                    <p class="fs-5 text-dark">&nbsp; &nbsp;El MPU-6050 combina un giroscopio MEMS de 3 ejes y un
+                        acelerómetro de 3 ejes en la misma pastilla de silicio junto con un procesador digital de
+                        movimiento (DMP Digital Motion Processor) capaz de procesar los más complejos algoritmos de
+                        movimientos en 9 ejes.</p>
+                    <p class="text-dark opacity-50">6 de diciembre de 2013 · <i>3 minutos de lectura</i></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container mb-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img/MPU6050.webp" alt="Acelerómetro y giróscopo" class="img-fluid rounded-3">
+                <figcaption class="text-dark opacity-50">Sparkfun Breakout.
+                </figcaption>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <p>&nbsp; &nbsp;El MPU-6050 elimina los errores de cruce por cero, los cuales provocan problemas de
+                    alineación vertical. La <a href="https://www.sparkfun.com/products/11028" target="_blank">placa
+                        desarrollada por Sparkfun</a> para el MPU-6050, ofrece la posibilidad de trabajar fácilmente con
+                    este pequeño integrado QFN. Con solo conectarle una pira de pines de 0,1", incluyendo un bus I2C
+                    auxiliar que permite al MPU-6050 conectarse a un magnetómetro u otros sensores externos.</p>
+
+                <h3>Características</h3>
+                <p>
+                <ul>
+                    <li>Salida digital I2C.</li>
+                    <li>Tensión de alimentación: 2,3 - 3,4v.</li>
+                    <li>Permite puentear CLK, FSYNC y AD0.</li>
+                    <li>Giróscopo 3 ejes (velocidad angular), sencibilidad 131LSB/dps con fondo de escala configurable
+                        ±250, -±500, ±1.000 o ±2000dps.</li>
+                    <li>Acelerómetro 3 ejes con fondo de escala programable ±2 g, ±4 g, ±8g o ±16g.</li>
+                    <li>Procesador digital de movimiento (DMP Digital Motion Processor).</li>
+                    <li>Contiene algoritmos integrados para calibración en tiempo de ejecución, sin intervención del
+                        usuario.</li>
+                    <li>Sensor digital de temperatura.</li>
+                </ul>
+                </p>
+
+                <h3>Implementación</h3>
+                <p>&nbsp; &nbsp;Lo implementamos en CMSIS con un LPC1769, en el <a href="lixed.html">nivelador
+                        digital</a>, para leer las mediciones de aceleración y velocidad angular.
+                    Las lecturas de las mediciones de cada dato, acelerómetro (x, y, z), giróscopo (x, y, z) y
+                    temperatura se realizan por medio de dos bytes de 8 bits. Una parte alta y una baja. Por lo que
+                    luego de hacer la lectura de cada valor, es necesario "armar" el número. </p>
+                <p>&nbsp; &nbsp;Por lo tanto primero se realiza la lectura propia de cada segmento de 8 bits y se
+                    almacena en un buffer de 16 posiciones "Datos_Recibidos [i]:</p>
+                <pre><code>
+//&lt;! Datos_Recibidos[0] = 8bits más significativos acc eje x
+//&lt;! Datos_Recibidos[1] = 8bits menos significativos acc eje x
+//&lt;!...
+//&lt;! Datos_Recibidos[12] = 8bits mas significativos gyr eje z
+//&lt;! Datos_Recibidos[13] = 8bits menos significativos gyr eje z
+                </code></pre>
+
+                <p>&nbsp; &nbsp;El armado del dato se realiza sobre un vector de 7 posiciones, "Información[i]", donde
+                    las posiciones 0, 1 y 2 son los valores del acelerómetro x, y, z, respectivamente, uniendo los 8bits
+                    altos con los 8 bits bajos de cada dato. Caso similar tanto para el giróscopo en las ubicaciones 4,
+                    5 y 6, como la temperatura en la posición 3.</p>
+                <pre><code>
+Datos_Devueltos [ACC_X] = -((Datos_Recibidos[2]&lt;&lt; 8 & 0xFF00) +
+ (Datos_Recibidos[3] & 0x00FF));
+                 </code></pre>
+
+                <p>&nbsp; &nbsp;Cabe aclarar que al mismo tiempo que se realiza la unión de los datos, se hace la
+                    corrección física necesaria para alinear el sensor con el equipo donde se encuentra montado.</p>
+                <p>&nbsp; &nbsp;Una vez obtenido el vector "Información[i]", los datos están listos para procesar.
+                    Además, se pueden realizar otras configuraciones en los fondos de escala, filtros, ect.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <p class="fs-4 border-start ps-4 my-5">Actualización: Prometo armar un repositorio con el proyecto.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EStudios relacionados -->
+    <section class="bg-black py-5" id="blog">
+        <div class="container col-lg-7 p-4 gap-5 pt-md-4 align-items-center">
+
+            <h2 class="display-8 text-white mb-3 text-center">Estudios relacionados</h2>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="rpic.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/rpic.webp" width="64px" class="rounded mb-3 mb-md-0"
+                        alt="Reunión de Procesamiento de la Información y Control ">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">RPIC 2013 Plataforma Inteligente</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Tuvimos al agrado de poder presentar el trabajo
+                                con el que venimos trabajando en estos últimos años, junto al equipo de GIAR</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Octubre 2013</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="lixed.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/lixed.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Medidor de nivel">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Medidor de nivel digital</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Indicador de nivel digital. Por medio de un
+                                display con un gráfico tipo burbuja indica el ángulo de inclinación y su dirección.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Diciembre 2012</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="first-post list-group justify-content-center">
+                <a href="avance2.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/avance2.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Estudiante ingeniería">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Avance 2,45%</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">El que aprende y aprende y no practica lo que sabe, es como el que ara y ara y no siembra.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Agosto 2012</small>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col text-center">
+            <a id="contact" class="link-secondary text-secondary" href="estudios.html">Ver todos<i
+                    class="bi bi-plus-circle ms-2"></i></a>
+        </div>
+
+    </section>
+
+
+    <div class="container footer">
+        <!-- Footer descripto en script.js -->
+        <footer></footer>
+    </div>
+
+    <!-- Core JS (with Popper)-->
+    <script src="../js/scripts.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
