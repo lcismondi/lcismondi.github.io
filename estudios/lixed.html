@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" hreflang="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Medidor de nivel digital | Luciano Cismondi</title>
+
+    <meta name="description"
+        content="Indicador de nivel digital, con un display indica el ángulo de inclinación y su dirección, por un gráfico tipo burbuja para una lectura rápida." />
+    <meta name="author" content="Luciano Cismondi" />
+    <meta name="copyright" content="Copyright owner" />
+    <meta name="keywords"
+        content="acelerometro, giroscopo, Digital Motion Processor, sparkfun, LPC1769, MPU6050, luciano cismondi" />
+    <meta name="robots" content="follow" />
+    <link rel="canonical" href="https://lucianocismondi.com.ar" />
+
+    <!--
+        * Main HTML
+        * By lucianocismondi.com.ar. Powered by Boostrap 5.0
+        * Cismondi Holdings -->
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lucianocismondi.com.ar/estudios/lixed.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lixed | Medidor de nivel">
+    <meta property="og:description"
+        content="Indicador de nivel digital, con un display indica el ángulo de inclinación y su dirección, por un gráfico tipo burbuja para una lectura rápida.">
+    <meta property="og:image" content="https://lcismondi.github.io/estudios/img/lixed.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://lucianocismondi.com.ar">
+    <meta property="twitter:url" content="https://lucianocismondi.com.ar/estudios/lixed.html">
+    <meta name="twitter:title" content="Lixed | Medidor de nivel">
+    <meta name="twitter:description"
+        content="Indicador de nivel digital, con un display indica el ángulo de inclinación y su dirección, por un gráfico tipo burbuja para una lectura rápida.">
+    <meta name="twitter:image" content="https://lcismondi.github.io/estudios/img/lixed.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS-->
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS-->
+    <link href="../css/boostrap-styles.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body id="home">
+    <!-- Responsive navbar-->
+    <nav></nav>
+
+    <header>
+
+        <div class="container mt-5">
+
+            <div class="row justify-content-center pt-5">
+                <div class="col-10 col-md-8 mb-2">
+                    <h1 class="fs-1 fw-bolder text-dark">Lixed | Medidor de nivel digital</h1>
+                    <p class="fs-5 text-dark">&nbsp; &nbsp;Como parte de la cursada universitaria aprovechamos a
+                        realizar un proyecto donde pudimos realizar pruebas con un acelerómetro - giróscopo de 3 ejes,
+                        para luego integrarlo definitivamente en un proyecto de mayor envergadura.</p>
+                    <p class="text-dark opacity-50">20 de diciembre de 2012 · <i>2 minutos de lectura</i></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container mb-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 text-center">
+                <img src="img/lixed.webp" alt="Acelerómetro y giróscopo" class="img-fluid rounded-3">
+                <figcaption class="text-dark opacity-50">Logo del proyecto.
+                </figcaption>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 text-dark">
+                <p>&nbsp; &nbsp;El trabajo consta de un indicador de nivel digital. Por medio de un display indica el
+                    ángulo de inclinación y su dirección, además de un indicador gráfico "tipo burbuja" para una lectura
+                    rápida. Se llevó a cabo con un harware básico, MPU6050 (sensor), LCP1769 (microcontrolador) y un
+                    display 128x64px monocromático, montado sobre un PCB que se realizó a medida, junto al desarrollo de
+                    producto final para el usuario.</p>
+
+                <p>&nbsp; &nbsp;Junto a la implementación del sensor de nivel fue necesario el desarrollo de un filtro
+                    complementario
+                    (kalman reducido) para filtrar el ruido de la medición y lograr integrar las mediciones de gravedad
+                    con las de velocidad angular.</p>
+
+                <p>&nbsp; &nbsp;El proyecto en sí está orientado a la mejora de la medición, el cálculo de su error e
+                    incertidumbre.</p>
+                <p>&nbsp; &nbsp;Para más detalles pueden leer el paper final del proyecto y ver las imágenes:</p>
+
+                <p class="text-center"><a
+                        href="https://docs.google.com/file/d/0B3zNHDpQ0mDNTk9WMUM5SkZ5UW8/edit?usp=sharing"
+                        target="_blank">Ver paper</a></p>
+
+                <p class="text-center"><a
+                        href="https://www.facebook.com/media/set/?set=a.107569929328577.15942.100002267117720&amp;type=1&amp;l=accac14e8c"
+                        target="_blank">Galería de imágenes</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EStudios relacionados -->
+    <section class="bg-black py-5" id="blog">
+        <div class="container col-lg-7 p-4 gap-5 pt-md-4 align-items-center">
+
+            <h2 class="display-8 text-white mb-3 text-center">Estudios relacionados</h2>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="blcd.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/bldc.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Motor BLDC">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">Controlador BLDC</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Un sistema de control de un Motor Trifásico del
+                                tipo BLDC de baja potencia, utilizados en los discor rígidos de compuradora.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Diciembre 2011</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-post list-group justify-content-center">
+                <a href="cargando41.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/cargando41.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Estudiar ingeniería">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">41% ingeniero electrónico</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">El piano marca el límite y si se intenta ir más
+                                allá se pone en juego la solides de las bases con la que uno siempre quiso trabajar.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Noviembre 2011</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="first-post list-group justify-content-center">
+                <a href="cargando34.html"
+                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
+                    aria-current="true">
+                    <img src="img/cargando34.webp" width="64px" class="rounded mb-3 mb-md-0"
+                        alt="Estudiante ingeniería">
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h5 class="mb-1 text-white">34% ingeniero</h5>
+                            <p class="mb-0 text-white-50 pb-3 pb-md-0">A veces pequeños logros son los que ayudan a
+                                seguir adelante, simplemente hay que encontrar el momento y lugar adecuado.</p>
+                        </div>
+                        <small class="text-white-50 text-nowrap">Marzo 2011</small>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col text-center">
+            <a id="contact" class="link-secondary text-secondary" href="estudios.html">Ver todos<i
+                    class="bi bi-plus-circle ms-2"></i></a>
+        </div>
+
+    </section>
+
+
+    <div class="container footer">
+        <!-- Footer descripto en script.js -->
+        <footer></footer>
+    </div>
+
+    <!-- Core JS (with Popper)-->
+    <script src="../js/scripts.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
