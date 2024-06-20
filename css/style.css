@@ -340,3 +340,20 @@ label.text-white::after {
 .form-control:focus, .form-select:focus {
     box-shadow: 0 0 0 .25rem rgb(202, 202, 202) !important;
 }
+
+
+/* Masonry */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px; /* Ajusta esto según tu diseño */
+  }
+  
+  .grid-item {
+    width: 200px; /* Ajusta esto según tu diseño */
+    margin-left: 10px; /* Ajusta esto según tu diseño */
+    margin-bottom: 10px; /* Ajusta esto según tu diseño */
+    background: #ddd; /* Solo para visualización */
+    border: 1px solid #ccc; /* Solo para visualización */
+    box-sizing: border-box;
+  }
