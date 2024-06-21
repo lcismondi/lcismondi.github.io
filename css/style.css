@@ -316,7 +316,7 @@ border-radius: 15px;
 }
 
 .highlight {
-background-color: #ffcc00;
+background-color: #3757ce;
 font-weight: bold;
 }
 
@@ -326,7 +326,7 @@ padding: 20px;
 
 .contact-cta {
 background: rgb(3,1,0);
-background: linear-gradient(180deg, rgba(3,1,0,1) 1%, rgba(55, 87, 206,.8) 100%);
+background: linear-gradient(180deg, rgba(3,1,0,1) 1%, rgba(55, 87, 206, 0.8) 100%);
 box-shadow: 0px 16px 32px 0px rgba(245, 156, 76, .2);
 -webkit-box-shadow: 0px 16px 32px 0px rgba(245, 156, 76, .2);
 -moz-box-shadow: 0px 16px 32px 0px rgba(245, 156, 76, .2);
@@ -339,54 +339,4 @@ label.text-white::after {
 
 .form-control:focus, .form-select:focus {
     box-shadow: 0 0 0 .25rem rgb(202, 202, 202) !important;
-}
-
-
-/* Masonry */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px; /* Ajusta esto según tu diseño */
-    flex: 1; /* Esto permite que el grid se expanda */
-    /*min-height: calc(100vh - 100px); /* Ajusta según la altura de tu header y otros elementos */
-  }
-  
-  .grid-item {
-    width: calc(33.333% - 20px); /* Ajusta esto para tres columnas */
-    /*margin-left: 10px; /* Ajusta esto según tu diseño */
-    margin-bottom: 10px; /* Ajusta esto según tu diseño */
-    /*background: #ddd; /* Solo para visualización */
-    /*border: 1px solid #ccc; /* Solo para visualización */
-    box-sizing: border-box; /* */
-  }
-
-  .grid-item img {
-    width: 100%; /* Asegura que las imágenes tomen el ancho completo del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacios blancos debajo de las imágenes */
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.content-wrapper {
-    flex: 1;
-}
-
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .grid-item {
-        width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-item {
-        width: calc(100% - 20px); /* Una columna en pantallas pequeñas */
-    }
 }
