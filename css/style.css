@@ -347,13 +347,46 @@ label.text-white::after {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px; /* Ajusta esto según tu diseño */
+    flex: 1; /* Esto permite que el grid se expanda */
+    /*min-height: calc(100vh - 100px); /* Ajusta según la altura de tu header y otros elementos */
   }
   
   .grid-item {
-    width: 200px; /* Ajusta esto según tu diseño */
-    margin-left: 10px; /* Ajusta esto según tu diseño */
+    width: calc(33.333% - 20px); /* Ajusta esto para tres columnas */
+    /*margin-left: 10px; /* Ajusta esto según tu diseño */
     margin-bottom: 10px; /* Ajusta esto según tu diseño */
-    background: #ddd; /* Solo para visualización */
-    border: 1px solid #ccc; /* Solo para visualización */
-    box-sizing: border-box;
+    /*background: #ddd; /* Solo para visualización */
+    /*border: 1px solid #ccc; /* Solo para visualización */
+    box-sizing: border-box; /* */
   }
+
+  .grid-item img {
+    width: 100%; /* Asegura que las imágenes tomen el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios blancos debajo de las imágenes */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: calc(100% - 20px); /* Una columna en pantallas pequeñas */
+    }
+}

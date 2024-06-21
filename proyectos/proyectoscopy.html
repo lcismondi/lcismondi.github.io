@@ -52,6 +52,14 @@
     <!-- CSS Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Librería Masonry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <!-- Cargar jQuery antes de Masonry y imagesLoaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
 </head>
 
 <body id="home">
@@ -106,10 +114,10 @@
     </header>
 
     <!-- Projects section-->
-    <section class="container py-3">
+    <section class="container py-3 content-wrapper">
 
         <div class="row grid">
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-4 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="airbit.html" class="text-white">
                         <img class="card-img-top" src="img/airbit.webp">
@@ -120,18 +128,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="psicoanalisis_fmart.html" class="text-white">
                         <img class="card-img-top" src="img/fmart_psicoanalisis.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Psicoanálisis fmart<small class="text-white-50"> | Septiembre 2022</small>
+                            <p class="card-text text-light">Psicoanálisis fmart<small class="text-white-50"> |
+                                    Septiembre 2022</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="fmart.html" class="text-white">
                         <img class="card-img-top" src="img/fmart.webp">
@@ -157,40 +166,43 @@
                     </div>
                 </a>
             </div>-->
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="sillon_tech.html" class="text-white">
                         <img class="card-img-top" src="img/sillon_tech.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Sillón tech<small class="text-white-50"> | Noviembre 2020</small>
+                            <p class="card-text text-light">Sillón tech<small class="text-white-50"> | Noviembre
+                                    2020</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="erl_cargaelectronica.html" class="text-white">
                         <img class="card-img-top" src="img/erl_cargaelectronica.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Carga electrónica<small class="text-white-50"> | Noviembre 2018</small>
+                            <p class="card-text text-light">Carga electrónica<small class="text-white-50"> | Noviembre
+                                    2018</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/trabajos/frioen30segundos.html" class="text-white">
                         <img class="card-img-top" src="/trabajos/img/Consumo_masivo.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">IA enfriado<small class="text-white-50"> | Enero 2018</small>
+                            <p class="card-text text-light">IA enfriado<small class="text-white-50"> | Enero
+                                    2018</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/forceboard.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/forceboard.webp">
@@ -201,7 +213,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="vubo.html" class="text-white">
                         <img class="card-img-top" src="img/vubo_vumetro.webp">
@@ -212,51 +224,55 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/bolayviga.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/bolayviga.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Bola y viga<small class="text-white-50"> | Enero 2016</small>
+                            <p class="card-text text-light">Bola y viga<small class="text-white-50"> | Enero
+                                    2016</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/permitividaddielectrica.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/permitividaddielectrica.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Permitividad eléctrica<small class="text-white-50"> | Diciembre 2015</small>
+                            <p class="card-text text-light">Permitividad eléctrica<small class="text-white-50"> |
+                                    Diciembre 2015</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/tecladocapacitivo.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/tecladocapacitivo.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Teclado capacitivo<small class="text-white-50"> | Marzo 2015</small>
+                            <p class="card-text text-light">Teclado capacitivo<small class="text-white-50"> | Marzo
+                                    2015</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/estabilizadordevuelo.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/estabilizadorvuelo.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Estabilizador de vuelo<small class="text-white-50"> | Abril 2014</small>
+                            <p class="card-text text-light">Estabilizador de vuelo<small class="text-white-50"> | Abril
+                                    2014</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/rpic.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/rpic_slim.webp">
@@ -267,45 +283,49 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/lixed.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/lixed.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Medidor de nivel<small class="text-white-50"> | Diciembre 2012</small>
+                            <p class="card-text text-light">Medidor de nivel<small class="text-white-50"> | Diciembre
+                                    2012</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/blcd.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/bldc.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Control BLDC<small class="text-white-50"> | Diciembre 2011</small>
+                            <p class="card-text text-light">Control BLDC<small class="text-white-50"> | Diciembre
+                                    2011</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/robotautonomo.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/robotautonomo_slim.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">Robot autónomo<small class="text-white-50"> | Diciembre 2009</small>
+                            <p class="card-text text-light">Robot autónomo<small class="text-white-50"> | Diciembre
+                                    2009</small>
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
+            <div class="grid-item col-sm-6 col-lg-4 mb-4 animate__animated animate__fadeIn animate__slower">
                 <div class="card bg-black border-dark work">
                     <a href="/estudios/brazorobotico.html" class="text-white">
                         <img class="card-img-top" src="/estudios/img/brazorobotico.webp">
                         <div class="card-body">
-                            <p class="card-text text-light">brazorobotico<small class="text-white-50"> | Diciembre 2007</small>
+                            <p class="card-text text-light">brazorobotico<small class="text-white-50"> | Diciembre
+                                    2007</small>
                             </p>
                         </div>
                     </a>
@@ -320,10 +340,6 @@
         <footer></footer>
     </div>
 
-
-    <!-- Core JS (with Popper)-->
-    <script src="/js/scripts.js"></script>
-
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -333,20 +349,23 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <!-- Librería Masonry -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
-  <!-- Inicialización de Masonry -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var grid = document.querySelector('.grid');
-      var msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',  // Esto asegura que las columnas se ajusten al tamaño del item
-        percentPosition: true  // Esto permite el uso de porcentajes en el CSS
-      });
-    });
-  </script>
+    <!-- Inicialización de Masonry -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var grid = document.querySelector('.grid');
+            imagesLoaded(grid, function () {
+                var msnry = new Masonry(grid, {
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-item',  // Esto asegura que las columnas se ajusten al tamaño del item
+                    percentPosition: true  // Esto permite el uso de porcentajes en el CSS
+                });
+            });
+        });
+    </script>
+
+    <!-- Core JS (with Popper)-->
+    <script src="/js/scripts.js"></script>
 
 </body>
 
