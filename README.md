@@ -22,7 +22,7 @@ El control de renderizado lo hago con: [Page Speed](https://pagespeed.web.dev/)
 La web la pruebo en un servidor local:
 
 ```
-H:
+H:                         //Buscar el disco
 cd path/to/your/project    //Ir hasta el proyecto
 python3 -m http.server     //Inicia el servidor
 http://localhost:8000      //Abrir desde el navegador
