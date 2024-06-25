@@ -56,7 +56,10 @@
 
     <!-- Jquery para colapsar el nav -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
+    <!-- Google reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body id="home">
@@ -121,7 +124,8 @@
 
     <!-- Projects section -->
     <section class="bg-light pt-1 pb-3">
-        <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s">Me divierto</h2>
+        <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s">Me divierto
+        </h2>
         <div class="work container my-4 col-12 col-md-9 animate__animated animate__fadeIn animate__delay-1s">
             <a href="/proyectos/enclosure3D.html">
                 <div class="card-portfolio-one row p-3 pb-0 pe-lg-0 pt-lg-4 align-items-center rounded-3">
@@ -140,7 +144,8 @@
                     </div>
 
                     <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-md rounded-3">
-                        <img class="rounded-lg-3" src="proyectos/img/enclosure.webp" alt="Enclosure preview" width="720">
+                        <img class="rounded-lg-3" src="proyectos/img/enclosure.webp" alt="Enclosure preview"
+                            width="720">
                     </div>
                 </div>
             </a>
@@ -204,7 +209,8 @@
     <section class="bg-light py-5" id="work">
         <div class="container col-lg-7 p-4 gap-5 py-md-5 align-items-center">
 
-            <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s">Trabajo</h2>
+            <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s">Trabajo
+            </h2>
             <div class="first-post list-group justify-content-center">
                 <a href="/trabajos/producto.html"
                     class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
@@ -215,7 +221,8 @@
                         <div>
                             <h5 class="mb-1 text-white">Ingeniero de producto</h5>
                             <p class="mb-1 text-white-50 pb-3 pb-md-0">Trabajo de la mano de un equipo de profesionales
-                                y junto a ellos priorizo sus acciones de mejora para obtener el equilibrio esfuerzo-impacto.
+                                y junto a ellos priorizo sus acciones de mejora para obtener el equilibrio
+                                esfuerzo-impacto.
                             </p>
                         </div>
                         <small class="text-white-50 text-nowrap">Actual</small>
@@ -234,7 +241,8 @@
                         <div>
                             <h5 class="mb-1 text-white">Ingeniero de proyectos de arquitectura de software</h5>
                             <p class="mb-1 text-white-50 pb-3 pb-md-0">Las metodologías ágiles nos brindan las
-                                herramientas que necesitamos para adaptar nuestra gestión a las condiciones de los proyectos que nos
+                                herramientas que necesitamos para adaptar nuestra gestión a las condiciones de los
+                                proyectos que nos
                                 enfrentamos.</p>
                         </div>
                         <small class="text-white-50 text-nowrap">Dic. 2022</small>
@@ -247,7 +255,8 @@
                 <a href="trabajos/frioen30segundos.html"
                     class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
                     aria-current="true">
-                    <img src="trabajos/img/Consumo_masivo.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Post image">
+                    <img src="trabajos/img/Consumo_masivo.webp" width="64px" class="rounded mb-3 mb-md-0"
+                        alt="Post image">
                     <div class="d-md-flex gap-2 w-100 justify-content-between">
                         <div>
                             <h5 class="mb-1 text-white">CTO Cofundador</h5>
@@ -260,7 +269,8 @@
             </div>
         </div>
         <div class="col text-center">
-            <a class="link-secondary text-secondary" href="/trabajos/curriculum.html">Curriculum<i class="bi bi-plus-circle ms-2"></i></a>
+            <a class="link-secondary text-secondary" href="/trabajos/curriculum.html">Curriculum<i
+                    class="bi bi-plus-circle ms-2"></i></a>
         </div>
 
     </section>
@@ -270,7 +280,8 @@
     <section class="container my-5 col-12 col-md-9 animate__animated animate__fadeIn animate__delay-1s">
 
         <div class="row align-items-md-stretch">
-            <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s mb-4">Estudio</h2>
+            <h2 class="display-8 text-dark mb-3 text-center animate__animated animate__fadeIn animate__delay-1s mb-4">
+                Estudio</h2>
             <div class="col-md-6 mb-sm-3">
                 <div class="h-100 p-5 text-bg-dark rounded-3">
                     <h2>Evaluación de proyectos</h2>
@@ -316,8 +327,7 @@
                     <div id="form">
                         <form
                             action="https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse"
-                            method="post" target="hiddenConfirm" onsubmit="formSubmit()">
-
+                            method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bg-dark text-white border-secondary"
                                     name="entry.2024450423" id="floatingInput" placeholder="Best Client" required>
@@ -328,7 +338,8 @@
                             <div class="form-floating mb-2">
                                 <input type="email" class="form-control bg-dark text-white border-secondary"
                                     name="entry.172661864" id="floatingInput" placeholder="best@client.com" required>
-                                <label class="text-white text-opacity-75" for="entry.172661864 floatingInput email">y tu email es?</label>
+                                <label class="text-white text-opacity-75" for="entry.172661864 floatingInput email">y tu
+                                    email es?</label>
                             </div>
 
                             <div class="form-floating mb-2">
@@ -339,13 +350,13 @@
                                     sobre tu proyecto...</label>
                             </div>
 
-                            <button type="submit" class="button-contact btn-lg px-5">Enviar</button>
+                            <div class="g-recaptcha" data-sitekey="6LedIAEqAAAAAK9Gq4f6pOjkc4Hi4qqE_siN8R-w"></div> <!-- key publica -->
 
+                            <button type="submit" class="button-contact btn-lg px-5">Enviar</button>
                         </form>
                     </div>
 
-                    <iframe name="hiddenConfirm" style="display: none;">
-                    </iframe>
+                    <iframe name="hiddenConfirm" style="display: none;"></iframe>
 
                     <!-- Submitted message confirmation -->
                     <div id="completion-msg" class="col-12 text-center mb-5 pb-5"
@@ -356,12 +367,19 @@
                             contexto con el cual escribes y sienta bien al recibir un correo.</p>
                     </div>
 
-                    <!-- Script to hide form after submitted -->
+                    <!-- Script to hide form after submitted and check reCAPTCHA -->
                     <script type="text/javascript">
-                        var submitted = false
-                        function formSubmit() {
-                            document.getElementById("form").style.display = "none";  // make form invisible
-                            document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
+                        var submitted = false;
+                        function formSubmit(event) {
+                            if (grecaptcha.getResponse() === "") {
+                                event.preventDefault();
+                                alert("Por favor, completa el reCAPTCHA.");
+                                return false;
+                            } else {
+                                document.getElementById("form").style.display = "none";  // make form invisible
+                                document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
+                                return true;
+                            }
                         }
                     </script>
                 </div>
