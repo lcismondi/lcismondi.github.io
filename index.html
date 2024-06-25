@@ -328,7 +328,6 @@
                         <form
                             action="https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse"
                             method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
-
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bg-dark text-white border-secondary"
                                     name="entry.2024450423" id="floatingInput" placeholder="Best Client" required>
@@ -351,15 +350,13 @@
                                     sobre tu proyecto...</label>
                             </div>
 
-                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                            <div class="g-recaptcha" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3"></div> <!-- key publica -->
 
                             <button type="submit" class="button-contact btn-lg px-5">Enviar</button>
-
                         </form>
                     </div>
 
-                    <iframe name="hiddenConfirm" style="display: none;">
-                    </iframe>
+                    <iframe name="hiddenConfirm" style="display: none;"></iframe>
 
                     <!-- Submitted message confirmation -->
                     <div id="completion-msg" class="col-12 text-center mb-5 pb-5"
@@ -370,22 +367,19 @@
                             contexto con el cual escribes y sienta bien al recibir un correo.</p>
                     </div>
 
-                    <!-- Script to hide form after submitted and get reCAPTCHA token -->
+                    <!-- Script to hide form after submitted and check reCAPTCHA -->
                     <script type="text/javascript">
                         var submitted = false;
                         function formSubmit(event) {
-                            event.preventDefault(); // Prevenir el envío del formulario
-
-                            grecaptcha.ready(function () {
-                                grecaptcha.execute('6LedIAEqAAAAAK9Gq4f6pOjkc4Hi4qqE_siN8R-w', { action: 'submit' }).then(function (token) {
-                                    document.getElementById('g-recaptcha-response').value = token;
-                                    // Después de obtener el token, envía el formulario
-                                    document.querySelector('form').submit();
-                                });
-                            });
-
-                            document.getElementById("form").style.display = "none";  // make form invisible
-                            document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
+                            if (grecaptcha.getResponse() === "") {
+                                event.preventDefault();
+                                alert("Por favor, completa el reCAPTCHA.");
+                                return false;
+                            } else {
+                                document.getElementById("form").style.display = "none";  // make form invisible
+                                document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
+                                return true;
+                            }
                         }
                     </script>
                 </div>
