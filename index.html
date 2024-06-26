@@ -322,67 +322,74 @@
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-6">
-
                     <!-- Contact form -->
                     <div id="form">
-                        <form
-                            action="https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse"
-                            method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
+                        <form id="contactForm" method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bg-dark text-white border-secondary"
-                                    name="entry.2024450423" id="floatingInput" placeholder="Best Client" required>
-                                <label class="text-white text-opacity-75"
-                                    for="entry.2024450423 floatingInput email">Cómo te llamas?</label>
+                                <input type="text" class="form-control bg-dark text-white border-secondary" name="entry.2024450423" id="name" placeholder="Best Client" required>
+                                <label class="text-white text-opacity-75" for="name">Cómo te llamas?</label>
                             </div>
-
+                
                             <div class="form-floating mb-2">
-                                <input type="email" class="form-control bg-dark text-white border-secondary"
-                                    name="entry.172661864" id="floatingInput" placeholder="best@client.com" required>
-                                <label class="text-white text-opacity-75" for="entry.172661864 floatingInput email">y tu
-                                    email es?</label>
+                                <input type="email" class="form-control bg-dark text-white border-secondary" name="entry.172661864" id="email" placeholder="best@client.com" required>
+                                <label class="text-white text-opacity-75" for="email">y tu email es?</label>
                             </div>
-
+                
                             <div class="form-floating mb-2">
-                                <textarea class="form-control bg-dark text-white border-secondary"
-                                    name="entry.1797313582" style="height: 100px" id="floatingInput"
-                                    placeholder="Do whatever" required></textarea>
-                                <label class="text-white text-opacity-75" for="entry.1797313582 floatingInput">Cuéntame
-                                    sobre tu proyecto...</label>
+                                <textarea class="form-control bg-dark text-white border-secondary" name="entry.1797313582" style="height: 100px" id="message" placeholder="Do whatever" required></textarea>
+                                <label class="text-white text-opacity-75" for="message">Cuéntame sobre tu proyecto...</label>
                             </div>
-
-                            <div class="g-recaptcha" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3"></div> <!-- key publica -->
-
+                
+                            <!-- Honeypot field -->
+                            <div style="display: none;">
+                                <input type="text" name="honeypot" value="">
+                            </div>
+                
+                            <div class="g-recaptcha mb-2" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3"></div> <!-- key publica -->
+                
                             <button type="submit" class="button-contact btn-lg px-5">Enviar</button>
                         </form>
                     </div>
-
+                
                     <iframe name="hiddenConfirm" style="display: none;"></iframe>
-
+                
                     <!-- Submitted message confirmation -->
-                    <div id="completion-msg" class="col-12 text-center mb-5 pb-5"
-                        style="display: none; transition: all .1s ease;">
+                    <div id="completion-msg" class="col-12 text-center mb-5 pb-5" style="display: none; transition: all .1s ease;">
                         <i class="bi bi-check-circle text-success mb-3 h2"></i>
                         <h5 class="text-white mb-1">Mensaje enviado</h5>
-                        <p class="text-white text-opacity-75 mb-5 pb-5 mb-5 pb-5">Saber de vos me sirve para entender el
-                            contexto con el cual escribes y sienta bien al recibir un correo.</p>
+                        <p class="text-white text-opacity-75 mb-5 pb-5 mb-5 pb-5">Saber de vos me sirve para entender el contexto con el cual escribes y sienta bien al recibir un correo.</p>
                     </div>
-
+                
                     <!-- Script to hide form after submitted and check reCAPTCHA -->
                     <script type="text/javascript">
-                        var submitted = false;
-                        function formSubmit(event) {
-                            if (grecaptcha.getResponse() === "") {
-                                event.preventDefault();
-                                alert("Por favor, completa el reCAPTCHA.");
-                                return false;
-                            } else {
-                                document.getElementById("form").style.display = "none";  // make form invisible
-                                document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
-                                return true;
-                            }
-                        }
+                        document.addEventListener("DOMContentLoaded", function () {
+                            var form = document.getElementById("contactForm");
+                
+                            // Set the action attribute using JavaScript
+                            form.setAttribute("action", "https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse");
+                
+                            form.addEventListener("submit", function (event) {
+                                var honeypot = form.querySelector("input[name='honeypot']").value;
+                                if (honeypot) {
+                                    // If the honeypot field is filled, it's a bot
+                                    event.preventDefault();
+                                    alert("Spam detected!");
+                                    return false;
+                                }
+                                if (grecaptcha.getResponse() === "") {
+                                    event.preventDefault();
+                                    alert("Por favor, completa el reCAPTCHA.");
+                                    return false;
+                                } else {
+                                    document.getElementById("form").style.display = "none";  // make form invisible
+                                    document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
+                                    return true;
+                                }
+                            });
+                        });
                     </script>
                 </div>
+                
             </div>
         </div>
 
