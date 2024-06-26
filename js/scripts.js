@@ -60,29 +60,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Formulario de contacto
-document.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById("contactForm");
-
-    // Set the action attribute using JavaScript
-    form.setAttribute("action", "https://docs.google.com/forms/d/e/1FAIpQLSc2L75SKm2em22xHlLLP6Gd9BmykjFGBHdlt0MHOuXBVYSctQ/formResponse");
-
-    form.addEventListener("submit", function (event) {
-        var honeypot = form.querySelector("input[name='honeypot']").value;
-        if (honeypot) {
-            // If the honeypot field is filled, it's a bot
-            event.preventDefault();
-            alert("Spam detected!");
-            return false;
-        }
-        if (grecaptcha.getResponse() === "") {
-            event.preventDefault();
-            alert("Por favor, completa el reCAPTCHA.");
-            return false;
-        } else {
-            document.getElementById("form").style.display = "none";  // make form invisible
-            document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
-            return true;
-        }
-    });
-});
