@@ -324,23 +324,21 @@
                 <div class="col-12 col-md-10 col-lg-6">
                     <!-- Contact form -->
                     <div id="form">
-                        <form id="contactForm"
-                            action="https://docs.google.com/forms/d/e/1FAIpQLSc2L75SKm2em22xHlLLP6Gd9BmykjFGBHdlt0MHOuXBVYSctQ/formResponse"
-                            method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
+                        <form id="contactForm" method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bg-dark text-white border-secondary"
                                     name="entry.2024450423" id="floatingInput" placeholder="Best Client" required>
                                 <label class="text-white text-opacity-75"
                                     for="entry.2024450423 floatingInput email">Cómo te llamas?</label>
                             </div>
-            
+
                             <div class="form-floating mb-2">
                                 <input type="email" class="form-control bg-dark text-white border-secondary"
                                     name="entry.172661864" id="floatingInput" placeholder="best@client.com" required>
                                 <label class="text-white text-opacity-75" for="entry.172661864 floatingInput email">y tu
                                     email es?</label>
                             </div>
-            
+
                             <div class="form-floating mb-2">
                                 <textarea class="form-control bg-dark text-white border-secondary"
                                     name="entry.1797313582" style="height: 100px" id="floatingInput"
@@ -348,20 +346,21 @@
                                 <label class="text-white text-opacity-75" for="entry.1797313582 floatingInput">Cuéntame
                                     sobre tu proyecto...</label>
                             </div>
-            
+
                             <!-- Honeypot field -->
                             <div style="display: none;">
                                 <input type="text" name="honeypot" value="">
                             </div>
-            
-                            <div class="g-recaptcha mb-2" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3"></div> <!-- key publica -->
-            
+
+                            <div class="g-recaptcha mb-2" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3"></div>
+                            <!-- key publica -->
+
                             <button type="submit" class="button-contact btn-lg px-5">Enviar</button>
                         </form>
                     </div>
-            
+
                     <iframe name="hiddenConfirm" style="display: none;"></iframe>
-            
+
                     <!-- Submitted message confirmation -->
                     <div id="completion-msg" class="col-12 text-center mb-5 pb-5"
                         style="display: none; transition: all .1s ease;">
@@ -371,12 +370,16 @@
                             contexto con el cual escribes y sienta bien al recibir un correo.</p>
                     </div>
                 </div>
-            
-                <!-- Script to handle form submission and honeypot -->
+
+                <!-- Script to handle form submission, honeypot, and decoding action URL -->
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                         var form = document.getElementById("contactForm");
-            
+
+                        // Enmascarar URL de acción del formulario
+                        var encodedAction = "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlQUUxTY2RtWmhBUFV5VkxIVThTeXBBdF91RC0xUkF6eVZ1d01BVTNIeEtHN3NkZG9zQnFnL2Zvcm1SZXNwb25zZQ==";
+                        form.action = atob(encodedAction);
+
                         form.addEventListener("submit", function (event) {
                             var honeypot = form.querySelector("input[name='honeypot']").value;
                             if (honeypot) {
@@ -396,13 +399,13 @@
                             }
                         });
                     });
-            
+
                     function formSubmit(event) {
                         // Esta función está definida solo para cumplir con el onsubmit del formulario.
                         return true;
                     }
                 </script>
-                
+
             </div>
         </div>
 
