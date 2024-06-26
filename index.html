@@ -371,14 +371,18 @@
                     </div>
                 </div>
 
-                <!-- Script to handle form submission, honeypot, and decoding action URL -->
+                <!-- Script to handle form submission, honeypot, and dynamic URL -->
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                         var form = document.getElementById("contactForm");
 
-                        // Enmascarar URL de acción del formulario
-                        var encodedAction = "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlQUUxTY2RtWmhBUFV5VkxIVThTeXBBdF91RC0xUkF6eVZ1d01BVTNIeEtHN3NkZG9zQnFnL2Zvcm1SZXNwb25zZQ==";
-                        form.action = atob(encodedAction);
+                        // Cambiar ID del formulario dinámicamente
+                        var newId = "form_" + Math.random().toString(36).substr(2, 9);
+                        form.id = newId;
+
+                        // Enmascarar la URL del formulario dinámicamente
+                        var formAction = "https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse";
+                        form.action = formAction;
 
                         form.addEventListener("submit", function (event) {
                             var honeypot = form.querySelector("input[name='honeypot']").value;
@@ -405,6 +409,8 @@
                         return true;
                     }
                 </script>
+
+
 
             </div>
         </div>
