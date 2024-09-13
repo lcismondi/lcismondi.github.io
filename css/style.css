@@ -214,7 +214,7 @@ header p {
         border .3s ease-in-out;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(47, 50, 99, .15);
     -moz-box-shadow: 0px 0px 20px 0px rgba(47, 50, 99, .15);
-    box-shadow: 0px 0px 32px 8px rgba(47, 50, 99, .15);
+    box-shadow: 0px 0px 32px 8px rgba(0, 13, 255, 0.15);
 }
 
 .card-portfolio-two {
@@ -236,7 +236,7 @@ header p {
         border .3s ease-in-out;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(225, 187, 123, .3);
     -moz-box-shadow: 0px 0px 20px 0px rgba(225, 187, 123, .3);
-    box-shadow: 0px 0px 32px 8px rgba(225, 187, 123, .3);
+    box-shadow: 0px 0px 32px 8px rgba(97, 97, 97, 0.3);
 }
 
 .card-portfolio-three {
@@ -258,7 +258,7 @@ header p {
         border .3s ease-in-out;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(123, 112, 102, .2);
     -moz-box-shadow: 0px 0px 20px 0px rgba(123, 112, 102, .2);
-    box-shadow: 0px 0px 32px 8px rgba(123, 112, 102, .2);
+    box-shadow: 0px 0px 32px 8px rgba(255, 191, 0, 0.2);
 }
 
 .social-icons a {
@@ -307,6 +307,22 @@ width: 64px;
 height: 64px; 
 object-fit: cover;
 object-position: 50% 25%; 
+}
+
+.list-no-indent {
+    list-style-type: none !important; /* Elimina los puntos o números */
+    position: relative;
+    padding-left: 30px; /* Espacio suficiente para el ícono */
+    text-indent: -20px; /* Sangría negativa para la primera línea */
+    margin-left: -20px !important; /* Desplaza el ícono */
+}
+
+.list-no-indent li {
+    list-style-type: none !important; /* Elimina los puntos o números */
+    position: relative;
+    padding-left: 30px; /* Espacio suficiente para el ícono */
+    text-indent: -20px; /* Sangría negativa para la primera línea */
+    margin-left: -20px !important; /* Desplaza el ícono */
 }
 
 
