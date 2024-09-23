@@ -60,3 +60,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Ejecuta el desplazamiento y asignación del newsletter
+function goToForm(optionValue) {
+    // Realizar scroll suave hasta el formulario
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+
+    // Esperar un poco para que el scroll termine antes de cambiar el valor del select
+    setTimeout(function() {
+        // Seleccionar la opción correspondiente en el select
+        var select = document.getElementById("tipoInput");
+        select.value = optionValue; // Cambia el valor del select al valor del botón
+    }, 500);  // 500ms de delay para esperar que el scroll termine
+}

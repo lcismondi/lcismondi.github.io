@@ -115,11 +115,10 @@
                             tu producto tecnológico.
                         </p>
 
-                        <a href="#">
-                            <button
-                                class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
-                                type="button">Suscribirse <i class="bi bi-arrow-right ps-2"></i></button>
-                        </a>
+                        <button
+                            class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
+                            type="button" onclick="goToForm('Newsletter')">Suscribirse <i
+                                class="bi bi-arrow-right ps-2"></i></button>
                     </div>
                 </div>
             </div>
@@ -153,11 +152,10 @@
                                 La comunidad que estamos creando te ayudará a realizar tus proyectos y avanzar en tu
                                 carrera. -->
                             </p>
-                            <a href="#">
-                                <button
-                                    class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
-                                    type="button">Colaborar <i class="bi bi-arrow-right ps-2"></i></button>
-                            </a>
+                            <button
+                                class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
+                                type="button" onclick="goToForm('Inicial')">Colaborar <i
+                                    class="bi bi-arrow-right ps-2"></i></button>
                         </div>
                     </div>
 
@@ -194,11 +192,10 @@
                                 confianza.
                                 Desbloquea todo el contenido técnico y aprende mientras avanzas en tu proyecto.-->
                             </p>
-                            <a href="#">
-                                <button
-                                    class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
-                                    type="button">Comenzar <i class="bi bi-arrow-right ps-2"></i></button>
-                            </a>
+                            <button
+                                class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
+                                type="button" onclick="goToForm('Profesional')">Comenzar <i
+                                    class="bi bi-arrow-right ps-2"></i></button>
                         </div>
                     </div>
 
@@ -235,11 +232,10 @@
                                 No permitas que la tecnología te detenga. Obtén la asistencia personalizada que
                                 necesitas para llevar tu proyecto al siguiente nivel.-->
                             </p>
-                            <a href="#">
-                                <button
-                                    class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
-                                    type="button">Contactar <i class="bi bi-arrow-right ps-2"></i></button>
-                            </a>
+                            <button
+                                class="button-tertiary btn py-3 px-4 mb-3 bg-primary-subtle d-inline-flex align-items-center"
+                                type="button" onclick="goToForm('Mentor')">Contactar <i
+                                    class="bi bi-arrow-right ps-2"></i></button>
                         </div>
                     </div>
                 </div>
@@ -296,12 +292,13 @@
 
                 <div class="col-11 col-md-10 col-lg-6 p-2 mb-3 justify-content-center">
                     <div class="fs-3 fw-bold text-white">¿Quieres que trabajemos mano a mano?</div>
-                    <div class="work text-white-50 mt-3 me-5">
+                    <div class="work text-light mt-3 me-5">
                         <p>No importa en qué etapa esté tu proyecto, suscribiéndote recibirás
                             inspiración, tutoriales detallados y actualizaciones que te ayudarán a llevar tus ideas al
                             siguiente nivel. ¡No te pierdas la oportunidad de formar parte de una comunidad innovadora y
                             en constante crecimiento!</p>
-                        <p><span class="fw-bolder">Suscríbete ahora y da el siguiente paso en tu carrera tecnológica.</span></p>
+                        <p><span class="fw-bolder">Suscríbete ahora y da el siguiente paso en tu carrera
+                                tecnológica.</span></p>
                     </div>
                 </div>
 
@@ -326,14 +323,14 @@
                             <div class="form-floating mb-2">
                                 <select
                                     class="form-select bg-dark text-white border-secondary text-white text-opacity-75"
-                                    id="floatingInput" name="entry.917542536" required>
+                                    id="tipoInput" name="entry.917542536" required>
                                     <option selected disabled>Selecciona una suscripción</option>
                                     <option value="Newsletter">Newsletter</option>
                                     <option value="Inicial">Inicial</option>
                                     <option value="Profesional">Profesional</option>
                                     <option value="Mentor">Mentor</option>
                                 </select>
-                                <label class="text-white text-opacity-75" for="entry.917542536 floatingInput">y te
+                                <label class="text-white text-opacity-75" for="entry.917542536 tipoInput">y te
                                     quieres suscribir a</label>
                             </div>
 
@@ -364,8 +361,12 @@
                         style="display: none; transition: all .1s ease;">
                         <i class="bi bi-exclamation-circle text-warning mb-3 h2"></i>
                         <h5 class="text-white mb-1">Confirma tu dirección de correo</h5>
-                        <p class="text-white text-opacity-75 mb-5 pb-5 mb-5 pb-5">Saber de vos me sirve para entender el
-                            contexto con el cual escribes y sienta bien al recibir un correo.</p>
+                        <p class="text-white text-opacity-75 mb-5 pb-5">Gracias por suscribirte. Te he enviado un
+                            correo de verificación para confirmar tu dirección. Por favor, revisa tu bandeja de entrada
+                            y sigue las instrucciones haciendo clic en el enlace.</p>
+                        <p class="text-white text-opacity-75">Si no encuentras el correo, revisa tu carpeta de spam o
+                            correos no deseados. Una vez confirmada tu dirección, recibirás todas las actualizaciones y
+                            recursos directamente en tu bandeja de entrada.</p>
                     </div>
                 </div>
 
