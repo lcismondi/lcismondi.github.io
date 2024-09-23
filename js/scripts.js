@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Formulario de contacto dinámico
-var formAction = "https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse";
-form.action = formAction;
+//var formAction = "https://docs.google.com/forms/d/e/1FAIpQLScdmZhAP5yVLHU8SypAt_uD-1RAzyVuwMAU3HxKG7sdwosBqg/formResponse";
+//form.action = formAction;

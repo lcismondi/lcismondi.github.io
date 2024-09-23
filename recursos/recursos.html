@@ -302,7 +302,7 @@
                 <div class="col-12 col-md-10 col-lg-6">
                     <!-- Contact form -->
                     <div id="form">
-                        <form id="contactForm" method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
+                        <form id="newstForm" method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bg-dark text-white border-secondary"
                                     name="entry.2024450423" id="floatingInput" placeholder="Best Client" required>
@@ -366,7 +366,7 @@
                 <!-- Script to handle form submission, honeypot, and dynamic URL -->
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
-                        var form = document.getElementById("contactForm");
+                        var form = document.getElementById("newstForm");
 
                         // Cambiar ID del formulario dinámicamente
                         var newId = "form_" + Math.random().toString(36).substr(2, 9);
