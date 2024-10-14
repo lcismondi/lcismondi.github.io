@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 /*!
@@ -5,6 +6,14 @@
  * By lucianocismondi.com.ar
  * Cismondi Holdings
  */
+
+/*! Imagen de marca */
+.imagen-marca{
+    color: #091235; /* Royal Blue */
+    color: #14202E; /* Navy Blue */
+    color: #2B4257; /* Midnight Blue */
+    color: #88a9C3; /* Blue Gray */
+    }
 
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Inter', sans-serif;
@@ -356,3 +365,18 @@ label.text-white::after {
 .form-control:focus, .form-select:focus {
     box-shadow: 0 0 0 .25rem rgb(202, 202, 202) !important;
 }
+
+#Inicial {
+    padding-top: 100px; /* Ajusta este valor según necesites */
+    margin-top: -100px; /* Compensa el espacio superior */
+  }
+
+#Profesional {
+    padding-top: 100px; /* Ajusta este valor según necesites */
+    margin-top: -100px; /* Compensa el espacio superior */
+ }
+
+#Mentor {
+    padding-top: 100px; /* Ajusta este valor según necesites */
+    margin-top: -100px; /* Compensa el espacio superior */
+ }
