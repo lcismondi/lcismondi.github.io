@@ -34,7 +34,8 @@ Para sincronizar el repositorio remoto:
 ```
 git init
 git status
-git rm --cached archivo.html       //Dejar de rastrear archivo
+git rm --cached ruta/archivo.html           //Dejar de rastrear archivo
+git add ruta/archivo.html                   //Volver a rastreas el arvhivo 
 git add .      //Agrega los archivos nuevos y modificados al área de "preparación" (staged)
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
