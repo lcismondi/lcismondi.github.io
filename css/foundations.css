@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* V5 foundations. Self-contained reset scoped to the Home. */
+.site-v5 { margin: 0; -webkit-text-size-adjust: 100%; }
+.site-v5, .site-v5 *, .site-v5 *::before, .site-v5 *::after { box-sizing: border-box; }
+.site-v5 [hidden] { display: none !important; }
+.site-v5 :is(h1,h2,h3,h4,h5,h6) { margin-top: 0; margin-bottom: 0.5rem; }
+.site-v5 p { margin-top: 0; margin-bottom: 1rem; }
+.site-v5 :is(ol,ul,dl) { margin-top: 0; margin-bottom: 1rem; }
+.site-v5 dd { margin-left: 0; margin-bottom: 0.5rem; }
+.site-v5 :is(button,input,textarea) { margin: 0; font: inherit; }
+.site-v5 button { cursor: pointer; text-transform: none; }
+.site-v5 img { vertical-align: middle; }
+.site-v5 a { color: inherit; }
+@font-face {
+    font-family: "Inter V5";
+    src: url("../assets/fonts/inter/Inter-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter V5";
+    src: url("../assets/fonts/inter/Inter-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter V5";
+    src: url("../assets/fonts/inter/Inter-SemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+.site-v5 {
+    --color-royal-blue: #091235;
+    --color-navy-blue: #14202e;
+    --color-midnight-blue: #2b4257;
+    --color-blue-gray: #88a9c3;
+    --color-background: #f7f8fa;
+    --color-surface: #ffffff;
+    --color-text: #091235;
+    --color-text-on-dark: #f7f8fa;
+    --color-text-muted: #526575;
+    --color-border: #d8e1e8;
+    --color-accent: #88a9c3;
+    --font-body: "Inter V5", "Segoe UI", Arial, sans-serif;
+    --font-size-small: 0.875rem;
+    --font-size-body: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+    --font-size-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+    --font-size-h1: clamp(2.25rem, 1.35rem + 3vw, 4.5rem);
+    --font-size-h2: clamp(1.75rem, 1.25rem + 1.6vw, 3rem);
+    --font-size-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.625rem);
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-section: clamp(3rem, 2rem + 4vw, 6rem);
+    --container-max: 80rem;
+    --container-gutter: clamp(1rem, 0.5rem + 2vw, 2.5rem);
+    --measure: 65ch;
+    --radius-control: 0.375rem;
+    --radius-card: 0.5rem;
+    --target-size: 2.75rem;
+    --motion-fast: 160ms;
+    --motion-ease: ease-out;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    color: var(--color-text);
+    /* Overrides the legacy body's !important background. */
+    background: var(--color-background) !important;
+}
+
+.site-v5 :is(h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea) {
+    font-family: var(--font-body);
+}
+.site-v5 :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    overflow-wrap: break-word;
+}
+.site-v5 :is(strong, b) { font-weight: 600; }
+.site-v5 :is(.fw-bold, .fw-bolder) { font-weight: 600 !important; }
+.site-v5 .lead { font-size: var(--font-size-lead); font-weight: 400; }
+
+/* Opt-in layout primitives for the sections migrated in subsequent steps. */
+.site-v5 .v5-container {
+    width: min(100% - 2 * var(--container-gutter), var(--container-max));
+    margin-inline: auto;
+}
+.site-v5 .v5-section { padding-block: var(--space-section); }
+.site-v5 .v5-section-header { max-width: var(--measure); margin-bottom: var(--space-12); }
+.site-v5 .v5-title { font-size: var(--font-size-h1); }
+.site-v5 .v5-section-title { font-size: var(--font-size-h2); }
+.site-v5 .v5-card-title { font-size: var(--font-size-h3); }
+.site-v5 .v5-measure { max-width: var(--measure); }
+.site-v5 .v5-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-6);
+}
+.site-v5 .v5-surface { background: var(--color-surface); }
+.site-v5 .v5-dark {
+    background: var(--color-royal-blue);
+    color: var(--color-text-on-dark);
+}
+.site-v5 .v5-dark :is(h1, h2, h3, p) { color: inherit; }
+.site-v5 .v5-muted { color: var(--color-text-muted); }
+.site-v5 .v5-dark .v5-muted { color: var(--color-blue-gray); }
+
+/* Keep legacy media and the availability row usable on narrow screens. */
+.site-v5 header .d-flex:has(> .chip-available) { flex-wrap: wrap; }
+.site-v5 .chip-available { max-width: 100%; white-space: normal; height: auto; min-height: 2.75rem; }
+.site-v5 .work img { max-width: 100%; height: auto; }
+
+/* Shared controls: stable geometry on hover, keyboard focus and touch. */
+.site-v5 :is(.button-primary, .button-secondary, .button-contact, .v5-button) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--target-size);
+    padding: var(--space-3) var(--space-6);
+    border: 1px solid transparent;
+    border-radius: var(--radius-control);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    transition: background-color var(--motion-fast) var(--motion-ease),
+                color var(--motion-fast) var(--motion-ease),
+                border-color var(--motion-fast) var(--motion-ease);
+}
+.site-v5 :is(.button-primary, .v5-button) {
+    background: var(--color-royal-blue);
+    color: var(--color-text-on-dark);
+    border-color: var(--color-royal-blue);
+}
+.site-v5 :is(.button-primary, .v5-button):hover {
+    background: var(--color-midnight-blue);
+    color: var(--color-text-on-dark);
+    border-color: var(--color-midnight-blue);
+    box-shadow: none;
+}
+.site-v5 .button-secondary {
+    background: transparent;
+    color: var(--color-text);
+    border-color: var(--color-midnight-blue);
+}
+.site-v5 .button-secondary:hover {
+    background: var(--color-navy-blue);
+    color: var(--color-text-on-dark);
+    border-color: var(--color-navy-blue);
+    box-shadow: none;
+}
+.site-v5 :is(.button-contact, .v5-dark .v5-button) {
+    background: var(--color-text-on-dark);
+    color: var(--color-royal-blue);
+    border-color: var(--color-text-on-dark);
+}
+.site-v5 :is(.button-contact, .v5-dark .v5-button):hover {
+    background: var(--color-blue-gray);
+    color: var(--color-royal-blue);
+    border-color: var(--color-blue-gray);
+    box-shadow: none;
+}
+.site-v5 .v5-text-link {
+    color: var(--color-midnight-blue);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.08em;
+}
+.site-v5 .v5-dark .v5-text-link { color: var(--color-text-on-dark); }
+.site-v5 :is(.nav-link, .navbar-toggler, .button-tertiary, .social-icons a) {
+    min-height: var(--target-size);
+    min-width: var(--target-size);
+}
+.site-v5 .social-icons a { display: inline-flex; align-items: center; justify-content: center; }
+
+/* Two-color focus ring remains visible against both light and dark surfaces. */
+.site-v5 :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid var(--color-royal-blue);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px var(--color-surface) !important;
+}
+.site-v5 .v5-skip-link {
+    position: fixed;
+    inset-block-start: var(--space-4);
+    inset-inline-start: var(--space-4);
+    z-index: 1100;
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-surface);
+    color: var(--color-text);
+    border-radius: var(--radius-control);
+    transform: translateY(calc(-100% - 2rem));
+}
+.site-v5 .v5-skip-link:focus { transform: none; }
+.site-v5 [id] { scroll-margin-top: 6rem; }
+.site-v5 #main-content:focus { outline: none; box-shadow: none !important; }
+
+/* Start with a static narrative. Motion is introduced in its own later phase. */
+.site-v5 .animate__animated { animation: none !important; }
+.site-v5 :is(.card-portfolio-one, .card-portfolio-two, .card-portfolio-three):hover {
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    html:has(.site-v5) { scroll-behavior: auto !important; }
+    .site-v5 .chip-available img { visibility: hidden; }
+    .site-v5 *, .site-v5 *::before, .site-v5 *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

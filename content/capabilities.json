@@ -1,0 +1,30 @@
+{
+  "title": "Tecnología al servicio del producto.",
+  "intro": "Cada producto requiere una combinación distinta de capacidades. Las decisiones de arquitectura conectan estas disciplinas con los requisitos, los costes y la evolución del sistema.",
+  "items": [
+    {
+      "title": "Hardware y electrónica",
+      "description": "Arquitectura electrónica, diseño de producto, sensores, interfaces y comunicaciones."
+    },
+    {
+      "title": "Sistemas embebidos",
+      "description": "Firmware, conectividad e integración entre hardware y firmware."
+    },
+    {
+      "title": "Automatización y control",
+      "description": "Control, automatización, sistemas industriales y HVAC."
+    },
+    {
+      "title": "IoT y productos conectados",
+      "description": "Dispositivos conectados, protocolos, plataformas y telemetría."
+    },
+    {
+      "title": "Software y arquitectura",
+      "description": "Arquitectura de sistemas, integración, APIs y herramientas."
+    },
+    {
+      "title": "Inteligencia artificial aplicada",
+      "description": "IA aplicada cuando produce una ventaja concreta para el producto."
+    }
+  ]
+}

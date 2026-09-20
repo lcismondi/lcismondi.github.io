@@ -1,0 +1,37 @@
+/* Decision layers describe related responsibilities, not sequential stages. */
+.site-v5 .v5-layers { color: var(--color-text); }
+.site-v5 .v5-layers-layout { display: grid; gap: var(--space-12); }
+.site-v5 .v5-layers-eyebrow {
+    margin: 0 0 var(--space-4);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+.site-v5 .v5-layers h2 { max-width: 23ch; margin: 0; text-wrap: balance; }
+.site-v5 .v5-layers-description { max-width: 46ch; color: var(--color-text-muted); margin: var(--space-6) 0 var(--space-4); }
+.site-v5 .v5-layers-link { display: inline-flex; align-items: center; gap: var(--space-3); min-height: var(--target-size); font-size: var(--font-size-small); font-weight: 500; }
+.site-v5 .v5-layers-link:hover { color: var(--color-royal-blue); text-decoration-thickness: 0.12em; }
+.site-v5 .v5-layers-content { min-width: 0; }
+.site-v5 .v5-layers-list { margin: 0; display: grid; gap: var(--space-3); }
+.site-v5 .v5-layer {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-6);
+    background: var(--color-background);
+    border-left: 3px solid var(--layer-accent);
+}
+.site-v5 .v5-layer-business { --layer-accent: var(--color-royal-blue); }
+.site-v5 .v5-layer-product { --layer-accent: var(--color-navy-blue); }
+.site-v5 .v5-layer-system { --layer-accent: var(--color-midnight-blue); }
+.site-v5 .v5-layer-engineering { --layer-accent: var(--color-blue-gray); }
+.site-v5 .v5-layer dt { font-size: 1.125rem; font-weight: 600; line-height: 1.4; }
+.site-v5 .v5-layer dd { color: var(--color-text-muted); font-size: var(--font-size-small); line-height: 1.75; margin: 0; }
+.site-v5 .v5-layers-connection { color: var(--color-text-muted); font-size: var(--font-size-small); line-height: 1.75; margin: var(--space-6) 0 0; max-width: 65ch; }
+@media (min-width: 640px) {
+    .site-v5 .v5-layer { grid-template-columns: 8rem minmax(0, 1fr); gap: var(--space-6); align-items: center; }
+}
+@media (min-width: 1024px) {
+    .site-v5 .v5-layers-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--space-16); }
+}

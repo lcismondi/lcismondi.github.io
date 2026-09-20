@@ -9,7 +9,7 @@ function loadHTML(selector, url) {
         })
         .then(data => {
             document.querySelector(selector).innerHTML = data;
-            initializeNavEvents(); // Inicializa los eventos después de cargar el contenido
+            if (selector === 'nav') initializeNavEvents();
         })
         .catch(error => console.error(error));
 }
@@ -49,6 +49,11 @@ function initializeNavEvents() {
 
 // Ejecuta la carga del contenido dependiendo de la URL actual
 document.addEventListener("DOMContentLoaded", function () {
+    // V5 has a static, progressively enhanced navigation; preserve legacy pages.
+    if (document.querySelector('[data-v5-navigation]')) {
+        loadHTML('footer', 'footer.html');
+        return;
+    }
     var currentUrl = window.location.pathname;
 
     if (currentUrl === '/' || currentUrl.endsWith('index.html')) {

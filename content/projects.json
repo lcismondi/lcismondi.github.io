@@ -1,0 +1,49 @@
+{
+  "title": "Explorar para seguir construyendo.",
+  "intro": "La dirección tecnológica también se nutre del contacto directo con la ingeniería. Estos proyectos son un espacio para probar ideas, conectar disciplinas y explorar nuevas posibilidades de producto.",
+  "items": [
+    {
+      "slug": "digit",
+      "title": "Digit",
+      "category": "IA · Hardware · Nuevas interfaces",
+      "summary": "Exploración de un dispositivo concebido para interactuar con inteligencia artificial: cómo conectar hardware, sistemas embebidos y una nueva experiencia de uso.",
+      "question": "¿Cómo cambia el diseño de un dispositivo cuando la IA forma parte de su punto de partida?",
+      "image": {
+        "src": "proyectos/img/digit_escritorio.webp",
+        "alt": "Propuesta de diseño de Digit sobre un escritorio.",
+        "width": 1536,
+        "height": 1024
+      },
+      "alt": "Propuesta de diseño de Digit sobre un escritorio.",
+      "href": "/proyectos/digit.html"
+    },
+    {
+      "slug": "airbit",
+      "title": "Airbit",
+      "category": "Sensores · Conectividad",
+      "summary": "Un monitor de ambiente que combina sensores, indicadores de estado y conectividad Wi-Fi para explorar cómo convertir mediciones en información útil.",
+      "image": {
+        "src": "proyectos/img/airbit.webp",
+        "alt": "Imagen del proyecto Airbit, monitor de ambiente.",
+        "width": 2800,
+        "height": 1532
+      },
+      "alt": "Imagen del proyecto Airbit, monitor de ambiente.",
+      "href": "/proyectos/airbit.html"
+    },
+    {
+      "slug": "fmart",
+      "title": "Fmart",
+      "category": "Refrigeración · Control",
+      "summary": "Exploración del control de una nevera a partir de rutinas de uso. La pregunta: cómo adaptar su funcionamiento para reducir el consumo energético.",
+      "image": {
+        "src": "proyectos/img/fmart.webp",
+        "alt": "Imagen del proyecto Fmart, refrigeración y control.",
+        "width": 2800,
+        "height": 1532
+      },
+      "alt": "Imagen del proyecto Fmart, refrigeración y control.",
+      "href": "/proyectos/fmart.html"
+    }
+  ]
+}

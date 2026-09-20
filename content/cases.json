@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "hvac",
+    "title": "Renovación de producto y operaciones en HVAC",
+    "category": "Fabricantes OEM · Electrónica de control",
+    "summary": "Modernización de una gama de controles y de las capacidades necesarias para desarrollarla y producirla.",
+    "context": "Una empresa fabricante con crecimiento lento y una gama de productos e infraestructura que necesitaban renovarse.",
+    "challenge": "Actualizar los controles HVAC y las herramientas de desarrollo y producción, coordinando producto, instalaciones y equipo.",
+    "role": "Apoyo directo a la dirección y liderazgo de la renovación de productos, infraestructura y procesos.",
+    "decision": "Renovar la gama de termostatos e incorporar prototipado interno, estandarización de procesos y nuevas herramientas de producción.",
+    "architecture": "Integración de electrónica e interfaces táctiles o capacitivas con diseño de producto, prototipos y matrices de inyección.",
+    "result": "Renovación de la gama con pantallas táctiles, LCD de mayor tamaño y botones capacitivos retroiluminados. Creación de una sala de fabricación digital con impresión 3D, corte láser e impresión UV.",
+    "impact": "Reforma integral del almacén con ubicaciones codificadas, modernización de herramientas de producción y refuerzo del equipo para facilitar el aprendizaje de quienes se incorporaban.",
+    "objective": null,
+    "href": "/trabajos/hvac.html",
+    "linkLabel": "Leer el enfoque HVAC",
+    "visual": "platform",
+    "sources": [
+      "WEBSITE_REDESIGN.md §5.6",
+      "trabajos/hvac.html",
+      "Información proporcionada por Luciano en la conversación de rediseño"
+    ],
+    "editorial": {
+      "status": "confirmed_by_author",
+      "missing": [],
+      "privacy": "No mencionar empresas ni información personal de sus responsables."
+    }
+  },
+  {
+    "slug": "chillit",
+    "title": "Del prototipo a la industrialización internacional",
+    "category": "Producto físico · Refrigeración",
+    "summary": "Desarrollo y dirección de un producto de enfriamiento rápido de bebidas.",
+    "context": "Consumo de bebidas envasadas en comercios y espacios públicos.",
+    "challenge": "Combinar rapidez y temperatura de consumo con un uso racional de la energía.",
+    "role": "Cofundador y CTO: construcción del prototipo desde cero, validación del concepto y participación en financiación y mercado.",
+    "decision": "Conectar el desarrollo técnico con las primeras rondas de inversión, los estudios y las pruebas de mercado para avanzar hacia la industrialización.",
+    "architecture": "Integración de hardware, control, mecánica e IA para el enfriamiento de bebidas envasadas.",
+    "result": "Concepto validado y desarrollo llevado hasta la industrialización internacional durante mi participación.",
+    "impact": "Las bases de ese desarrollo dieron continuidad a la expansión posterior del producto a mercados internacionales.",
+    "objective": null,
+    "href": "/trabajos/frioen30segundos.html",
+    "linkLabel": "Leer sobre el proyecto",
+    "visual": "publication",
+    "publication": {
+      "id": "US20210341220A1",
+      "date": "2021",
+      "href": "https://patents.google.com/patent/US20210341220A1/en"
+    },
+    "sources": [
+      "WEBSITE_REDESIGN.md §5.6",
+      "trabajos/frioen30segundos.html",
+      "https://patents.google.com/patent/US20210341220A1/en",
+      "Información proporcionada por Luciano en la conversación de rediseño"
+    ],
+    "editorial": {
+      "status": "confirmed_by_author",
+      "missing": [],
+      "privacy": "No mencionar empresas ni información personal de sus responsables."
+    }
+  }
+]

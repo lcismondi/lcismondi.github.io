@@ -1,0 +1,22 @@
+/* Experimental projects, with Digit as the featured exploration. */
+.site-v5 .v5-lab-eyebrow, .site-v5 .v5-lab-category { color: var(--color-text-muted); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 var(--space-4); }
+.site-v5 .v5-lab h2 { max-width: 24ch; margin: 0; text-wrap: balance; }
+.site-v5 .v5-lab-intro { color: var(--color-text-muted); margin: var(--space-6) 0 0; }
+.site-v5 .v5-lab-grid { display: grid; gap: var(--space-8); }
+.site-v5 .v5-lab-project { display: flex; flex-direction: column; min-width: 0; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
+.site-v5 .v5-lab-copy { padding: clamp(1.5rem, 3vw, 2.5rem); }
+.site-v5 .v5-lab h3 { font-size: var(--font-size-h3); margin: 0 0 var(--space-4); }
+.site-v5 .v5-lab .v5-lab-featured h3 { font-size: var(--font-size-h2); }
+.site-v5 .v5-lab-summary { color: var(--color-text-muted); margin: 0 0 var(--space-4); max-width: 58ch; }
+.site-v5 .v5-lab-question { border-left: 2px solid var(--color-border); padding-left: var(--space-4); margin: var(--space-6) 0; }
+.site-v5 .v5-lab-project img { display: block; width: 100%; height: auto; margin-top: auto; border-radius: 0 0 var(--radius-card) var(--radius-card); }
+.site-v5 .v5-lab .v5-text-link { display: inline-flex; align-items: center; gap: var(--space-3); min-height: var(--target-size); font-size: var(--font-size-small); }
+.site-v5 .v5-lab-footer { margin-top: var(--space-8); }
+@media (min-width: 768px) {
+    .site-v5 .v5-lab-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .site-v5 .v5-lab-featured { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+    .site-v5 .v5-lab-featured { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; }
+    .site-v5 .v5-lab-featured img { margin: 0; border-radius: 0; }
+}

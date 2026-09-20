@@ -1,0 +1,27 @@
+/* Final conversation prompt and accessible Google Forms handoff. */
+.site-v5 .v5-contact-layout { display: grid; gap: var(--space-12); }
+.site-v5 .v5-contact h2 { margin: 0 0 var(--space-6); max-width: 20ch; text-wrap: balance; }
+.site-v5 .v5-contact-copy > p { max-width: 52ch; margin: 0 0 var(--space-6); }
+.site-v5 .v5-contact .v5-contact-promise { color: var(--color-blue-gray); border-left: 2px solid var(--color-midnight-blue); padding-left: var(--space-4); }
+.site-v5 .v5-contact-panel { min-width: 0; }
+.site-v5 .v5-contact-help { margin: 0 0 var(--space-6); }
+.site-v5 .v5-contact-fields { display: grid; gap: var(--space-6); }
+.site-v5 .v5-contact-fields > div { min-width: 0; }
+.site-v5 .v5-contact label { display: block; font-weight: 500; margin-bottom: var(--space-2); }
+.site-v5 .v5-contact label span { font-weight: 400; color: var(--color-blue-gray); }
+.site-v5 .v5-contact :is(input, textarea) { display: block; width: 100%; min-height: var(--target-size); padding: var(--space-3); color: var(--color-text); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-control); font: inherit; }
+.site-v5 .v5-contact textarea { resize: vertical; }
+.site-v5 .v5-contact #contact-project-help { font-size: var(--font-size-small); color: var(--color-blue-gray); margin: 0 0 var(--space-3); }
+.site-v5 .v5-contact-captcha { margin-block: var(--space-6); }
+.site-v5 .v5-contact .v5-contact-delivery { font-size: var(--font-size-small); color: var(--color-blue-gray); margin: 0 0 var(--space-4); }
+.site-v5 .v5-contact .v5-contact-error { border: 2px solid var(--color-text-on-dark); padding: var(--space-4); margin-block: var(--space-4); }
+.site-v5 .v5-contact .v5-text-link { display: inline-flex; align-items: center; gap: var(--space-3); min-height: var(--target-size); font-size: var(--font-size-small); }
+.site-v5 .v5-contact-fallback { margin: var(--space-4) 0 0; }
+.site-v5 .v5-contact .v5-button { width: 100%; }
+@media (min-width: 640px) {
+    .site-v5 .v5-contact-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .site-v5 .v5-contact-wide { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+    .site-v5 .v5-contact-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--space-16); }
+}

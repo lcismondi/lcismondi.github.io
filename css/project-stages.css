@@ -1,0 +1,50 @@
+/* Situations are alternative entry points, not sequential process steps. */
+.site-v5 .v5-stages { background: var(--color-background); color: var(--color-text); }
+.site-v5 .v5-stages-heading { display: grid; gap: var(--space-6); margin-bottom: var(--space-12); }
+.site-v5 .v5-stages-heading h2 { max-width: 24ch; margin: 0; text-wrap: balance; }
+.site-v5 .v5-stages-heading > p { color: var(--color-text-muted); max-width: 46ch; margin: 0; }
+.site-v5 .v5-stages-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-v5 .v5-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+}
+.site-v5 .v5-stage-area {
+    margin: 0 0 var(--space-6);
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.site-v5 .v5-stage h3 { font-size: var(--font-size-h3); line-height: 1.3; max-width: 33ch; margin: 0 0 var(--space-4); }
+.site-v5 .v5-stage-description { color: var(--color-text-muted); margin: 0 0 var(--space-4); max-width: 50ch; }
+.site-v5 .v5-stage-decisions { font-size: var(--font-size-small); color: var(--color-text); max-width: 54ch; margin: 0 0 var(--space-6); }
+.site-v5 .v5-stage-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: var(--target-size);
+    margin-top: auto;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+}
+.site-v5 .v5-stage-link:hover { color: var(--color-royal-blue); text-decoration-thickness: 0.12em; }
+@media (min-width: 768px) {
+    .site-v5 .v5-stages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+    .site-v5 .v5-stages-heading { grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: end; }
+}

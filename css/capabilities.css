@@ -1,0 +1,16 @@
+/* Capabilities support the product narrative; no runtime behavior. */
+.site-v5 .v5-capabilities-heading { display: grid; gap: var(--space-6); margin-bottom: var(--space-12); }
+.site-v5 .v5-capabilities .v5-capabilities-eyebrow { color: var(--color-blue-gray); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 var(--space-4); }
+.site-v5 .v5-capabilities h2 { max-width: 23ch; margin: 0; text-wrap: balance; }
+.site-v5 .v5-capabilities .v5-capabilities-intro { color: var(--color-text-on-dark); max-width: 58ch; margin: 0; }
+.site-v5 .v5-capabilities-grid { display: grid; gap: var(--space-8); margin: 0; }
+.site-v5 .v5-capability { min-width: 0; border-top: 1px solid var(--color-midnight-blue); padding-top: var(--space-6); }
+.site-v5 .v5-capability dt { font-size: var(--font-size-h3); font-weight: 600; line-height: 1.35; letter-spacing: -0.025em; }
+.site-v5 .v5-capability dd { color: var(--color-blue-gray); font-size: 1rem; margin: var(--space-3) 0 0; max-width: 44ch; }
+@media (min-width: 768px) {
+    .site-v5 .v5-capabilities-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+    .site-v5 .v5-capabilities-heading { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: var(--space-12); }
+    .site-v5 .v5-capabilities-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-12); }
+}
