@@ -19,3 +19,12 @@ Prueba autorizada: PRUEBA V5 - Codex, identificador V5-20260920. Google respondi
 Preferencia confirmada: https://links.lucianocismondi.com.ar/. links/index.html renovado con diseño estático independiente, canonical al subdominio y destinos absolutos. No utiliza JS ni las dependencias antiguas. Fuera del sitemap del dominio principal.
 
 Para publicarlo falta conocer proveedor DNS y registros actuales de links; no compartir credenciales. GitHub Pages debe servir esta página mediante una configuración de sitio/dominio compatible, por ejemplo un proyecto independiente cuyo contenido de raíz sea esta página. No cambiar CNAME de la web principal para apuntarlo a links. No se han modificado DNS ni configuración remota.
+## Formulario corregido y DNS confirmado
+
+El propietario indicó que el formulario anterior había sido sustituido por spam. Destino vigente: https://docs.google.com/forms/d/e/1FAIpQLSc2L75SKm2em22xHlLLP6Gd9BmykjFGBHdlt0MHOuXBVYSctQ/viewform . Se comprobaron en su estructura pública los tres entry IDs, que coinciden con los anteriores; se actualizaron action y enlace alternativo de la Home.
+
+Prueba autorizada al nuevo destino: PRUEBA V5 - Formulario nuevo / V5-FORM-NUEVO. Google respondió HTTP 200 y Hemos registrado tu respuesta. Pendiente confirmación visual del propietario en las respuestas correctas. La prueba anterior no validaba este nuevo formulario.
+
+El captcha del frontend no protege envíos directos al endpoint de Google Forms. Cambiar de formulario no constituye una protección completa contra spam. Para control robusto se necesita verificación en servidor de un captcha o un proveedor de formularios que lo gestione; no se ha creado un backend ni se ha cambiado de proveedor.
+
+DNS aportado por el propietario: FreeDNS/afraid, links.lucianocismondi.com.ar CNAME lcismondi.github.io. El destino es compatible con Pages; falta asociar links al sitio/repositorio que sirva esta página. No se han modificado DNS ni Pages del sitio principal.
