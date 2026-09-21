@@ -59,6 +59,8 @@
     <link href="css/contact-v5.css" rel="stylesheet" />
     <link href="css/footer-v5.css" rel="stylesheet" />
     <script src="js/contact-v5.js" defer></script>
+    <link href="css/analytics-v5.css" rel="stylesheet" />
+    <script src="js/analytics-v5.js" defer></script>
     <script src="js/navigation-v5.js" defer></script>
 </head>
 
@@ -526,12 +528,22 @@
                 </nav>
             </div>
             <div class="v5-footer-bottom">
+                <button class="v5-analytics-settings" id="analytics-settings" type="button" hidden>Preferencias de analítica</button>
                 <a href="https://creativecommons.org/licenses/by/3.0/">Contenido bajo licencia CC BY 3.0</a>
                 <a href="#main-content">Volver al inicio <span aria-hidden="true">↑</span></a>
             </div>
         </div>
     </footer>
 
+    <section id="analytics-choice" class="v5-analytics-panel" aria-labelledby="analytics-title" hidden>
+        <h2 id="analytics-title">Medición de visitas</h2>
+        <p>Con tu permiso, usamos Google Analytics para medir las visitas y el uso de esta web. No enviamos el contenido de tus mensajes. Puedes rechazar la analítica y seguir usando el sitio.</p>
+        <p>Puedes cambiar tu elección en «Preferencias de analítica», al pie de la página.</p>
+        <div class="v5-analytics-actions">
+            <button type="button" class="v5-button" data-analytics-accept>Aceptar analítica</button>
+            <button type="button" class="v5-button" data-analytics-reject>Rechazar analítica</button>
+        </div>
+    </section>
 </body>
 
 </html>

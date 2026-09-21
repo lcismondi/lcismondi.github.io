@@ -28,3 +28,12 @@ Prueba autorizada al nuevo destino: PRUEBA V5 - Formulario nuevo / V5-FORM-NUEVO
 El captcha del frontend no protege envíos directos al endpoint de Google Forms. Cambiar de formulario no constituye una protección completa contra spam. Para control robusto se necesita verificación en servidor de un captcha o un proveedor de formularios que lo gestione; no se ha creado un backend ni se ha cambiado de proveedor.
 
 DNS aportado por el propietario: FreeDNS/afraid, links.lucianocismondi.com.ar CNAME lcismondi.github.io. El destino es compatible con Pages; falta asociar links al sitio/repositorio que sirva esta página. No se han modificado DNS ni Pages del sitio principal.
+## Analytics y diagnóstico de automatizaciones de correo
+
+ID facilitado: G-GVEJ50Y14T. Integrado en la Home mediante js/analytics-v5.js y css/analytics-v5.css, con aceptación/rechazo de igual jerarquía y preferencias accesibles desde el footer. Sin carga de gtag antes de aceptar; solo se activa en el dominio de producción y www, no en localhost. Preferencia con caducidad de 180 días; rechazo deshabilita GA y elimina cookies _ga conocidas. No es una certificación legal de consentimiento: pendiente texto de privacidad completo y revisión de configuración en GA.
+
+Eventos implementados: page_view, primary_cta_click, case_click y contact_start, sin valores de campos. No se emite contact_submit: no puede inferirse la recepción desde la Home. Pendiente revisar Medición mejorada en la propiedad, desactivar seguimiento automático de formularios para evitar duplicación/ambigüedad y verificar DebugView tras despliegue consentido. La integración es de la Home; las páginas internas no cargan GA todavía.
+
+Pruebas locales: rechazo no carga tag, aceptación lo carga una vez, revocación lo deshabilita, preferencias guardadas/caducadas y bloqueo en localhost. Verificación de enlaces/teclado/footer sin excepciones. No se realizaron más envíos de formularios ni eventos reales a GA.
+
+El usuario confirma recepción pero informa correos inesperados. El correo PRUEBA V5 - Codex corresponde a la prueba del formulario anterior, enviada con el email del propietario. El aviso Apps Script indica doPost invocado por formSubmit sin autorización; código remoto no disponible en repo. Se solicitaron código de doPost/correos/newsletter, activadores y comportamiento deseado. No reautorizar ciegamente antes de revisar qué envía. Newsletter no corresponde a los datos de nuestras pruebas; origen pendiente de investigación. No se abrió el enlace de confirmación de suscripción.

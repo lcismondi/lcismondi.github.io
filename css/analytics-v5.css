@@ -1,0 +1,6 @@
+.site-v5 .v5-analytics-panel { position: fixed; z-index: 1200; inset: auto 1rem 1rem; max-width: 38rem; max-height: calc(100dvh - 2rem); overflow: auto; margin-left: auto; background: var(--color-surface); color: var(--color-text); padding: var(--space-6); border: 2px solid var(--color-midnight-blue); border-radius: var(--radius-card); box-shadow: 0 4px 24px #09123533; }
+.site-v5 .v5-analytics-panel h2 { font-size: 1.25rem; }
+.site-v5 .v5-analytics-panel p { font-size: var(--font-size-small); }
+.site-v5 .v5-analytics-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.site-v5 .v5-analytics-actions button { flex: 1 1 10rem; }
+.site-v5 .v5-analytics-settings { color: var(--color-text-on-dark); background: transparent; border: 0; padding: 0; min-height: var(--target-size); text-decoration: underline; text-underline-offset: .2em; font-size: var(--font-size-small); }
