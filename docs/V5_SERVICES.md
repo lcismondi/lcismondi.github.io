@@ -38,3 +38,14 @@ Pruebas locales: rechazo no carga tag, aceptación lo carga una vez, revocación
 
 El usuario confirma recepción pero informa correos inesperados. El correo PRUEBA V5 - Codex corresponde a la prueba del formulario anterior, enviada con el email del propietario. El aviso Apps Script indica doPost invocado por formSubmit sin autorización; código remoto no disponible en repo. Se solicitaron código de doPost/correos/newsletter, activadores y comportamiento deseado. No reautorizar ciegamente antes de revisar qué envía. Newsletter no corresponde a los datos de nuestras pruebas; origen pendiente de investigación. No se abrió el enlace de confirmación de suscripción.
 Aviso de analítica personalizado: tarjeta compacta Navy Blue, texto breve que identifica responsable, proveedor y finalidad, botones Aceptar/Rechazar equivalentes y preferencias en footer. Sin cambios en lógica de consentimiento; pruebas de aceptación/rechazo/revocación/local pasan. Sigue pendiente información ampliada de cookies/privacidad antes de publicar. La apariencia concreta del aviso es personalizable; no se declara cumplimiento legal integral por esta modificación.
+## Información ampliada de privacidad y cookies — borradores
+
+Se preparan privacidad.html y cookies.html con estilos en css/legal-v5.css, enlazadas desde footer, aviso de Analytics y formulario. Son borradores locales con aviso explícito y noindex, fuera del sitemap; no están listas para publicar.
+
+Contenido basado en la integración real: consentimiento Analytics, preferencia local de 180 días de vigencia funcional (sin prometer borrado automático), cookies GA con duración predeterminada documentada por Google, reCAPTCHA cargado independientemente de Analytics, Forms/Sheets/Apps Script, registros IP de GitHub Pages, proveedores externos y derechos ante AAIP. Se distingue conservación en navegador de conservación en servidores.
+
+Pendientes explícitos: responsable/domicilio/contacto público, plazo de consultas, conservación GA, transferencias internacionales y configuración de proveedores, inventario real de cookies de terceros y alcance de automatizaciones de correo. No se afirman anonimato, ausencia de newsletter ni garantías legales no verificadas. No se modificaron scripts de correo, preferencias de analítica ni se borraron datos.
+
+Se aclaró al propietario que conservación refiere a consultas recibidas (Forms/Sheets/correos), no a una cuenta nueva. Se solicitan por separado email público y plazo para consultas inactivas. El domicilio y demás datos siguen pendientes, sin inventarlos.
+
+Verificación Chrome 320, 390, 768, 1440 px: ambas páginas sin desbordamiento, un h1, aviso de borrador, noindex y sin scripts. Sin excepciones. Fuentes enlazadas en páginas: AAIP, Ley 25.326, Google y GitHub. La revisión no certifica cumplimiento legal.

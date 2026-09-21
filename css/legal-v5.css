@@ -1,0 +1,10 @@
+.site-v5 .legal-header { background: var(--color-royal-blue); padding-block: var(--space-4); color: var(--color-text-on-dark); }
+.site-v5 .legal-content { max-width: 52rem; padding-block: var(--space-12); }
+.site-v5 .legal-content h2 { font-size: var(--font-size-h3); margin-top: var(--space-8); }
+.site-v5 .legal-content li { margin-bottom: var(--space-3); }
+.site-v5 .legal-draft, .site-v5 .legal-pending { border-left: 3px solid var(--color-midnight-blue); padding: var(--space-4); background: var(--color-surface); }
+.site-v5 .legal-storage dt { font-weight: 600; margin-top: var(--space-6); }
+.site-v5 .legal-storage dd { margin-top: var(--space-2); }
+.site-v5 .legal-footer { display: flex; flex-wrap: wrap; gap: var(--space-6); padding-block: var(--space-6); border-top: 1px solid var(--color-border); }
+.site-v5 :is(.legal-footer,.legal-header) a { display: inline-flex; align-items: center; min-height: var(--target-size); }
+.site-v5 .legal-content a { text-underline-offset: .2em; }
