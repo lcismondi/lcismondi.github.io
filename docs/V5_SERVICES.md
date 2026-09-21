@@ -49,3 +49,6 @@ Pendientes explícitos: responsable/domicilio/contacto público, plazo de consul
 Se aclaró al propietario que conservación refiere a consultas recibidas (Forms/Sheets/correos), no a una cuenta nueva. Se solicitan por separado email público y plazo para consultas inactivas. El domicilio y demás datos siguen pendientes, sin inventarlos.
 
 Verificación Chrome 320, 390, 768, 1440 px: ambas páginas sin desbordamiento, un h1, aviso de borrador, noindex y sin scripts. Sin excepciones. Fuentes enlazadas en páginas: AAIP, Ley 25.326, Google y GitHub. La revisión no certifica cumplimiento legal.
+## Criterio de conservación aprobado
+
+El propietario aprueba conservar consultas mientras sean necesarias para responder y gestionar la relación profesional, eliminándolas cuando dejen de ser necesarias salvo obligación legal. Incorporado en privacidad.html, sin plazo fijo de 12/24 meses. El criterio abarca Forms, hoja de respuestas y correos; pendiente concretar el procedimiento operativo y comprobar conservación GA. Email público confirmado: cismondil@gmail.com. No se han borrado datos ni configurado automatismos. Actualizados los avisos de borrador para no presentar el email o un plazo numérico como decisiones pendientes. Siguen pendientes domicilio, servicios y demás comprobaciones ya documentadas.
