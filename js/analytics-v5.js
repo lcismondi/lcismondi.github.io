@@ -2,10 +2,15 @@
 (() => {
     const id = 'G-GVEJ50Y14T';
     const key = 'v5-analytics-choice';
-    const panel = document.getElementById('analytics-choice');
+    const preferencesOnly = document.currentScript?.hasAttribute('data-preferences-only');
     const settings = document.getElementById('analytics-settings');
-    if (!panel || !settings) return;
-    const live = ['lucianocismondi.com.ar', 'www.lucianocismondi.com.ar'].includes(location.hostname);
+    if (!settings) return;
+    let panel = document.getElementById('analytics-choice');
+    if (!panel) {
+        document.body.insertAdjacentHTML('beforeend', "<section id=\"analytics-choice\" class=\"v5-analytics-panel\" aria-labelledby=\"analytics-title\" hidden>\n        <h2 id=\"analytics-title\">Tu elección sobre las cookies</h2>\n        <p>Luciano Cismondi utiliza cookies de Google Analytics para conocer las visitas y mejorar esta web. Solo se activan si aceptas.</p>\n        <div class=\"v5-analytics-actions\">\n            <button type=\"button\" class=\"v5-button\" data-analytics-accept>Aceptar</button>\n            <button type=\"button\" class=\"v5-button\" data-analytics-reject>Rechazar</button>\n        </div>\n        <p class=\"v5-analytics-note\"><a href=\"/cookies.html\">Información sobre cookies</a> · <a href=\"/privacidad.html\">Privacidad</a>. Puedes cambiar tu elección al pie de la página.</p>\n    </section>");
+        panel = document.getElementById('analytics-choice');
+    }
+    const live = !preferencesOnly && ['lucianocismondi.com.ar', 'www.lucianocismondi.com.ar'].includes(location.hostname);
     let accepted = false;
     let started = false;
     let previousFocus;
@@ -57,19 +62,28 @@
         (previousFocus || settings).focus({preventScroll:true});
     };
     settings.hidden = false;
-    panel.hidden = !!valid;
+    panel.hidden = preferencesOnly || !!valid;
     if (valid && choice.value === 'accepted') { accepted = true; start(); }
-    settings.addEventListener('click', () => {
+    const openSettings = () => {
         previousFocus = settings;
         panel.hidden = false;
-        panel.querySelector('button').focus();
+        panel.querySelector('button').focus({preventScroll:true});
+    };
+    const openLinkedSettings = () => {
+        if (location.hash === '#analytics-settings') openSettings();
+    };
+    settings.addEventListener('click', openSettings);
+    window.addEventListener('hashchange', openLinkedSettings);
+    window.addEventListener('pageshow', event => {
+        if (event.persisted) openLinkedSettings();
     });
+    openLinkedSettings();
     panel.querySelector('[data-analytics-accept]').addEventListener('click', () => choose('accepted'));
     panel.querySelector('[data-analytics-reject]').addEventListener('click', () => choose('rejected'));
     document.addEventListener('click', event => {
         const link = event.target.closest('a');
         if (!link) return;
-        if (link.hash === '#contact' && link.origin === location.origin) track('primary_cta_click', {section:link.closest('section')?.id || 'navigation'});
+        if (['#contact', '#contacto', '#formulario'].includes(link.hash) && link.origin === location.origin) track('primary_cta_click', {section:link.closest('section')?.id || 'navigation'});
         if (link.closest('#casos')) track('case_click', {case_id:link.closest('article')?.getAttribute('aria-labelledby') || 'cases'});
     });
     let contactStarted = false;

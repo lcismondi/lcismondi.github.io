@@ -15,7 +15,8 @@
         "height": 1024
       },
       "alt": "Propuesta de diseño de Digit sobre un escritorio.",
-      "href": "/proyectos/digit.html"
+      "href": "/proyectos/digit.html",
+      "homeSummary": "Un dispositivo pensado desde la interacción con IA."
     },
     {
       "slug": "airbit",
@@ -29,7 +30,8 @@
         "height": 1532
       },
       "alt": "Imagen del proyecto Airbit, monitor de ambiente.",
-      "href": "/proyectos/airbit.html"
+      "href": "/proyectos/airbit.html",
+      "homeSummary": "Observar el ambiente y comunicar sus cambios."
     },
     {
       "slug": "fmart",
@@ -43,7 +45,8 @@
         "height": 1532
       },
       "alt": "Imagen del proyecto Fmart, refrigeración y control.",
-      "href": "/proyectos/fmart.html"
+      "href": "/proyectos/fmart.html",
+      "homeSummary": "Explorar un control que se adapte al uso."
     }
   ]
 }

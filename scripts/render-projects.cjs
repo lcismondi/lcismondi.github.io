@@ -31,6 +31,7 @@ ${articles}
     <!-- V5 PROJECTS END -->`;
 const file = path.join(root, 'index.html');
 const html = fs.readFileSync(file, 'utf8');
+if (html.includes('/css/immersive-home.css')) { require('./render-immersive.cjs')('projects'); return; }
 const region = /    <!-- V5 PROJECTS START -->[\s\S]*?    <!-- V5 PROJECTS END -->/;
 if (!region.test(html)) throw new Error('Project section markers missing');
 fs.writeFileSync(file, html.replace(region, section));

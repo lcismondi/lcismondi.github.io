@@ -56,6 +56,7 @@ const section = `    <!-- V5 CASES START -->
     <!-- V5 CASES END -->`;
 const file = path.join(root,'index.html');
 const html = fs.readFileSync(file,'utf8');
+if (html.includes('/css/immersive-home.css')) { require('./render-immersive.cjs')('cases'); return; }
 const region = /    <!-- V5 CASES START -->[\s\S]*?    <!-- V5 CASES END -->/;
 if (!region.test(html)) throw new Error('Case section markers missing');
 fs.writeFileSync(file, html.replace(region, section.replace(/^[ \t]+$/gm, '')));

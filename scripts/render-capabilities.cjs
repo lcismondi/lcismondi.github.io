@@ -27,6 +27,7 @@ ${items}
     <!-- V5 CAPABILITIES END -->`;
 const file = path.join(root, 'index.html');
 const html = fs.readFileSync(file, 'utf8');
+if (html.includes('/css/immersive-home.css')) { require('./render-immersive.cjs')('capabilities'); return; }
 const region = /    <!-- V5 CAPABILITIES START -->[\s\S]*?    <!-- V5 CAPABILITIES END -->/;
 if (!region.test(html)) throw new Error('Capabilities section markers missing');
 fs.writeFileSync(file, html.replace(region, section));

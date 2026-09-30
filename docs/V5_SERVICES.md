@@ -52,3 +52,29 @@ Verificación Chrome 320, 390, 768, 1440 px: ambas páginas sin desbordamiento, 
 ## Criterio de conservación aprobado
 
 El propietario aprueba conservar consultas mientras sean necesarias para responder y gestionar la relación profesional, eliminándolas cuando dejen de ser necesarias salvo obligación legal. Incorporado en privacidad.html, sin plazo fijo de 12/24 meses. El criterio abarca Forms, hoja de respuestas y correos; pendiente concretar el procedimiento operativo y comprobar conservación GA. Email público confirmado: cismondil@gmail.com. No se han borrado datos ni configurado automatismos. Actualizados los avisos de borrador para no presentar el email o un plazo numérico como decisiones pendientes. Siguen pendientes domicilio, servicios y demás comprobaciones ya documentadas.
+## Domicilio pendiente y pruebas confirmadas por el propietario
+
+El propietario confirma las pruebas de contacto y newsletter, incluida la confirmación de suscripción. No se realizaron nuevos envíos desde el agente. Solicita dejar un domicilio de ejemplo mientras decide qué dirección de contacto publicar para evitar usar su vivienda. privacidad.html incluye un marcador explícito con los campos de dirección, sin inventar un domicilio real; debe sustituirse antes de publicar. Se conserva el aviso de borrador y noindex.
+
+## Contacto de privacidad mediante formulario
+
+Se reemplaza el email visible de privacidad.html por enlaces a /#contact y al formulario vigente de Google, con la indicación de comenzar el mensaje con Privacidad. Se actualizan los avisos sobre automatizaciones según las pruebas confirmadas por el propietario: contacto separado del newsletter y confirmación de suscripción. Esto no elimina direcciones que puedan existir en páginas heredadas, documentos o historial Git, ni garantiza ausencia de spam. Se mantienen el domicilio de ejemplo, el aviso de borrador y los demás pendientes de servicios. No se cambian scripts remotos ni se publica.
+
+## Ajustes de Analytics confirmados por el propietario
+
+El propietario confirma conservación de 2 meses y medición mejorada desactivada en su cuenta. Se reflejan en privacidad.html y cookies.html. No se verificó directamente la cuenta ni se modificó desde el agente. Falta confirmar por separado el interruptor de reinicio con actividad nueva; no se presupone desactivado. El plazo no equivale a la duración de cookies ni afecta a informes agregados estándar. Se mantienen borradores y pendientes de inventario, domicilio y procedimientos. Fuente: https://support.google.com/analytics/answer/7667196?hl=es .
+
+El propietario confirma además que desmarcó «Borrar cuando haya actividad nueva del usuario», correspondiente al reinicio del plazo con nueva actividad. Se registra el reinicio desactivado en privacidad.html y se retira ese pendiente. Esta confirmación completa los tres ajustes solicitados de Analytics; sigue pendiente comprobar su funcionamiento en producción tras el despliegue consentido.
+
+## Procedimiento de consultas aplazado por el propietario
+
+Por indicación expresa del propietario, la definición del procedimiento de revisión y eliminación de consultas se deja para después de publicar, dado el bajo volumen de consultas. Se retira como bloqueo previo y como nota editorial de privacidad.html. Se mantiene el criterio de conservación ya aprobado; no se afirma que exista un procedimiento automatizado ni se eliminan datos. Esta decisión no autoriza por sí sola un despliegue y no resuelve los demás pendientes.
+
+## Mejora del newsletter después de publicar
+
+Pendiente solicitado por el propietario: mejorar la página de confirmación del newsletter. Propuesta para esa etapa: adaptar el diseño a V5, aclarar los estados de confirmación correcta, enlace vencido o inválido y suscripción ya confirmada, y ofrecer un enlace de regreso a la web. El alcance visual y funcional se revisará al retomarlo; no se modifica ahora el Apps Script ni su despliegue.
+
+
+## Cierre editorial de privacidad y cookies — 30 de septiembre de 2026
+
+Por decisión expresa del propietario, el domicilio queda pendiente para después de publicar; no se añade dirección ni marcador público. Se retiran avisos de borrador y notas de revisión de ambas páginas. Se actualizan preferencias desde cualquier página, reCAPTCHA en Home y Recursos, y la descripción de recursos externos. Se añaden descripción y canonical y se incluyen ambas páginas en el sitemap. No se afirma haber auditado la cuenta de Google, transferencias internacionales o el inventario efectivo de cookies en producción: esas comprobaciones continúan pendientes internos. La retirada de notas editoriales no constituye una certificación legal ni una publicación.

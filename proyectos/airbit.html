@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es-AR"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Airbit: sensores y monitoreo ambiental | Luciano Cismondi</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>airbit | Luciano Cismondi</title>
-
-    <meta name="description"
-        content="airbit identifica la calidad del aire y cuándo es el momento de abrir la ventana para tomar aire fresco." />
-    <meta name="author" content="Luciano Cismondi" />
-    <meta name="copyright" content="Copyright owner" />
-    <meta name="keywords"
-        content="airbit, calidad del aire, ventilación, voc, temperatura, humedad, luciano cismondi" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://lucianocismondi.com.ar/proyectos/airbit.html" />
+    <meta name="description" content="Monitor experimental de ambiente con ESP8266, sensores, indicadores y Wi-Fi. Exploración de hardware, visualización de variables e interacción.">
+    <meta name="author" content="Luciano Cismondi">
+    <meta name="copyright" content="Luciano Cismondi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lucianocismondi.com.ar/proyectos/airbit.html">
 
     <!--
         * Main HTML
@@ -23,233 +18,116 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://lucianocismondi.com.ar/proyectos/airbit.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="airbit | Luciano Cismondi">
-    <meta property="og:description"
-        content="airbit identifica la calidad del aire y cuándo es el momento de abrir la ventana para tomar aire fresco.">
+    <meta property="og:title" content="Airbit: sensores y monitoreo ambiental | Luciano Cismondi">
+    <meta property="og:description" content="Monitor experimental de ambiente con ESP8266, sensores, indicadores y Wi-Fi. Exploración de hardware, visualización de variables e interacción.">
     <meta property="og:image" content="https://lucianocismondi.com.ar/proyectos/img/airbit.webp">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="lucianocismondi.com.ar">
     <meta property="twitter:url" content="https://lucianocismondi.com.ar/proyectos/airbit.html">
-    <meta name="twitter:title" content="airbit | Luciano Cismondi">
-    <meta name="twitter:description"
-        content="airbit identifica la calidad del aire y cuándo es el momento de abrir la ventana para tomar aire fresco.">
+    <meta name="twitter:title" content="Airbit: sensores y monitoreo ambiental | Luciano Cismondi">
+    <meta name="twitter:description" content="Monitor experimental de ambiente con ESP8266, sensores, indicadores y Wi-Fi. Exploración de hardware, visualización de variables e interacción.">
     <meta name="twitter:image" content="https://lucianocismondi.com.ar/proyectos/img/airbit.webp">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Main CSS-->
-    <link href="../css/style.css" rel="stylesheet" />
+
 
     <!-- Bootstrap CSS-->
-    <link href="../css/boostrap-styles.css" rel="stylesheet" />
+    <link href="../css/boostrap-styles.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 
     <!-- CSS Animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-</head>
 
-<body id="home">
+<link rel="stylesheet" href="/css/immersive.css"><link rel="stylesheet" href="/css/immersive-case.css"><link rel="stylesheet" href="/css/immersive-shared.css"><link rel="stylesheet" href="/css/immersive-legacy.css"><link rel="stylesheet" href="/css/immersive-details.css"><script src="/js/analytics-v5.js" data-preferences-only defer></script></head>
+
+<body id="home" class="case-page legacy-page"><a class="skip" href="#contenido">Saltar al contenido</a><header class="nav wrap"><a class="brand" href="/#inicio">LC<span>LUCIANO<br>CISMONDI</span></a><nav aria-label="Principal"><a href="/#casos">Casos</a><a href="/#enfoque">Enfoque</a><a href="/#perfil">Perfil</a><a href="/#proyectos">Exploración</a><a class="nav-contact" href="/#contacto">Hablemos ↗</a></nav></header><main id="contenido" tabindex="-1"><header class="case-hero wrap"><a class="back" href="/">← Volver al inicio</a><p class="eyebrow">// EXPLORACIÓN Y PRODUCTO</p><h1>Airbit: observar el ambiente y comunicar sus cambios</h1><div class="case-intro"><p>Proyecto experimental · Sensores y conectividad</p><p>Un monitor experimental que combina sensores, indicadores de estado y conectividad Wi-Fi para explorar cómo convertir lecturas del ambiente en información útil.</p><p class="date">Publicado el 9 de abril de 2023</p></div></header><div class="legacy-content">
     <!-- Responsive navbar-->
-    <nav></nav>
 
-    <header>
 
-        <div class="container mt-5">
 
-            <div class="row justify-content-center pt-5">
-                <div class="col-10 col-md-8 mb-2">
-                    <h1 class="fs-1 fw-bolder text-dark">airbit | Calidad de aire interior</h1>
-                    <p class="fs-5 text-dark">&nbsp; &nbsp;Seamos realistas, los dispositivos que miden la calidad de
-                        aire se han convertido en estos días en un commodity para el hogar. Pero, ¿Si decimos que
-                        tenemos algo que no solo es práctico sino que ayuda a la energía del hogar? Si, no es más ni
-                        menos que un complemento de <a href="fmart.html">Fmart |
-                            Heladera inteligente</a>.</p>
-                    <p class="text-dark opacity-50">9 de abril de 2023 · <i>3 minutos de lectura</i></p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="container">
+    <div class="container mb-5" id="project-content">
         <div class="row justify-content-center mb-5">
-            <div class="col-12 col-md-8 text-center">
-                <img src="img/airbit.webp" alt="Render de airbit" class="img-fluid rounded-3">
-                <figcaption class="text-dark opacity-50">Render del concepto .
-                </figcaption>
-            </div>
+            <figure class="col-12 col-md-8 text-center">
+                <img src="img/airbit.webp" alt="Render del concepto Airbit" class="img-fluid rounded-3">
+                <figcaption class="text-dark opacity-50">Render del concepto.</figcaption>
+            </figure>
         </div>
-
         <div class="row justify-content-center">
-            <div class="col-10 col-md-6 text-dark">
-                <p>&nbsp; &nbsp;Equipado con sensores de alta calidad, airbit es el compañero ideal para identificar el
-                    ambiente de trabajo en el que se encuentra funcionando la heladera y así complementar su estimación.
-                    Es
-                    un dispositivo muy sencillo con feedback intuitivo, que además permite saber cuándo es el momento de
-                    abrir una ventana y tomar un poco de aire fresco.</p>
-                <h3>Mucho más que un simple monitor del aire</h3>
-                <p>
+            <article class="col-10 col-md-8 text-dark" aria-label="Exploración del proyecto Airbit">
+                <h2 class="fs-3 mt-4">El contexto del proyecto</h2>
+                <p>Airbit nació como complemento de <a href="/proyectos/fmart.html">Fmart</a>: una forma de observar el ambiente en el que funciona la heladera y aportar contexto a la exploración de su comportamiento.</p>
+                <p>El proyecto reúne adquisición de datos, interacción física y visualización. La pregunta de producto es cómo presentar los cambios observados de una manera que resulte comprensible.</p>
+                <h2 class="fs-3 mt-4">La base del dispositivo</h2>
+                <p>La configuración descrita para el proyecto utiliza un ESP8266 en placas NodeMCU, programación en C/C++ y conectividad Wi-Fi. El conjunto incorpora:</p>
                 <ul>
-                    <li>Sensor de medioambiente (Temperatura, presión, VOC).</li>
-                    <li>Botones de interacción.</li>
-                    <li>Luces de estado.</li>
+                    <li>Sensor MQ-135.</li>
+                    <li>Sensor BMP085 para presión y temperatura.</li>
+                    <li>Cuatro pulsadores para la interacción.</li>
+                    <li>Luces WS2812 para indicar estados.</li>
+                    <li>Alimentación externa, sin batería.</li>
                 </ul>
-                </p>
-                <h4>Especificación técnica</h4>
-                <p>
+                <p>Los indicadores ofrecen una lectura inmediata del estado; la conexión permite consultar las variables y su evolución con más detalle.</p>
+                <h2 class="fs-3 mt-4">De las lecturas a la interpretación</h2>
+                <p>El trabajo con sensores incluye decidir qué se muestra y cómo se interpreta. Para convertir una lectura en una conclusión, hace falta conocer la calibración, las condiciones de medición y los límites del conjunto.</p>
+                <p>Esta página presenta una exploración y sus componentes, sin documentar una validación que permita determinar por sí sola cuándo ventilar o atribuir una precisión concreta a las mediciones.</p>
+                <h2 class="fs-3 mt-4">Visualización de variables</h2>
+                <p>El gráfico publicado del proyecto permite explorar las series compartidas. Su disponibilidad y actualización dependen de la fuente de Google Sheets.</p>
+                <iframe title="Gráfico de variables del proyecto Airbit" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ18ypScVGAXYWe0YlnpX370TQGrdr8hSGw-boPil6cPlPOEw3DmDNAGNeeTbh5D4Dz180kQryzGC8e/pubchart?oid=461328057&amp;format=interactive" width="707" height="435" loading="lazy" style="display:block;width:100%;max-width:707px;border:0;"></iframe>
+                <p class="mt-3"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ18ypScVGAXYWe0YlnpX370TQGrdr8hSGw-boPil6cPlPOEw3DmDNAGNeeTbh5D4Dz180kQryzGC8e/pubchart?oid=461328057&amp;format=interactive">Abrir el gráfico directamente en Google</a>.</p>
+                <h2 class="fs-3 mt-4">Material para explorar el desarrollo</h2>
+                <p>El proyecto comparte una base para trabajar sobre sensores, indicadores e integración. Podés consultar el material técnico y las publicaciones del desarrollo:</p>
                 <ul>
-                    <li>Tensión de alimentación 12V CC, no requiere batería (debe estar siempre conectado).</li>
-                    <li>ESP8266 @160MHz.</li>
-                    <li>32KB de RAM interna y 4MB flash externa.</li>
-                    <li>Tensión de operación segura entre 3.3 y 5V.</li>
-                    <li>Programado en C/C++.</li>
-                    <li>WIFI 802.11 b/g/n.</li>
-                    <li>Potencia de salida de +19.5dBm en modo 802.11b.</li>
+                    <li><a href="https://github.com/lcismondi/airbit/blob/main/README.md">Documentación de Airbit en GitHub</a>.</li>
+                    <li><a href="https://www.instagram.com/stories/highlights/17906926166257568/">Videos del proyecto en Instagram</a>.</li>
                 </ul>
-                </p>
-                <h4>Sensores</h4>
-                <p>
-                <ul>
-                    <li>Calidad de aire (MQ-135).</li>
-                    <li>Presión y Temperatura (BMP085).</li>
-                </ul>
-                </p>
-
-                <h4>Feedback</h4>
-                <p>
-                <ul>
-                    <li>4 pulsadores.</li>
-                    <li>Luces WS2812.</li>
-                </ul>
-                </p>
-            </div>
+                <h2 class="fs-3 mt-4">El criterio de producto</h2>
+                <p>La conexión entre sensores, controles e indicadores permite explorar el recorrido completo de un dato: desde su adquisición hasta la forma en que una persona lo interpreta. Esa relación entre hardware y experiencia de uso es el centro de Airbit.</p>
+                <div class="border-top pt-4 mt-5">
+                    <h2 class="fs-3">¿Estás desarrollando un dispositivo conectado?</h2>
+                    <p>Podemos empezar por definir qué necesitás observar, qué decisión debe facilitar y cómo validar la información que recibe el usuario.</p>
+                    <a class="btn btn-dark px-4 py-3" href="/#contact">Hablemos de tu proyecto</a>
+                    <p class="mt-3"><a href="/#projects">Volver a los proyectos experimentales</a></p>
+                </div>
+            </article>
         </div>
-
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-6 text-dark">
-                <h3>Lectura de variables en tiempo real</h3>
-                <p class="pb-3">&nbsp; &nbsp;Para quienes tienen la necesidad de sumergirse en el mundo de los datos
-                    airbit también lo tiene. Con solo conectarlo a una red wifi podrán ver los números y estadísticas.</p>
-            </div>
-        </div>
-
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8 d-flex justify-content-center">
-                <iframe frameborder="0" height="435" scrolling="no" seamless=""
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ18ypScVGAXYWe0YlnpX370TQGrdr8hSGw-boPil6cPlPOEw3DmDNAGNeeTbh5D4Dz180kQryzGC8e/pubchart?oid=461328057&amp;format=interactive"
-                    width="707"></iframe>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-6 text-dark">
-                <p class="fs-4 border-start ps-4 my-5">En instagram tengo algunos videos del proyecto <a
-                        href="https://www.instagram.com/stories/highlights/17906926166257568/" target="_blank">dale vida</a></p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-6 text-dark">
-                <h3>Hackeable 100%</h3>
-                <p>&nbsp; &nbsp; El corazón de airbit corre con un ESP8266 en sus versiones Node MCU v2 o v3.
-                    Es un poderoso microcontrolador que le da vida al monitor de ambiente y la mejor parte es que
-                    cualquier con conocimientos básicos se puede conectar.</p>
-                <p class="pb-3">&nbsp; &nbsp; Es la primer herramienta que dejo <a
-                        href="https://github.com/lcismondi/airbit/blob/main/README.md">disponible para que otros
-                        creadores se puedan sumar al proyecto</a> y tengan la libertad de apoyar el proyecto, creando e innovar sin
-                    restricciones innecesarias, ya sea jugando en un sótano o construyendo la próxima gran versión.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos relacionados -->
-    <section class="bg-black py-5" id="blog">
-        <div class="container col-lg-7 p-4 gap-5 pt-md-4 align-items-center">
-
-            <h2 class="display-8 text-white mb-3 text-center">Proyectos relacionados</h2>
-            <div class="list-post list-group justify-content-center">
-                <a href="psicoanalisis_fmart.html"
-                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
-                    aria-current="true">
-                    <img src="img\fmart_psicoanalisis.webp" width="64px" class="rounded mb-3 mb-md-0"
-                        alt="psicoanalisis fmart">
-                    <div class="d-md-flex gap-2 w-100 justify-content-between">
-                        <div>
-                            <h5 class="mb-1 text-white">Fmart | Psicoanálisis</h5>
-                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Como en todo sistema hay un panel de control, de
-                                esta forma se puede ir viendo cómo interactúan las variables en juego.</p>
-                        </div>
-                        <small class="text-white-50 text-nowrap">Septiembre 2022</small>
-                    </div>
-                </a>
-            </div>
-
-            <div class="list-post list-group justify-content-center">
-                <a href="fmart.html"
-                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
-                    aria-current="true">
-                    <img src="img/fmart.webp" width="64px" class="rounded mb-3 mb-md-0" alt="heladera fmart">
-                    <div class="d-md-flex gap-2 w-100 justify-content-between">
-                        <div>
-                            <h5 class="mb-1 text-white">Fmart | Heladera Inteligente</h5>
-                            <p class="mb-0 text-white-50 pb-3 pb-md-0">¿Qué pasaría si tu heladera pudiera aprender tus
-                                rutinas y hábitos de consumo? ¿La llamarías inteligente?</p>
-                        </div>
-                        <small class="text-white-50 text-nowrap">Diciembre 2021</small>
-                    </div>
-                </a>
-            </div>
-
-            <div class="first-post list-group justify-content-center">
-                <a href="sillon_tech.html"
-                    class="bg-black list-group-item list-group-item d-md-flex gap-4 py-4 rounded-3 my-2 border-dark"
-                    aria-current="true">
-                    <img src="img\sillon_tech.webp" width="64px" class="rounded mb-3 mb-md-0" alt="Sillon tech">
-                    <div class="d-md-flex gap-2 w-100 justify-content-between">
-                        <div>
-                            <h5 class="mb-1 text-white">Sillón | Mueble tech</h5>
-                            <p class="mb-0 text-white-50 pb-3 pb-md-0">Los muebles "inteligentes" o tecnológicos son
-                                productos que se están viendo cada vez más seguido.</p>
-                        </div>
-                        <small class="text-white-50 text-nowrap">Noviembre 2020</small>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="col text-center">
-            <a id="contact" class="link-secondary text-secondary" href="/proyectos/proyectos.html">Ver todos<i
-                    class="bi bi-plus-circle ms-2"></i></a>
-        </div>
-
-    </section>
-
-
-    <div class="container footer">
-        <!-- Footer descripto en script.js -->
-        <footer></footer>
     </div>
+    <!-- Proyectos relacionados -->
+    <section class="wrap lab" id="blog"><h2 class="display">Proyectos relacionados</h2><div class="project-grid"><a href="psicoanalisis_fmart.html"><img src="img/fmart_psicoanalisis.webp" alt="psicoanalisis fmart" loading="lazy"><div><h3>Fmart | Psicoanálisis</h3><p>Como en todo sistema hay un panel de control, de
+                                esta forma se puede ir viendo cómo interactúan las variables en juego.</p><small>Septiembre 2022</small></div></a><a href="fmart.html"><img src="img/fmart.webp" alt="heladera fmart" loading="lazy"><div><h3>Fmart | Heladera Inteligente</h3><p>¿Qué pasaría si tu heladera pudiera aprender tus
+                                rutinas y hábitos de consumo? ¿La llamarías inteligente?</p><small>Diciembre 2021</small></div></a><a href="sillon_tech.html"><img src="img/sillon_tech.webp" alt="Sillon tech" loading="lazy"><div><h3>Sillón | Mueble tech</h3><p>Los muebles "inteligentes" o tecnológicos son
+                                productos que se están viendo cada vez más seguido.</p><small>Noviembre 2020</small></div></a></div><a href="psicoanalisis_fmart.html" class="back">
+
+                    <div class="d-md-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h3 class="h5 mb-1 text-white">Fmart | Psicoanálisis</h3>
+
+                        </div>
+
+                    </div>
+                </a></section>
+
+
+
 
     <!-- Core JS (with Popper)-->
-    <script src="../js/scripts.js"></script>
+
 
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
 
-</body>
 
-</html>
+
+
+
+</div><section class="contact wrap"><p class="eyebrow">// EL SIGUIENTE PASO</p><h2 class="display">TU PRODUCTO.<br><span>SU PRÓXIMA ETAPA.</span></h2><div><p>Una primera conversación para entender el desafío y ver si puedo aportar valor.</p><a class="button" href="/#contact"><span>↗</span> Hablemos de tu proyecto</a></div></section></main><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script><footer class="wrap"><a class="brand" href="/">LC<span>LUCIANO<br>CISMONDI</span></a><p>Negocio, producto e ingeniería.</p><nav aria-label="Pie de página"><a href="https://www.linkedin.com/in/lucianocismondi">LinkedIn ↗</a><a href="https://github.com/lcismondi">GitHub ↗</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/trabajos/curriculum.html">Trayectoria</a><a href="/recursos/recursos.html">Recursos y newsletter</a><button id="analytics-settings" class="v5-analytics-settings" type="button" hidden>Preferencias de analítica</button></nav></footer></body></html>

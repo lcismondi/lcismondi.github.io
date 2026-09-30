@@ -3,6 +3,7 @@
     const form = document.getElementById('contactForm');
     if (!form) return;
     const error = document.getElementById('contact-error');
+    const status = document.getElementById('contact-status');
     const showError = message => {
         error.textContent = message;
         error.hidden = false;
@@ -11,22 +12,28 @@
     form.hidden = false;
     form.addEventListener('submit', event => {
         error.hidden = true;
+        status.hidden = true;
         if (form.elements.honeypot.value) {
             event.preventDefault();
-            showError('No se pudo continuar. Puedes utilizar el formulario de Google.');
+            showError('No se pudo continuar. Recargá la página e intentá nuevamente.');
             return;
         }
         if (!window.grecaptcha || typeof window.grecaptcha.getResponse !== 'function') {
             event.preventDefault();
-            showError('No se ha cargado la verificación. Inténtalo de nuevo o abre el formulario directamente en Google.');
+            showError('No se cargó la verificación. Revisá tu conexión y recargá la página para intentarlo de nuevo.');
             return;
         }
         let token = '';
         try { token = window.grecaptcha.getResponse(); } catch { /* Widget not ready. */ }
         if (!token) {
             event.preventDefault();
-            showError('Completa la verificación antes de enviar. Si no está disponible, abre el formulario directamente en Google.');
+            showError('Completá la verificación antes de enviar. Si no aparece, recargá la página para volver a intentarlo.');
+            return;
         }
+        // A native POST into the hidden frame keeps the visitor on this page.
+        // Its cross-origin response cannot prove receipt; preserve the fields.
+        status.textContent = 'Envío iniciado. Revisá tu correo para confirmar la recepción de tu consulta, incluida la carpeta de spam. Si no recibís la confirmación, podés volver a intentarlo.';
+        status.hidden = false;
     });
     form.addEventListener('formdata', event => {
         // The existing Google Form has three fields. Preserve its entry IDs and
