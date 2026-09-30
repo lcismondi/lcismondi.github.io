@@ -1,0 +1,73 @@
+name: Publicación V5
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publicar el paquete en el sitio público (desmarcado: solo preparar)'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-v5
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/V5'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obtener la versión seleccionada
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generar y comprobar el paquete público
+        run: node scripts/build-publication.cjs
+      - name: Localizar el paquete generado
+        id: package
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const build = JSON.parse(fs.readFileSync('dist/latest-build.json', 'utf8'));
+          const directory = path.resolve(build.directory);
+          const dist = path.resolve('dist') + path.sep;
+          if (!directory.startsWith(dist) || !fs.existsSync(path.join(directory, 'index.html'))) {
+            throw new Error('El paquete no está dentro de dist o no contiene la Home.');
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `path=${directory}\n`);
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+            `## Paquete V5\n\n${build.pages} páginas · ${build.files} archivos\n\nCommit: ${process.env.GITHUB_SHA}\n\nSolo se publica si se marca la opción de publicación al iniciar el flujo.\n`);
+          NODE
+      - name: Guardar únicamente el paquete público
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ steps.package.outputs.path }}
+
+  deploy:
+    if: inputs.publish && github.ref == 'refs/heads/V5'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Consultar configuración de Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar el paquete verificado
+        id: deployment
+        uses: actions/deploy-pages@v4
