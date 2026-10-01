@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     if: github.ref == 'refs/heads/V5'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Obtener la versión seleccionada
@@ -27,7 +27,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Preparar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22'
       - name: Generar y comprobar el paquete público
@@ -50,14 +50,14 @@ jobs:
             `## Paquete V5\n\n${build.pages} páginas · ${build.files} archivos\n\nCommit: ${process.env.GITHUB_SHA}\n\nSolo se publica si se marca la opción de publicación al iniciar el flujo.\n`);
           NODE
       - name: Guardar únicamente el paquete público
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ${{ steps.package.outputs.path }}
 
   deploy:
     if: inputs.publish && github.ref == 'refs/heads/V5'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       pages: write
