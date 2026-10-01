@@ -29,3 +29,12 @@ Pasos futuros, cuando se acuerde publicar:
 El workflow fue preparado localmente: no se subió ni ejecutó en GitHub. La prueba local del generador no sustituye una ejecución real de Actions.
 
 Referencia: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+## Publicación principal completada — 1 de octubre de 2026
+
+Autorizada expresamente por el propietario. Pages cambiado de legacy/V4 a workflow, conservando dominio y HTTPS. Se añadió V5 a las ramas permitidas del entorno github-pages, manteniendo V4. Flujo ejecutado con publish=true sobre c3d2b4b087a9da581fef6572948242931b1ce28e.
+
+Ejecución: https://github.com/lcismondi/lcismondi.github.io/actions/runs/36845383515 — build y deploy completados correctamente.
+
+Verificación pública: las 64 rutas respondieron 200; 63 documentos coinciden con los archivos locales y /links/index.html redirige al repositorio independiente del subdominio (comportamiento de Pages). HTTP y www redirigen al HTTPS del dominio principal. Sitemap accesible; rutas inexistentes devuelven 404 personalizada. docs/V5_SERVICES.md, previews/inmersiva.html y assets/Inter-4.0.zip devuelven 404.
+
+Chrome en producción: formulario visible con destino vigente e iframe, reCAPTCHA cargado (dos frames), ninguna etiqueta GA antes de elegir ni tras rechazar, preferencias internas abren sin navegar y sin errores de ejecución detectados. No se enviaron consultas ni se resolvió captcha desde la automatización. Pendiente: prueba manual del propietario con captcha y confirmación de hoja/correo; comprobación de recepción de eventos en la cuenta GA. V4 permanece en d43c930 como opción de restauración.
