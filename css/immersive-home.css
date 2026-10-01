@@ -34,3 +34,13 @@
 #casos,#proyectos{scroll-margin-top:-120px}
 #perfil,#contacto{scroll-margin-top:-160px}
 @media(max-width:800px){#enfoque,#perfil,#contacto{scroll-margin-top:-90px}#casos,#proyectos{scroll-margin-top:-70px}}
+
+/* Visible post-submit state, with a recoverable draft for uncertain delivery. */
+.contact-feedback{padding:28px;border:1px solid #88a9c3;background:#e8eef0;color:#091235;margin-block:24px}
+.contact-feedback[hidden]{display:none}
+.contact-feedback h3{margin:0 0 16px;font:600 24px/1.25 Inter,Arial,sans-serif}
+.contact-feedback p{font-size:15px;line-height:1.6}
+.contact-feedback-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.contact-feedback-actions button{padding:12px 18px;min-height:44px;border:1px solid #091235;background:#091235;color:#fff;font:600 14px/1.4 Inter,Arial,sans-serif;cursor:pointer}
+.contact-feedback-actions button+button{background:transparent;color:#091235}
+.contact-feedback-actions button:focus-visible{outline:3px solid #52798e;outline-offset:4px}
