@@ -116,7 +116,7 @@
                         alineación de un proyecto. Esto facilita la toma de decisiones informadas y cohesivas.</p></div><div><h3>Compromiso con la innovación</h3><p>Los proyectos que impulsan la innovación están siempre buscando nuevas maneras de mejorar y
                         adaptarse. Mantener una mentalidad abierta hacia nuevas ideas, tecnologías y procesos es clave
                         para la sostenibilidad a largo plazo.</p></div></div><a class="privacy-back" href="/proyectos/proyectos.html">Explorar los proyectos ↗</a></section><section class="resources-signup" id="contact"><div class="wrap resources-signup-layout"><div><p class="eyebrow">04 / SIGAMOS EN CONTACTO</p><h2 class="display">ELEGÍ CÓMO<br>SEGUIR.</h2><p>Seleccioná la opción que te interesa y contame sobre tu proyecto.</p></div><div class="resources-form-panel"><div id="form">
-                        <form id="newstForm" method="post" target="hiddenConfirm" onsubmit="return formSubmit(event)">
+                        <form id="newstForm" method="post" target="hiddenConfirm">
                             <div class="resources-field"><label class="" for="subscription-field-0">Nombre</label>
                                 <input type="text" class="" name="entry.2024450423" id="subscription-field-0" required="">
                                 
@@ -129,7 +129,7 @@
 
                             <div class="resources-field"><label class="" for="tipoInput">Me interesa</label>
                                 <select class="" id="tipoInput" name="entry.917542536" required="">
-                                    <option selected="" disabled="">Selecciona una suscripción</option>
+                                    <option value="" selected="" disabled="">Selecciona una suscripción</option>
                                     <option value="Newsletter">Newsletter</option>
                                     <option value="Inicial">Inicial</option>
                                     <option value="Profesional">Profesional</option>
@@ -151,51 +151,11 @@
                             <div class="g-recaptcha" data-sitekey="6LeiJAEqAAAAAP8MOPacLM7q0ppd48f43SNd8Fx3" data-size="compact"></div>
                             <!-- key publica -->
 
-                            <button type="submit" class="button">Enviar</button>
+                            <p id="subscription-error" role="alert" hidden></p><button type="submit" class="button">Enviar</button>
                         </form>
-                    </div><iframe name="hiddenConfirm" style="display: none;" title="Respuesta de la suscripción"></iframe><div id="completion-msg" class="resources-completion" style="display: none; transition: all .1s ease;">
-                        
-                        <h5>Confirma tu dirección de correo</h5>
-                        <p>Gracias por suscribirte. Te he enviado un
-                            correo de verificación para confirmar tu dirección. Por favor, revisa tu bandeja de entrada
-                            y sigue las instrucciones haciendo clic en el enlace.</p>
-                        <p>Si no encuentras el correo, revisa tu carpeta de spam o
-                            correos no deseados. Una vez confirmada tu dirección, recibirás todas las actualizaciones y
-                            recursos directamente en tu bandeja de entrada.</p>
-                    </div></div></div></section></main><footer class="wrap"><a class="brand" href="/">LC<span>LUCIANO<br>CISMONDI</span></a><p>Negocio, producto e ingeniería.</p><nav aria-label="Pie de página"><a href="https://www.linkedin.com/in/lucianocismondi">LinkedIn ↗</a><a href="https://github.com/lcismondi">GitHub ↗</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/trabajos/curriculum.html">Trayectoria</a><a href="/recursos/recursos.html">Recursos y newsletter</a><button id="analytics-settings" class="v5-analytics-settings" type="button" hidden>Preferencias de analítica</button></nav></footer><script src="/js/resources-navigation.js" defer=""></script><script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        var form = document.getElementById("newstForm");
-
-                        // Cambiar ID del formulario dinámicamente
-                        var newId = "form_" + Math.random().toString(36).substr(2, 9);
-                        form.id = newId;
-
-                        // Enmascarar la URL del formulario dinámicamente
-                        var formAction = "https://docs.google.com/forms/d/e/1FAIpQLSdS7mPrmf57O7zx45MXsvw1tewo9ZWsszo3FXTOKEUnIiddiw/formResponse";
-                        form.action = formAction;
-
-                        form.addEventListener("submit", function (event) {
-                            var honeypot = form.querySelector("input[name='honeypot']").value;
-                            if (honeypot) {
-                                // If the honeypot field is filled, it's a bot
-                                event.preventDefault();
-                                alert("Spam detected!");
-                                return false;
-                            }
-                            if (grecaptcha.getResponse() === "") {
-                                event.preventDefault();
-                                alert("Por favor, completa el reCAPTCHA.");
-                                return false;
-                            } else {
-                                document.getElementById("form").style.display = "none";  // make form invisible
-                                document.getElementById("completion-msg").style.display = "block"; // Optional if you want to give a completion feedback!
-                                return true;
-                            }
-                        });
-                    });
-
-                    function formSubmit(event) {
-                        // Esta función está definida solo para cumplir con el onsubmit del formulario.
-                        return true;
-                    }
-                </script></body></html>
+                    </div><iframe name="hiddenConfirm" style="display: none;" title="Respuesta de la suscripción"></iframe><div id="completion-msg" class="resources-completion" hidden tabindex="-1" aria-labelledby="subscription-status-title">
+<p class="eyebrow">UN PASO MÁS</p><h3 id="subscription-status-title">Revisá tu correo</h3>
+<p>El envío se inició. Cuando se procese tu solicitud, recibirás un enlace para confirmar tu dirección. Tenés 24 horas para usarlo.</p>
+<p>Si no aparece, revisá la carpeta de spam. También podés recuperar tus datos y volver a intentarlo.</p>
+<div class="resources-feedback-actions"><button class="button" type="button" data-subscription-retry>Reintentar el envío</button><button class="button" type="button" data-subscription-new>Otra solicitud</button></div>
+</div></div></div></section></main><footer class="wrap"><a class="brand" href="/">LC<span>LUCIANO<br>CISMONDI</span></a><p>Negocio, producto e ingeniería.</p><nav aria-label="Pie de página"><a href="https://www.linkedin.com/in/lucianocismondi">LinkedIn ↗</a><a href="https://github.com/lcismondi">GitHub ↗</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/trabajos/curriculum.html">Trayectoria</a><a href="/recursos/recursos.html">Recursos y newsletter</a><button id="analytics-settings" class="v5-analytics-settings" type="button" hidden>Preferencias de analítica</button></nav></footer><script src="/js/resources-navigation.js" defer=""></script><script src="/js/newsletter-form.js" defer></script></body></html>

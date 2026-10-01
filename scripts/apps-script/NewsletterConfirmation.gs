@@ -1,0 +1,28 @@
+/** Replace the old doGet only. Keep validateCodeAndEmail and onFormSubmit. */
+function doGet(e) {
+  const params = e && e.parameter || {};
+  let state = 'invalid';
+  if (params.code && params.email) {
+    try {
+      state = validateCodeAndEmail(params.email, params.code) ? 'success' : 'invalid';
+    } catch (_) {
+      state = 'error';
+    }
+  }
+  return HtmlService.createHtmlOutput(newsletterConfirmationHtml(state))
+    .setTitle('Confirmación de correo | Luciano Cismondi')
+    .addMetaTag('viewport', 'width=device-width, initial-scale=1');
+}
+
+/** Static messages only: never reflect email addresses or URL parameters. */
+function newsletterConfirmationHtml(state) {
+  const messages = {
+    success: ['CORREO CONFIRMADO', 'YA ESTAMOS<br>EN CONTACTO.', 'Tu dirección de correo quedó confirmada. Gracias por sumarte.', 'Podés seguir explorando los recursos y proyectos de la web.', 'Explorar recursos', 'https://lucianocismondi.com.ar/recursos/recursos.html'],
+    invalid: ['REVISÁ EL ENLACE', 'NO PUDIMOS<br>CONFIRMARLO.', 'Este enlace puede haber vencido, estar incompleto o haberse utilizado.', 'Si ya confirmaste tu dirección, no hace falta repetirlo. Si todavía no lo hiciste, podés enviar una nueva solicitud y usar el enlace del último correo.', 'Volver a la suscripción', 'https://lucianocismondi.com.ar/recursos/recursos.html#contact'],
+    error: ['INTENTALO DE NUEVO', 'ALGO NO SALIÓ<br>COMO ESPERÁBAMOS.', 'No pudimos completar la confirmación en este momento.', 'Volvé a abrir el enlace de tu correo dentro de unos minutos. Si el problema continúa, escribime desde la web.', 'Ir a contacto', 'https://lucianocismondi.com.ar/#contacto']
+  };
+  const m = messages[state] || messages.invalid;
+  return `<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:#090f1d;color:#f7f8f5;font-family:Arial,Helvetica,sans-serif;line-height:1.6}header,main,footer{max-width:1080px;margin:auto;padding:32px 6vw}header{border-bottom:1px solid #2b4257;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding-block:24px}header nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px 32px;font-family:Inter,Arial,sans-serif}header nav a{display:flex;align-items:center;min-height:44px;font-size:13px;text-decoration:none}header nav a:hover{color:#88a9c3}.nav-contact{border:1px solid #526575;padding:4px 22px}@media(max-width:800px){header nav{gap:8px 20px}}a{color:inherit}@font-face{font-display:swap;font-family:Inter;src:url('https://lucianocismondi.com.ar/assets/fonts/inter/Inter-Regular.woff2');font-weight:400}@font-face{font-display:swap;font-family:Inter;src:url('https://lucianocismondi.com.ar/assets/fonts/inter/Inter-SemiBold.woff2');font-weight:600}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Inter,Arial,sans-serif;font-size:40px;font-weight:600;line-height:1;color:#f7f8fa}.brand span{font-size:12px;line-height:1.2;letter-spacing:.06em}main{padding-top:72px;padding-bottom:80px}.eyebrow{font-size:12px;letter-spacing:.18em;color:#88a9c3}h1{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-weight:400;font-size:clamp(42px,7vw,88px);line-height:1.05;margin:24px 0 40px;overflow-wrap:break-word}.message{background:#f7f8f5;color:#091235;padding:clamp(24px,5vw,48px);max-width:720px}.message p{max-width:58ch;margin:0 0 20px}.message p+p{color:#405569}.button{display:inline-block;padding:14px 22px;background:#091235;color:#fff;text-decoration:none;margin-top:8px}a:focus-visible{outline:3px solid #88a9c3;outline-offset:6px}footer{color:#adbfce;border-top:1px solid #2b4257;font-size:14px}footer a{display:inline-block;margin:8px 24px 8px 0}@media(max-width:480px){header,main,footer{padding-left:24px;padding-right:24px}main{padding-top:40px}.button{display:block;text-align:center}}
+</style></head><body><header><a class="brand" href="https://lucianocismondi.com.ar/" target="_blank" rel="noopener">LC<span>LUCIANO<br>CISMONDI</span></a><nav aria-label="Navegación principal"><a href="https://lucianocismondi.com.ar/#casos" target="_blank" rel="noopener">Casos</a><a href="https://lucianocismondi.com.ar/#enfoque" target="_blank" rel="noopener">Enfoque</a><a href="https://lucianocismondi.com.ar/#perfil" target="_blank" rel="noopener">Perfil</a><a href="https://lucianocismondi.com.ar/#proyectos" target="_blank" rel="noopener">Exploración</a><a class="nav-contact" href="https://lucianocismondi.com.ar/#contacto" target="_blank" rel="noopener">Hablemos ↗</a></nav></header><main><p class="eyebrow">${m[0]}</p><h1>${m[1]}</h1><div class="message"><p>${m[2]}</p><p>${m[3]}</p><a class="button" href="${m[5]}" target="_blank" rel="noopener">${m[4]} ↗</a></div></main><footer>Negocio, producto e ingeniería.<br><a href="https://lucianocismondi.com.ar/privacidad.html" target="_blank" rel="noopener">Privacidad</a><a href="https://lucianocismondi.com.ar/" target="_blank" rel="noopener">Volver a la web ↗</a></footer></body></html>`;
+}

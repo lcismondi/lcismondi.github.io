@@ -34,3 +34,21 @@ El error Authorization is required es independiente: el propietario del activado
 Servicios simulados (sin Google/MailApp reales): contacto ignorado por newsletter, fila del evento frente a última fila, URL codificada, solicitudes antiguas y confirmadas omitidas, errores de evento/email, destinatario/replyTo y mensajes de texto plano. Todos pasan.
 
 Referencias: https://developers.google.com/apps-script/guides/triggers/events y https://developers.google.com/apps-script/reference/mail/mail-app
+## Nueva pantalla de confirmación (1 de octubre de 2026)
+
+Preparada localmente en `NewsletterConfirmation.gs`; pendiente de instalar en Google.
+
+1. Guardar una copia del código actual del proyecto del newsletter.
+2. Eliminar únicamente la función `doGet` antigua y agregar el contenido de `NewsletterConfirmation.gs`. Mantener `validateCodeAndEmail`, `onFormSubmit` y el activador existente. No dejar dos funciones `doGet`.
+3. Guardar. En **Implementar > Gestionar implementaciones**, editar la aplicación web existente (lápiz), elegir **Nueva versión** e implementar. Conservar su URL `/exec`: crear otra implementación cambiaría el enlace que se envía por correo.
+4. Abrir la URL `/exec` sin parámetros: debe mostrar la pantalla de enlace inválido. Luego comprobar una suscripción propia nueva: confirmar que muestra éxito y que la columna G de esa fila queda en 1. Una segunda apertura puede mostrar enlace utilizado, según el validador existente.
+
+La presentación tiene estados de éxito, enlace inválido/usado/vencido y error temporal. Conserva la validación y los enlaces anteriores; no añade registros con datos personales ni refleja parámetros en el HTML. No cambia las limitaciones del mecanismo Base64 descritas arriba.
+
+Documentación: https://developers.google.com/apps-script/concepts/deployments
+
+### Confirmación instalada y verificada
+
+El 1 de octubre de 2026 el usuario reemplazó `checkmail.gs` con `reemplazo/checkmail.gs` y actualizó la implementación existente, conservando la URL `/exec`. La lectura pública sin parámetros mostró el diseño nuevo. El usuario confirmó la prueba de suscripción, pantalla de éxito y valor 1 en la columna G. El archivo completo de reemplazo es una alternativa a `NewsletterConfirmation.gs`: no instalar ambos porque duplicarían funciones.
+
+El formulario web ahora ofrece recuperación de datos para reintentar y una nueva solicitud en blanco. Verificado en navegador con destino local (sin enviar a Google): validación del selector y captcha, un solo envío ante doble clic, contenido enviado, reinicio, recuperación, elección de plan y ausencia de desbordamiento a 320/768/1440 px.
