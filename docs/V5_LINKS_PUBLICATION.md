@@ -10,3 +10,4 @@ La fuente editable de la página sigue en links/index.html del proyecto V5. `nod
 Para futuras actualizaciones, generar el paquete, comparar y copiar los archivos públicos a un checkout del repositorio links; revisar el diff, guardar y subir a main. Un push a main de links sí publica este subdominio. Nunca copiar .git de un paquete o reemplazar el repositorio completo.
 
 La publicación de links no modifica V4 ni publica la Home V5. Se verificó la página independiente a 320, 768 y 1440 px sin desbordamientos, recursos locales faltantes o errores de ejecución detectados.
+Validación posterior: HTTPS respondió 200 con certificado válido; Home, estilos, imagen de perfil y ambas fuentes respondieron 200. Aprovisionamiento completado.
