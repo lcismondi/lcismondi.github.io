@@ -6,3 +6,5 @@
 footer nav a,footer nav button{text-decoration-thickness:1px;text-underline-offset:5px}
 footer nav button{display:inline-flex;align-items:center;line-height:inherit}
 footer nav button:focus-visible{outline:3px solid #88a9c3;outline-offset:6px}
+
+.nav .language-switch{display:flex;align-items:center;gap:8px;font-size:12px;color:#88a9c3;white-space:nowrap}.nav .language-switch a{font-size:12px;padding-inline:4px}.nav .language-switch a[aria-current="page"]{color:#f7f8fa;text-decoration:underline;text-underline-offset:5px}
