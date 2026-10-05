@@ -7,6 +7,8 @@
   const error=document.getElementById('contact-error');
   const button=form.querySelector('[type="submit"]');
   const status=document.getElementById('contact-status');
+  const pending=document.getElementById('contact-pending');
+  const buttonLabel=button.innerHTML;
   const showError=message=>{error.textContent=message;error.hidden=false;error.focus();};
   const unavailable=text('El formulario está temporalmente fuera de servicio. Podés escribirme por WhatsApp.','The form is temporarily unavailable. You can contact me through WhatsApp.');
   let busy=false, challenge='',widget, token='', draft;
@@ -18,7 +20,9 @@
     error.hidden=true;
     if(!challenge || !token){showError(text('Esperá a que termine la verificación.','Wait for verification to finish.'));return;}
     if(!form.reportValidity())return;
-    busy=true;button.disabled=true;
+    busy=true;button.disabled=true;form.setAttribute('aria-busy','true');
+    button.textContent=text('Enviando consulta…','Sending enquiry…');
+    pending.textContent=text('Estamos enviando tu consulta. La confirmación puede tardar unos segundos.','We are sending your enquiry. Confirmation may take a few seconds.');pending.hidden=false;
     const data={name:form.elements['entry.2024450423'].value,email:form.elements['entry.172661864'].value,company:form.elements.company.value,message:form.elements['entry.1797313582'].value,companyWebsite:form.elements.companyWebsite.value,challenge,token};
     try {
       const response=await fetch(config.endpoint+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(55000)});
@@ -30,11 +34,11 @@
       const title=document.createElement('h3');title.textContent=text('Consulta enviada','Enquiry sent');
       const note=document.createElement('p');note.textContent=text('Gracias por escribirme. Responderé a tu email; no se envía un acuse automático.','Thank you for contacting me. I will reply to your email; no automatic acknowledgement is sent.');
       const actions=document.createElement('div');actions.className='contact-feedback-actions';
-      for(const recover of [false,true]){const b=document.createElement('button');b.type='button';b.textContent=recover?text('Recuperar consulta','Recover enquiry'):text('Escribir otra consulta','Write another enquiry');b.onclick=()=>{form.reset();if(recover && draft){form.elements['entry.2024450423'].value=draft.name;form.elements['entry.172661864'].value=draft.email;form.elements.company.value=draft.company;form.elements['entry.1797313582'].value=draft.message;}status.hidden=true;form.hidden=false;form.elements['entry.2024450423'].focus();};actions.append(b);}
+      for(const recover of [false,true]){const b=document.createElement('button');b.type='button';b.textContent=recover?text('Recuperar consulta','Recover enquiry'):text('Escribir otra consulta','Write another enquiry');b.onclick=()=>{form.reset();if(recover && draft){form.elements['entry.2024450423'].value=draft.name;form.elements['entry.172661864'].value=draft.email;form.elements.company.value=draft.company;form.elements['entry.1797313582'].value=draft.message;}error.hidden=true;status.hidden=true;form.hidden=false;renew().catch(()=>showError(unavailable));form.elements['entry.2024450423'].focus();};actions.append(b);}
       status.append(title,note,actions);status.focus();
     } catch(e) {
       showError(e.message==='rate_limit'||e.message==='duplicate'?text('Ya recibimos una consulta similar o alcanzaste el límite. Esperá antes de reintentar.','A similar enquiry was received or the limit was reached. Please wait before retrying.'):e.message==='too_fast'?text('Esperá unos segundos y volvé a enviar.','Wait a few seconds and submit again.'):text('No pudimos confirmar el envío. Conservamos tus datos para reintentar; también podés escribirme por WhatsApp.','We could not confirm delivery. Your details are preserved for retrying; you can also contact me through WhatsApp.'));
-    } finally {busy=false;token='';button.disabled=true;try{window.turnstile.reset(widget);}catch{} }
+    } finally {busy=false;pending.hidden=true;form.setAttribute('aria-busy','false');button.innerHTML=buttonLabel;token='';button.disabled=true;try{window.turnstile.reset(widget);}catch{} }
   });
   if(!config.endpoint || !config.sitekey || !/^https:\/\/[^/]+$/.test(config.endpoint)){showError(unavailable);return;}
   async function renew(){challenge='';const r=await fetch(config.endpoint+'/challenge',{method:'POST',signal:AbortSignal.timeout(10000)});const data=await r.json();if(!r.ok || !data.challenge)throw new Error();challenge=data.challenge;button.disabled=busy||!token;}
