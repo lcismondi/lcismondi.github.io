@@ -22,4 +22,8 @@ test('fórmulas almacenadas como texto',()=>{const x=setup();x.p.name='=IMPORTXM
 test('encabezados modificados no sobrescribe hoja',()=>{const x=setup();x.rows[0][0]='Otro encabezado';assert.equal(x.send().ok,false);assert.equal(x.rows.length,1);assert.equal(x.mails.length,0);});
 test('fallo de almacenamiento no envía correo',()=>{const x=setup();x.sheet.getRange=()=>{throw new Error('storage');};assert.equal(x.send().ok,false);assert.equal(x.mails.length,0);});
 test('email inválido no guarda ni envía',()=>{const x=setup();x.p.email='test';assert.equal(x.send().ok,false);assert.equal(x.rows.length,1);assert.equal(x.mails.length,0);});
+
+
+test('health firmado no crea filas ni correos',()=>{const x=setup();assert.equal(x.send({operation:'health',id:x.p.id,timestamp:Date.now()}).code,'ready');assert.equal(x.rows.length,1);assert.equal(x.mails.length,0);});
+
 console.log(`${count} sheet integration tests passed. No live rows or email.`);

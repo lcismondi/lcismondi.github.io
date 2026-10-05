@@ -2,8 +2,8 @@
 const CONTACT_SPREADSHEET_ID = '1CvLu3VhP7hLfAvdZBxPak-Ncif4qx4j_HpWZ-PcvK5s';
 const CONTACT_SHEET_NAME = 'Contacto web';
 function doPost(e) {
-  const output = ok => ContentService.createTextOutput(JSON.stringify({ok})).setMimeType(ContentService.MimeType.JSON);
-  const reject = reason => { console.log(JSON.stringify({reason})); return output(false); };
+  const output = (ok, code) => ContentService.createTextOutput(JSON.stringify({ok, code})).setMimeType(ContentService.MimeType.JSON);
+  const reject = reason => { console.log(JSON.stringify({reason})); return output(false, reason); };
   let lock, stored;
   try {
     const settings=PropertiesService.getScriptProperties();
@@ -19,6 +19,7 @@ function doPost(e) {
     if(diff) return reject('invalid_signature');
     const p=JSON.parse(envelope.payload);
     if(!Number.isFinite(p.timestamp) || Math.abs(Date.now()-p.timestamp)>120000 || typeof p.id!=='string' || !/^[a-f0-9-]{36}$/.test(p.id)) return reject('invalid_payload');
+    if(p.operation==='health') { autorizarContactoProtegido(); return output(true, 'ready'); }
     if(['name','email','company','message'].some(k=>typeof p[k]!=='string') || p.name.trim().length<2 || p.name.length>200 || p.company.length>200 || p.message.trim().length<10 || p.message.length>10000 || p.email.length>254 || !/^[^\s@,;<>]+@[^\s@,;<>]+\.[^\s@,;<>]+$/.test(p.email) || /[\x00-\x1f\x7f]/.test(p.name+p.email+p.company) || /[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/.test(p.message)) return reject('invalid_payload');
     lock=LockService.getScriptLock(); if(!lock.tryLock(10000)) return reject('unavailable');
     const now=Date.now();

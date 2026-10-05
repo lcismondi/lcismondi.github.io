@@ -40,7 +40,7 @@ export async function handle(request, env, net=fetch) {
   const cors={'Access-Control-Allow-Origin':origin||'', 'Vary':'Origin','Access-Control-Allow-Methods':'POST, OPTIONS','Access-Control-Allow-Headers':'Content-Type'};
   const url=new URL(request.url);
   if (!origins.includes(origin)) return json({ok:false},403);
-  if (!['/challenge','/contact'].includes(url.pathname)) return json({ok:false},404,cors);
+  if (!['/challenge','/contact','/health'].includes(url.pathname)) return json({ok:false},404,cors);
   if (request.method==='OPTIONS') return new Response(null,{status:204,headers:cors});
   if (request.method!=='POST') return json({ok:false},405,{...cors,Allow:'POST, OPTIONS'});
   const fail=(reason,status=400)=>{console.log(JSON.stringify({reason})); return json({ok:false,code:reason},status,cors);};
@@ -51,6 +51,12 @@ export async function handle(request, env, net=fetch) {
     if (!ip) return fail('unavailable',503);
     const ipKey=await mac(env.RELAY_SECRET,ip);
     if (!await limit(env, 'request:'+ipKey, 30,100)) return fail('rate_limit',429);
+    if (url.pathname==='/health') {
+      const payload=JSON.stringify({operation:'health',id:crypto.randomUUID(),timestamp:Date.now()});
+      const response=await net(env.APPS_SCRIPT_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({payload,signature:await mac(env.RELAY_SECRET,payload)}),signal:AbortSignal.timeout(45000)});
+      const responseText=await response.text(); let result; try { result=JSON.parse(responseText); } catch { const title=(responseText.match(/<title[^>]*>([^<]*)<\/title>/i)||[])[1]||'unknown'; console.log(JSON.stringify({reason:'relay_response_invalid',status:response.status,title:title.slice(0,150),urlHost:new URL(response.url).hostname})); return fail('relay_response_invalid_'+response.status,502); }
+      return json({ok:result.ok===true,code:result.code||'relay_rejected'},result.ok?200:502,cors);
+    }
     if (url.pathname==='/challenge') {
       const raw=Date.now()+'.'+crypto.randomUUID();
       return json({challenge:raw+'.'+await mac(env.RELAY_SECRET,raw)},200,cors);
@@ -78,7 +84,7 @@ export async function handle(request, env, net=fetch) {
     if(!await limit(env,'duplicate:'+fingerprint,1,1)) return fail('duplicate',429);
     if(!await limit(env,'global',Number(env.GLOBAL_LIMIT_10M||20),Number(env.GLOBAL_LIMIT_DAY||100))) return fail('rate_limit',429);
     const payload=JSON.stringify({id:crypto.randomUUID(),timestamp:Date.now(),name:p.name.trim(),email:p.email.trim(),company:p.company.trim(),message:p.message.trim()});
-    const response=await net(env.APPS_SCRIPT_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({payload,signature:await mac(env.RELAY_SECRET,payload)}),signal:AbortSignal.timeout(20000)});
+    const response=await net(env.APPS_SCRIPT_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({payload,signature:await mac(env.RELAY_SECRET,payload)}),signal:AbortSignal.timeout(45000)});
     const result=response.ok ? await response.json() : {};
     if(!result.ok) return fail('delivery_failed',502);
     return json({ok:true},200,cors);

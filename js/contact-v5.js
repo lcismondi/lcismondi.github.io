@@ -21,7 +21,7 @@
     busy=true;button.disabled=true;
     const data={name:form.elements['entry.2024450423'].value,email:form.elements['entry.172661864'].value,company:form.elements.company.value,message:form.elements['entry.1797313582'].value,companyWebsite:form.elements.companyWebsite.value,challenge,token};
     try {
-      const response=await fetch(config.endpoint+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(30000)});
+      const response=await fetch(config.endpoint+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(55000)});
       const result=await response.json();
       if(!response.ok || !result.ok)throw new Error(result.code||'unavailable');
       draft={name:data.name,email:data.email,company:data.company,message:data.message}; form.reset(); form.hidden=true;
