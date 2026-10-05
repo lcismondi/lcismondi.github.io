@@ -1,0 +1,21 @@
+name = "contactoweb"
+main = "worker.mjs"
+compatibility_date = "2026-10-05"
+
+[vars]
+APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEBhaDAJwGaE3KVw2QhBizC6OrTexRx49-p7ofHGO8LfqM3H1Z7cCJLe6vw0gftM8G/exec"
+ALLOWED_ORIGINS = "https://lucianocismondi.com.ar,https://www.lucianocismondi.com.ar"
+TURNSTILE_HOSTNAMES = "lucianocismondi.com.ar,www.lucianocismondi.com.ar"
+MIN_FORM_MS = "2000"
+IP_LIMIT_10M = "3"
+IP_LIMIT_DAY = "10"
+GLOBAL_LIMIT_10M = "20"
+GLOBAL_LIMIT_DAY = "100"
+
+[[durable_objects.bindings]]
+name = "GUARD"
+class_name = "ContactGuard"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ContactGuard"]

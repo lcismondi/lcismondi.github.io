@@ -66,8 +66,7 @@
                                 aproximada. Los eventos personalizados no incluyen nombre, email ni contenido del
                                 mensaje.</li>
                             <li><strong>Seguridad y alojamiento:</strong> GitHub Pages registra direcciones IP por
-                                motivos de seguridad. reCAPTCHA analiza señales técnicas y de interacción para evaluar
-                                automatismos.</li>
+                                motivos de seguridad. Cloudflare Turnstile verifica señales técnicas y de interacción en el contacto; reCAPTCHA continúa en el newsletter.</li>
                         </ul>
                     </section>
                     <section id="privacidad-eleccion-del-visitante"
@@ -84,12 +83,9 @@
                         aria-labelledby="privacidad-servicios-que-intervienen-titulo">
                         <h2 id="privacidad-servicios-que-intervienen-titulo">Servicios que intervienen</h2>
                         <ul>
-                            <li><strong>Google Forms y la hoja de respuestas:</strong> reciben y almacenan las
-                                consultas. Las automatizaciones de Apps Script asociadas envían notificaciones y
-                                respuestas de contacto. El newsletter utiliza una hoja de respuestas independiente y un
-                                correo de confirmación de suscripción.</li>
+                            <li><strong>Google Apps Script y Sheets:</strong> guardan las consultas de contacto y envían un aviso al propietario, sin acuse automático al visitante. Google Forms y una hoja independiente siguen gestionando el newsletter y su correo de confirmación.</li><li><strong>Cloudflare Workers y Turnstile:</strong> reciben las consultas de contacto, verifican la protección antispam y limitan envíos antes de transmitirlas a Apps Script.</li>
                             <li><strong>Google Analytics:</strong> mide las visitas e interacciones de la Home cuando tu preferencia de analítica es de aceptación.</li>
-                            <li><strong>Google reCAPTCHA:</strong> se carga en la Home y en Recursos y newsletter, independientemente de la preferencia de analítica.</li>
+                            <li><strong>Google reCAPTCHA:</strong> se carga en Recursos y newsletter, independientemente de la preferencia de analítica.</li>
                             <li><strong>GitHub Pages:</strong> aloja y sirve el sitio.</li><li><strong>Contenidos y recursos externos:</strong> algunas páginas cargan videos de YouTube, publicaciones incrustadas o archivos desde proveedores externos como jsDelivr. Al cargarse, el navegador se conecta con esos proveedores, que pueden recibir datos técnicos y utilizar su propio almacenamiento.</li>
                             <li><strong>WhatsApp y enlaces externos:</strong> si elegís abrirlos, usás servicios sujetos
                                 a sus propias condiciones y políticas.</li>
@@ -101,7 +97,7 @@
                         <p>Conservamos los datos mientras sean necesarios para responder la consulta y gestionar la
                             relación profesional. Cuando dejan de ser necesarios, los eliminamos, salvo que exista una
                             obligación legal de conservación.</p>
-                        <p>Este criterio comprende las consultas y sus copias en Google Forms, la hoja de respuestas y
+                        <p>Este criterio comprende las consultas y sus copias en la hoja de contacto y
                             los correos asociados. Las consultas sin continuidad deben revisarse para determinar si
                             sigue siendo necesario conservarlas.</p>
                         <p>La conservación de datos de eventos en Google Analytics está configurada en 2 meses. El
@@ -130,7 +126,7 @@
                     <section id="privacidad-mas-informacion" aria-labelledby="privacidad-mas-informacion-titulo">
                         <h2 id="privacidad-mas-informacion-titulo">Más información</h2>
                         <ul>
-                            <li><a href="https://policies.google.com/privacy?hl=es">Privacidad de Google</a></li>
+                            <li><a href="https://policies.google.com/privacy?hl=es">Privacidad de Google</a></li><li><a href="https://www.cloudflare.com/privacypolicy/">Privacidad de Cloudflare</a></li>
                             <li><a
                                     href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacidad
                                     de GitHub</a></li>

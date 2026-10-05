@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local testing only. Never commit actual values.
+TURNSTILE_SECRET=
+RELAY_SECRET=
+APPS_SCRIPT_URL=

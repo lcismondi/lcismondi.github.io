@@ -14,8 +14,9 @@ function onContactFormSubmit(e) {
   const email = answers['Correo electrónico'];
   const message = answers['Mensaje'];
   if (!name || !message || !email || !/^[^\s@,;<>]+@[^\s@,;<>]+\.[^\s@,;<>]+$/.test(email)) {
-    throw new Error('Revisar Nombre, Correo electrónico y Mensaje del formulario. No se enviaron correos.');
+    console.log(JSON.stringify({reason:'invalid_payload'})); return;
   }
+  if (name.length > 200 || email.length > 254 || message.length < 10 || message.length > 10000 || /[\x00-\x1f\x7f]/.test(name+email)) { console.log(JSON.stringify({reason:'invalid_payload'})); return; }
   const subjectName = name.replace(/[\r\n]+/g, ' ').slice(0, 150);
   // Texto plano: los datos del visitante no se interpretan como HTML.
   MailApp.sendEmail({
