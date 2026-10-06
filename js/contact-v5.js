@@ -31,8 +31,8 @@
       draft={name:data.name,email:data.email,company:data.company,message:data.message}; form.reset(); form.hidden=true;
       status.className='contact-feedback';status.hidden=false;status.tabIndex=-1;
       status.replaceChildren();
-      const title=document.createElement('h3');title.textContent=text('Consulta enviada','Enquiry sent');
-      const note=document.createElement('p');note.textContent=text('Gracias por escribirme. Responderé a tu email; no se envía un acuse automático.','Thank you for contacting me. I will reply to your email; no automatic acknowledgement is sent.');
+      const title=document.createElement('h3');title.textContent=text('¡Gracias por escribirme!','Thanks for writing!');
+      const note=document.createElement('p');note.textContent=text('Tu mensaje ya me llegó. Voy a leer lo que me contás y te respondo por email.','Your message has reached me. I’ll read about your project and get back to you by email.');
       const actions=document.createElement('div');actions.className='contact-feedback-actions';
       for(const recover of [false,true]){const b=document.createElement('button');b.type='button';b.textContent=recover?text('Recuperar consulta','Recover enquiry'):text('Escribir otra consulta','Write another enquiry');b.onclick=()=>{form.reset();if(recover && draft){form.elements['entry.2024450423'].value=draft.name;form.elements['entry.172661864'].value=draft.email;form.elements.company.value=draft.company;form.elements['entry.1797313582'].value=draft.message;}error.hidden=true;status.hidden=true;form.hidden=false;renew().catch(()=>showError(unavailable));form.elements['entry.2024450423'].focus();};actions.append(b);}
       status.append(title,note,actions);status.focus();
