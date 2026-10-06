@@ -22,7 +22,7 @@
     if(!form.reportValidity())return;
     busy=true;button.disabled=true;form.setAttribute('aria-busy','true');
     button.textContent=text('Enviando consulta…','Sending enquiry…');
-    pending.textContent=text('Estamos enviando tu consulta. La confirmación puede tardar unos segundos.','We are sending your enquiry. Confirmation may take a few seconds.');pending.hidden=false;
+    pending.textContent=text('Tu mensaje está en camino. En unos segundos te confirmo que llegó.','Your message is on its way. I’ll confirm it arrived in a few seconds.');pending.hidden=false;
     const data={name:form.elements['entry.2024450423'].value,email:form.elements['entry.172661864'].value,company:form.elements.company.value,message:form.elements['entry.1797313582'].value,companyWebsite:form.elements.companyWebsite.value,challenge,token};
     try {
       const response=await fetch(config.endpoint+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(55000)});
